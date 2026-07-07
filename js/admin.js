@@ -4,6 +4,7 @@
 (function () {
   const AUTH_KEY = "vippods_admin_auth";
   const OVERRIDES_KEY = "vippods_admin_overrides";
+  const PRICING_KEY = "vippods_pricing_settings";
 
   const loginSection = document.getElementById("admin-login");
   const loginForm = document.getElementById("admin-login-form");
@@ -18,10 +19,24 @@
   const logoutBtn = document.getElementById("admin-logout");
   const saveFileBtn = document.getElementById("admin-save-file");
   const downloadBtn = document.getElementById("admin-download");
+  const markAllOutBtn = document.getElementById("admin-mark-all-out");
+  const tabInBtn = document.getElementById("admin-tab-in");
+  const tabOutBtn = document.getElementById("admin-tab-out");
+  const tabInCountEl = document.getElementById("admin-tab-in-count");
+  const tabOutCountEl = document.getElementById("admin-tab-out-count");
+
+  const retailRateInput = document.getElementById("retail-rate");
+  const retailMarkupInput = document.getElementById("retail-markup");
+  const wholesaleRateInput = document.getElementById("wholesale-rate");
+  const wholesaleMarkupInput = document.getElementById("wholesale-markup");
+  const applyRetailBtn = document.getElementById("apply-retail-pricing");
+  const applyWholesaleBtn = document.getElementById("apply-wholesale-pricing");
 
   let overrides = {};
+  let pricing = {};
   let dirty = false;
-  const rowMap = new Map();
+  let currentTab = "in"; // 'in' | 'out'
+  const rowRefs = new Map(); // id -> { row, badge, checkbox, priceInput, costInput, wholesaleInput, thumb }
 
   function loadOverrides() {
     try {
@@ -43,6 +58,29 @@
           'Clique em "Baixar products.json" agora pra não perder o que já foi editado.'
       );
     }
+  }
+
+  function loadPricing() {
+    try {
+      const raw = localStorage.getItem(PRICING_KEY);
+      pricing = raw ? JSON.parse(raw) : { ...CONFIG.DEFAULT_PRICING };
+    } catch (err) {
+      pricing = { ...CONFIG.DEFAULT_PRICING };
+    }
+    retailRateInput.value = pricing.retailRate;
+    retailMarkupInput.value = pricing.retailMarkup;
+    wholesaleRateInput.value = pricing.wholesaleRate;
+    wholesaleMarkupInput.value = pricing.wholesaleMarkup;
+  }
+
+  function persistPricing() {
+    pricing = {
+      retailRate: Number(retailRateInput.value) || 0,
+      retailMarkup: Number(retailMarkupInput.value) || 0,
+      wholesaleRate: Number(wholesaleRateInput.value) || 0,
+      wholesaleMarkup: Number(wholesaleMarkupInput.value) || 0,
+    };
+    localStorage.setItem(PRICING_KEY, JSON.stringify(pricing));
   }
 
   // Redimensiona/comprime a imagem no navegador antes de embutir como base64,
@@ -85,6 +123,11 @@
     });
   }
 
+  function getEffective(product) {
+    const ov = overrides[product.id];
+    return ov ? { ...product, ...ov } : product;
+  }
+
   function debounce(fn, delay = 200) {
     let timer;
     return (...args) => {
@@ -95,6 +138,13 @@
 
   function normalize(text) {
     return (text || "").toString().normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  }
+
+  function setRowStockUI(refs, inStock) {
+    refs.checkbox.checked = !inStock;
+    refs.badge.className = `badge ${inStock ? "badge--ok" : "badge--out"}`;
+    refs.badge.textContent = inStock ? "Em estoque" : "Fora de estoque";
+    refs.row.className = inStock ? "" : "out-of-stock";
   }
 
   function buildRow(product) {
@@ -113,16 +163,23 @@
       <td>${product.name}</td>
       <td>${product.brand}</td>
       <td>${product.category}</td>
-      <td><input type="number" min="0" step="0.01" class="price-input" value="${product.price}" aria-label="Preço de ${product.name}"></td>
+      <td><input type="number" min="0" step="0.01" class="cost-input" value="${product.costUSD ?? 0}" aria-label="Custo em dólar de ${product.name}"></td>
+      <td><input type="number" min="0" step="0.01" class="price-input" value="${product.price}" aria-label="Preço varejo de ${product.name}"></td>
+      <td><input type="number" min="0" step="0.01" class="wholesale-input" value="${product.wholesalePrice ?? 0}" aria-label="Preço atacado de ${product.name}"></td>
       <td><span class="badge ${inStock ? "badge--ok" : "badge--out"}">${inStock ? "Em estoque" : "Fora de estoque"}</span></td>
       <td><input type="checkbox" class="stock-checkbox" ${inStock ? "" : "checked"} aria-label="Marcar ${product.name} como fora de estoque"></td>
     `;
 
     const priceInput = tr.querySelector(".price-input");
+    const costInput = tr.querySelector(".cost-input");
+    const wholesaleInput = tr.querySelector(".wholesale-input");
     const stockCheckbox = tr.querySelector(".stock-checkbox");
     const badge = tr.querySelector(".badge");
     const photoInput = tr.querySelector(".photo-input");
     const thumb = tr.querySelector(".admin-thumb");
+
+    const refs = { row: tr, badge, checkbox: stockCheckbox, priceInput, costInput, wholesaleInput, thumb };
+    rowRefs.set(product.id, refs);
 
     photoInput.addEventListener("change", async () => {
       const file = photoInput.files[0];
@@ -157,14 +214,35 @@
       setDirty(true);
     });
 
+    costInput.addEventListener("change", () => {
+      const value = Number(costInput.value);
+      if (Number.isNaN(value) || value < 0) {
+        costInput.value = product.costUSD ?? 0;
+        return;
+      }
+      overrides[product.id] = { ...(overrides[product.id] || {}), costUSD: value };
+      persistOverrides();
+      setDirty(true);
+    });
+
+    wholesaleInput.addEventListener("change", () => {
+      const value = Number(wholesaleInput.value);
+      if (Number.isNaN(value) || value < 0) {
+        wholesaleInput.value = product.wholesalePrice ?? 0;
+        return;
+      }
+      overrides[product.id] = { ...(overrides[product.id] || {}), wholesalePrice: value };
+      persistOverrides();
+      setDirty(true);
+    });
+
     stockCheckbox.addEventListener("change", () => {
       const nowInStock = !stockCheckbox.checked;
       overrides[product.id] = { ...(overrides[product.id] || {}), inStock: nowInStock };
       persistOverrides();
       setDirty(true);
-      tr.classList.toggle("out-of-stock", !nowInStock);
-      badge.className = `badge ${nowInStock ? "badge--ok" : "badge--out"}`;
-      badge.textContent = nowInStock ? "Em estoque" : "Fora de estoque";
+      setRowStockUI(refs, nowInStock);
+      applyTabAndSearch();
     });
 
     return tr;
@@ -174,23 +252,67 @@
     const frag = document.createDocumentFragment();
     products.forEach((p) => {
       const row = buildRow(p);
-      rowMap.set(p.id, row);
       frag.appendChild(row);
     });
     tableBody.appendChild(frag);
   }
 
-  function applySearch() {
+  function getRowInStock(id) {
+    const base = Products.getById(id);
+    const ov = overrides[id];
+    return ov && typeof ov.inStock === "boolean" ? ov.inStock : base.inStock;
+  }
+
+  function applyTabAndSearch() {
     const term = normalize(searchInput.value.trim());
-    rowMap.forEach((row, id) => {
-      if (!term) {
-        row.hidden = false;
-        return;
+    let inCount = 0;
+    let outCount = 0;
+
+    rowRefs.forEach((refs, id) => {
+      const inStock = getRowInStock(id);
+      if (inStock) inCount++;
+      else outCount++;
+
+      const matchesTab = currentTab === "in" ? inStock : !inStock;
+      let matchesSearch = true;
+      if (term) {
+        const product = Products.getById(id);
+        const haystack = normalize(`${product.name} ${product.brand} ${product.category}`);
+        matchesSearch = haystack.includes(term);
       }
-      const product = Products.getById(id);
-      const haystack = normalize(`${product.name} ${product.brand} ${product.category}`);
-      row.hidden = !haystack.includes(term);
+      refs.row.hidden = !(matchesTab && matchesSearch);
     });
+
+    tabInCountEl.textContent = `(${inCount})`;
+    tabOutCountEl.textContent = `(${outCount})`;
+  }
+
+  function switchTab(tab) {
+    currentTab = tab;
+    tabInBtn.classList.toggle("is-active", tab === "in");
+    tabOutBtn.classList.toggle("is-active", tab === "out");
+    applyTabAndSearch();
+  }
+
+  function applyBulkPricing(field, rateInput, markupInput, targetField) {
+    persistPricing();
+    const rate = Number(rateInput.value) || 0;
+    const markup = Number(markupInput.value) || 0;
+
+    Products.getAll().forEach((product) => {
+      const effective = getEffective(product);
+      const cost = Number(effective.costUSD) || 0;
+      const newValue = calcPrice(cost, rate, markup);
+      overrides[product.id] = { ...(overrides[product.id] || {}), [targetField]: newValue };
+
+      const refs = rowRefs.get(product.id);
+      if (refs) {
+        refs[field].value = newValue;
+      }
+    });
+
+    persistOverrides();
+    setDirty(true);
   }
 
   async function saveToFile() {
@@ -208,7 +330,7 @@
       const writable = await handle.createWritable();
       await writable.write(JSON.stringify(getMergedProducts(), null, 2));
       await writable.close();
-      statusEl.textContent = `Salvo em "${handle.name}". Confirme que sobrescreveu vippods-site/data/products.json.`;
+      statusEl.textContent = `Salvo em "${handle.name}". Confirme que sobrescreveu data/products.json.`;
       overrides = {};
       persistOverrides();
       dirty = false;
@@ -240,6 +362,7 @@
 
   async function initPanel() {
     loadOverrides();
+    loadPricing();
     await Products.load();
     let products = Products.getAll();
 
@@ -253,13 +376,45 @@
     products = products.map((p) => (overrides[p.id] ? { ...p, ...overrides[p.id] } : p));
 
     renderTable(products);
+    applyTabAndSearch();
     if (Object.keys(overrides).length > 0) {
       setDirty(true);
     }
 
-    searchInput.addEventListener("input", debounce(applySearch, 150));
+    searchInput.addEventListener("input", debounce(applyTabAndSearch, 150));
     saveFileBtn.addEventListener("click", saveToFile);
     downloadBtn.addEventListener("click", downloadJSON);
+
+    tabInBtn.addEventListener("click", () => switchTab("in"));
+    tabOutBtn.addEventListener("click", () => switchTab("out"));
+
+    markAllOutBtn.addEventListener("click", () => {
+      const confirmed = confirm(
+        "Tem certeza que deseja marcar TODOS os produtos como fora de estoque? " +
+          "Eles vão sumir do catálogo público até você reativar cada um (ou reverter aqui)."
+      );
+      if (!confirmed) return;
+
+      Products.getAll().forEach((product) => {
+        overrides[product.id] = { ...(overrides[product.id] || {}), inStock: false };
+        const refs = rowRefs.get(product.id);
+        if (refs) setRowStockUI(refs, false);
+      });
+      persistOverrides();
+      setDirty(true);
+      applyTabAndSearch();
+    });
+
+    applyRetailBtn.addEventListener("click", () => {
+      applyBulkPricing("priceInput", retailRateInput, retailMarkupInput, "price");
+    });
+    applyWholesaleBtn.addEventListener("click", () => {
+      applyBulkPricing("wholesaleInput", wholesaleRateInput, wholesaleMarkupInput, "wholesalePrice");
+    });
+
+    [retailRateInput, retailMarkupInput, wholesaleRateInput, wholesaleMarkupInput].forEach((input) => {
+      input.addEventListener("change", persistPricing);
+    });
   }
 
   function showPanel() {

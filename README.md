@@ -8,16 +8,17 @@ Tudo direto na raiz do repositório (sem subpasta), pra funcionar de cara em
 qualquer hospedagem estática que sirva a partir da raiz (GitHub Pages, Vercel,
 Netlify):
 
-├── index.html            -> página principal (catálogo público)
-├── admin.html            -> painel admin (preço / estoque / fotos), protegido por senha simples
+├── index.html            -> página principal, app de abas (Início / Produtos / Atacado / Carrinho)
+├── admin.html            -> painel admin (preço / custo / estoque / fotos), protegido por senha simples
 ├── css/
-│   └── style.css         -> estilos do site (dark theme, responsivo 320-768px+)
+│   └── style.css         -> estilos do site (dark theme, responsivo 320-768px+, bottom nav estilo app)
 ├── js/
-│   ├── config.js         -> constantes (WhatsApp, nome da loja, frete, senha admin)
+│   ├── config.js         -> constantes (WhatsApp, nome da loja, frete, senha admin, precificação padrão)
 │   ├── products-data.js  -> cópia embutida dos produtos (fallback offline/file://)
 │   ├── products.js       -> carregamento dos produtos (fetch com fallback)
-│   ├── cart.js           -> lógica do carrinho e checkout via WhatsApp
-│   ├── main.js           -> busca, filtros, ordenação e render do grid
+│   ├── cart.js           -> lógica do carrinho varejo e checkout via WhatsApp
+│   ├── wholesale.js      -> catálogo e carrinho da aba Atacado (mínimo de unidades, checkout próprio)
+│   ├── main.js           -> navegação em abas, carrossel de destaques, busca/filtros/ordenação do catálogo
 │   └── admin.js          -> lógica do painel admin
 ├── data/
 │   └── products.json     -> catálogo de produtos (555 itens - ATUALMENTE PLACEHOLDER)
@@ -44,12 +45,34 @@ Funciona das duas formas:
 
   Depois acesse http://localhost:8000
 
+## Navegação do site (estilo app)
+
+O catálogo público é um app de página única com navegação fixa embaixo, pensado
+pra celular:
+
+- **Início** — carrossel com até 3 produtos marcados como destaque no admin.
+- **Produtos** — catálogo completo, com busca, filtro de categoria/marca e ordenação.
+- **Atacado** — mesmos produtos com preço de atacado (`wholesalePrice`), seletor
+  de quantidade por produto e checkout próprio via WhatsApp. Só libera o botão
+  de finalizar quando o total de unidades (somando produtos diferentes) atinge
+  `CONFIG.WHOLESALE_MIN_QTY` (50 por padrão, ajustável em `js/config.js`).
+- **Carrinho** — carrinho de varejo, agora como aba fixa em vez de gaveta.
+
 ## Painel admin
 
 Acesse `admin.html` (tem um link "Acesso admin" no rodapé do catálogo), senha
 padrão definida em `js/config.js` (`ADMIN_PASSWORD`). Permite:
 
-- Editar preço e marcar produtos como fora de estoque (somem do catálogo público).
+- Editar preço, custo em dólar e preço de atacado por produto, e marcar
+  produtos como fora de estoque (somem do catálogo público e vão pra uma aba
+  separada "Fora de estoque" dentro do próprio admin, com busca própria).
+- **Marcar todos fora de estoque** de uma vez (com confirmação) — útil pra
+  esvaziar o catálogo rapidamente, por exemplo em caso de ruptura de estoque geral.
+- **Calculadora de preço**: dois painéis (Varejo e Atacado), cada um com
+  cotação do dólar + margem em R$. Preço final = (custo em US$ × cotação) +
+  margem, calculado individualmente pro custo de cada produto quando você
+  clica em "Aplicar a todos os produtos". As cotações/margens ficam salvas no
+  navegador entre sessões.
 - Trocar a foto do produto: a imagem enviada é redimensionada/comprimida no
   navegador e embutida como base64 direto no campo `image` do produto (não
   precisa de servidor/backend). Isso deixa o `products.json` mais pesado quanto

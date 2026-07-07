@@ -12,7 +12,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.46,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.82,
+    "wholesalePrice": 32.06,
+    "featured": false
   },
   {
     "id": 2,
@@ -24,7 +27,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Kiwi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Kiwi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.9,
+    "wholesalePrice": 22.08,
+    "featured": false
   },
   {
     "id": 3,
@@ -36,7 +42,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 141.03,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Pêssego 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Pêssego 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.33,
+    "wholesalePrice": 138.72,
+    "featured": true
   },
   {
     "id": 4,
@@ -48,7 +57,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Kiwi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Kiwi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.06,
+    "wholesalePrice": 33.31,
+    "featured": false
   },
   {
     "id": 5,
@@ -60,7 +72,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.14,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Frutas Vermelhas 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Frutas Vermelhas 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.0,
+    "wholesalePrice": 48.6,
+    "featured": false
   },
   {
     "id": 6,
@@ -72,7 +87,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.06,
+    "wholesalePrice": 54.11,
+    "featured": false
   },
   {
     "id": 7,
@@ -84,7 +102,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Pêssego 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Pêssego 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.27,
+    "wholesalePrice": 44.8,
+    "featured": false
   },
   {
     "id": 8,
@@ -96,7 +117,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Kiwi 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Kiwi 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.26,
+    "wholesalePrice": 23.95,
+    "featured": false
   },
   {
     "id": 9,
@@ -108,7 +132,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.49,
+    "wholesalePrice": 71.95,
+    "featured": false
   },
   {
     "id": 10,
@@ -120,7 +147,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Manga 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Manga 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.67,
+    "wholesalePrice": 41.68,
+    "featured": false
   },
   {
     "id": 11,
@@ -132,7 +162,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 91.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.83,
+    "wholesalePrice": 73.72,
+    "featured": false
   },
   {
     "id": 12,
@@ -144,7 +177,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.24,
+    "wholesalePrice": 23.85,
+    "featured": false
   },
   {
     "id": 13,
@@ -156,7 +192,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 78.32,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Aroma King Lichia 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Lichia 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.9,
+    "wholesalePrice": 68.88,
+    "featured": false
   },
   {
     "id": 14,
@@ -168,7 +207,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 55.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Abacaxi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Abacaxi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.5,
+    "wholesalePrice": 51.2,
+    "featured": false
   },
   {
     "id": 15,
@@ -180,7 +222,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 74.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Melancia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Melancia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.18,
+    "wholesalePrice": 59.94,
+    "featured": false
   },
   {
     "id": 16,
@@ -192,7 +237,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 87.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Energético 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Energético 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.83,
+    "wholesalePrice": 73.72,
+    "featured": false
   },
   {
     "id": 17,
@@ -204,7 +252,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Banana 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Banana 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.26,
+    "wholesalePrice": 49.95,
+    "featured": false
   },
   {
     "id": 18,
@@ -216,7 +267,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 72.23,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.48,
+    "wholesalePrice": 71.9,
+    "featured": false
   },
   {
     "id": 19,
@@ -228,7 +282,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Framboesa 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Framboesa 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.61,
+    "wholesalePrice": 62.17,
+    "featured": false
   },
   {
     "id": 20,
@@ -240,7 +297,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 114.42,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Waka Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.53,
+    "wholesalePrice": 103.36,
+    "featured": false
   },
   {
     "id": 21,
@@ -252,7 +312,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Cereja 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Cereja 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.81,
+    "wholesalePrice": 32.01,
+    "featured": false
   },
   {
     "id": 22,
@@ -264,7 +327,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 137.75,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Tropical Mix 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Tropical Mix 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.39,
+    "wholesalePrice": 113.03,
+    "featured": false
   },
   {
     "id": 23,
@@ -276,7 +342,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 137.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 26.02,
+    "wholesalePrice": 142.3,
+    "featured": true
   },
   {
     "id": 24,
@@ -288,7 +357,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 95.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Cereja 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Cereja 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.48,
+    "wholesalePrice": 82.3,
+    "featured": false
   },
   {
     "id": 25,
@@ -300,7 +372,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Menta 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Menta 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.37,
+    "wholesalePrice": 55.72,
+    "featured": false
   },
   {
     "id": 26,
@@ -312,7 +387,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 120.94,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Fume Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.04,
+    "wholesalePrice": 100.81,
+    "featured": false
   },
   {
     "id": 27,
@@ -324,7 +402,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 92.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Lichia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Lichia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.01,
+    "wholesalePrice": 79.85,
+    "featured": false
   },
   {
     "id": 28,
@@ -336,7 +417,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 94.45,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.73,
+    "wholesalePrice": 94.0,
+    "featured": false
   },
   {
     "id": 29,
@@ -348,7 +432,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Amora 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Amora 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.31,
+    "wholesalePrice": 39.81,
+    "featured": false
   },
   {
     "id": 30,
@@ -360,7 +447,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Chiclete 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Chiclete 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.77,
+    "wholesalePrice": 63.0,
+    "featured": false
   },
   {
     "id": 31,
@@ -372,7 +462,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.77,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Aroma King Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.76,
+    "wholesalePrice": 42.15,
+    "featured": false
   },
   {
     "id": 32,
@@ -384,7 +477,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.19,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Lost Mary Melancia com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Melancia com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.95,
+    "wholesalePrice": 37.94,
+    "featured": false
   },
   {
     "id": 33,
@@ -396,7 +492,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Energético 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Energético 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.39,
+    "wholesalePrice": 40.23,
+    "featured": false
   },
   {
     "id": 34,
@@ -408,7 +507,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 75.23,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "VaporEsse Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.06,
+    "wholesalePrice": 59.31,
+    "featured": false
   },
   {
     "id": 35,
@@ -420,7 +522,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 84.28,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Tugboat Limão 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Limão 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.56,
+    "wholesalePrice": 67.11,
+    "featured": false
   },
   {
     "id": 36,
@@ -432,7 +537,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.01,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Oxbar Menta Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Menta Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.29,
+    "wholesalePrice": 55.31,
+    "featured": false
   },
   {
     "id": 37,
@@ -444,7 +552,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 42.94,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Melancia 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Melancia 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.66,
+    "wholesalePrice": 36.43,
+    "featured": false
   },
   {
     "id": 38,
@@ -456,7 +567,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.29,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Puff Bar Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Puff Bar Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.38,
+    "wholesalePrice": 29.78,
+    "featured": false
   },
   {
     "id": 39,
@@ -468,7 +582,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 93.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Menta Gelada 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Menta Gelada 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.29,
+    "wholesalePrice": 81.31,
+    "featured": false
   },
   {
     "id": 40,
@@ -480,7 +597,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 71.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.1,
+    "wholesalePrice": 64.72,
+    "featured": false
   },
   {
     "id": 41,
@@ -492,7 +612,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 62.3,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Manga 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Manga 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.97,
+    "wholesalePrice": 53.64,
+    "featured": false
   },
   {
     "id": 42,
@@ -504,7 +627,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.24,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.6,
+    "wholesalePrice": 77.72,
+    "featured": false
   },
   {
     "id": 43,
@@ -516,7 +642,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.56,
+    "wholesalePrice": 35.91,
+    "featured": false
   },
   {
     "id": 44,
@@ -528,7 +657,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.65,
+    "wholesalePrice": 72.78,
+    "featured": false
   },
   {
     "id": 45,
@@ -540,7 +672,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 27.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Vozol Menta Gelada - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Vozol Menta Gelada - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.2,
+    "wholesalePrice": 18.44,
+    "featured": false
   },
   {
     "id": 46,
@@ -552,7 +687,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.59,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Baunilha 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Baunilha 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.73,
+    "wholesalePrice": 62.8,
+    "featured": false
   },
   {
     "id": 47,
@@ -564,7 +702,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 103.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Kiwi 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Kiwi 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.18,
+    "wholesalePrice": 96.34,
+    "featured": false
   },
   {
     "id": 48,
@@ -576,7 +717,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 141.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 27.03,
+    "wholesalePrice": 147.56,
+    "featured": true
   },
   {
     "id": 49,
@@ -588,7 +732,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Uva 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Uva 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.94,
+    "wholesalePrice": 48.29,
+    "featured": false
   },
   {
     "id": 50,
@@ -600,7 +747,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 121.92,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Ignite Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.25,
+    "wholesalePrice": 107.1,
+    "featured": false
   },
   {
     "id": 51,
@@ -612,7 +762,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.02,
+    "wholesalePrice": 69.5,
+    "featured": false
   },
   {
     "id": 52,
@@ -624,7 +777,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 91.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.95,
+    "wholesalePrice": 74.34,
+    "featured": false
   },
   {
     "id": 53,
@@ -636,7 +792,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.54,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Baunilha 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Baunilha 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 22.42,
+    "wholesalePrice": 123.58,
+    "featured": false
   },
   {
     "id": 54,
@@ -648,7 +807,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Energético 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Energético 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.39,
+    "wholesalePrice": 40.23,
+    "featured": false
   },
   {
     "id": 55,
@@ -660,7 +822,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Framboesa 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Framboesa 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.07,
+    "wholesalePrice": 43.76,
+    "featured": false
   },
   {
     "id": 56,
@@ -672,7 +837,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Maçã Verde 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Maçã Verde 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.23,
+    "wholesalePrice": 23.8,
+    "featured": false
   },
   {
     "id": 57,
@@ -684,7 +852,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.24,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.34,
+    "wholesalePrice": 34.77,
+    "featured": false
   },
   {
     "id": 58,
@@ -696,7 +867,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.19,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Uwell Caliburn Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.56,
+    "wholesalePrice": 72.31,
+    "featured": false
   },
   {
     "id": 59,
@@ -708,7 +882,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.65,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.1,
+    "wholesalePrice": 59.52,
+    "featured": false
   },
   {
     "id": 60,
@@ -720,7 +897,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Menta Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Menta Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.48,
+    "wholesalePrice": 40.7,
+    "featured": false
   },
   {
     "id": 61,
@@ -732,7 +912,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 94.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.05,
+    "wholesalePrice": 95.66,
+    "featured": false
   },
   {
     "id": 62,
@@ -744,7 +927,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.94,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Geek Bar Amora - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Geek Bar Amora - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.53,
+    "wholesalePrice": 40.96,
+    "featured": false
   },
   {
     "id": 63,
@@ -756,7 +942,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.23,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.97,
+    "wholesalePrice": 43.24,
+    "featured": false
   },
   {
     "id": 64,
@@ -768,7 +957,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 42.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.41,
+    "wholesalePrice": 35.13,
+    "featured": false
   },
   {
     "id": 65,
@@ -780,7 +972,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Abacaxi 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Abacaxi 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.36,
+    "wholesalePrice": 71.27,
+    "featured": false
   },
   {
     "id": 66,
@@ -792,7 +987,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.46,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Limão 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Limão 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.02,
+    "wholesalePrice": 33.1,
+    "featured": false
   },
   {
     "id": 67,
@@ -804,7 +1002,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.49,
+    "wholesalePrice": 45.95,
+    "featured": false
   },
   {
     "id": 68,
@@ -816,7 +1017,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Menta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Menta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.21,
+    "wholesalePrice": 44.49,
+    "featured": false
   },
   {
     "id": 69,
@@ -828,7 +1032,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.91,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Menta Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Menta Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.33,
+    "wholesalePrice": 55.52,
+    "featured": false
   },
   {
     "id": 70,
@@ -840,7 +1047,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 18.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 1.05,
+    "wholesalePrice": 12.46,
+    "featured": false
   },
   {
     "id": 71,
@@ -852,7 +1062,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 57.03,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Energético 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Energético 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.02,
+    "wholesalePrice": 43.5,
+    "featured": false
   },
   {
     "id": 72,
@@ -864,7 +1077,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 145.42,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Limão 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Limão 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 26.6,
+    "wholesalePrice": 145.32,
+    "featured": false
   },
   {
     "id": 73,
@@ -876,7 +1092,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.21,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Oxbar Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Oxbar Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.06,
+    "wholesalePrice": 33.31,
+    "featured": false
   },
   {
     "id": 74,
@@ -888,7 +1107,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 79.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Abacaxi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Abacaxi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.25,
+    "wholesalePrice": 81.1,
+    "featured": false
   },
   {
     "id": 75,
@@ -900,7 +1122,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.71,
+    "wholesalePrice": 41.89,
+    "featured": false
   },
   {
     "id": 76,
@@ -912,7 +1137,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 72.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Tabaco Clássico 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Tabaco Clássico 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.38,
+    "wholesalePrice": 60.98,
+    "featured": false
   },
   {
     "id": 77,
@@ -924,7 +1152,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 131.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Chiclete 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Chiclete 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.59,
+    "wholesalePrice": 119.27,
+    "featured": false
   },
   {
     "id": 78,
@@ -936,7 +1167,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.28,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.21,
+    "wholesalePrice": 86.09,
+    "featured": false
   },
   {
     "id": 79,
@@ -948,7 +1182,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 32.05,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Lichia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Lichia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.81,
+    "wholesalePrice": 21.61,
+    "featured": false
   },
   {
     "id": 80,
@@ -960,7 +1197,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.92,
+    "wholesalePrice": 48.18,
+    "featured": false
   },
   {
     "id": 81,
@@ -972,7 +1212,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 138.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Chiclete 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Chiclete 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.39,
+    "wholesalePrice": 118.23,
+    "featured": false
   },
   {
     "id": 82,
@@ -984,7 +1227,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.62,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Nasty Bar Cola Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Cola Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.55,
+    "wholesalePrice": 35.86,
+    "featured": false
   },
   {
     "id": 83,
@@ -996,7 +1242,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Cereja 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Cereja 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.94,
+    "wholesalePrice": 37.89,
+    "featured": false
   },
   {
     "id": 84,
@@ -1008,7 +1257,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.13,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Menta Gelada 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Menta Gelada 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.22,
+    "wholesalePrice": 34.14,
+    "featured": false
   },
   {
     "id": 85,
@@ -1020,7 +1272,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 125.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Cereja 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Cereja 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.84,
+    "wholesalePrice": 104.97,
+    "featured": false
   },
   {
     "id": 86,
@@ -1032,7 +1287,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.38,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Tugboat Lichia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Tugboat Lichia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.16,
+    "wholesalePrice": 28.63,
+    "featured": false
   },
   {
     "id": 87,
@@ -1044,7 +1302,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Chiclete 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Chiclete 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.22,
+    "wholesalePrice": 44.54,
+    "featured": false
   },
   {
     "id": 88,
@@ -1056,7 +1317,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.45,
+    "wholesalePrice": 66.54,
+    "featured": false
   },
   {
     "id": 89,
@@ -1068,7 +1332,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 78.61,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Frutas Vermelhas 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Frutas Vermelhas 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.69,
+    "wholesalePrice": 62.59,
+    "featured": false
   },
   {
     "id": 90,
@@ -1080,7 +1347,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.28,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.41,
+    "wholesalePrice": 29.93,
+    "featured": false
   },
   {
     "id": 91,
@@ -1092,7 +1362,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Coco 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Coco 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.72,
+    "wholesalePrice": 57.54,
+    "featured": false
   },
   {
     "id": 92,
@@ -1104,7 +1377,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.43,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Maracujá 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Maracujá 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.17,
+    "wholesalePrice": 91.08,
+    "featured": false
   },
   {
     "id": 93,
@@ -1116,7 +1392,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 103.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Tabaco Clássico 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Tabaco Clássico 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.56,
+    "wholesalePrice": 103.51,
+    "featured": false
   },
   {
     "id": 94,
@@ -1128,7 +1407,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 66.71,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Cola Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Cola Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.03,
+    "wholesalePrice": 64.36,
+    "featured": false
   },
   {
     "id": 95,
@@ -1140,7 +1422,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.64,
+    "wholesalePrice": 72.73,
+    "featured": false
   },
   {
     "id": 96,
@@ -1152,7 +1437,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 115.26,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Amora 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Amora 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.79,
+    "wholesalePrice": 104.71,
+    "featured": false
   },
   {
     "id": 97,
@@ -1164,7 +1452,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Uva 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Uva 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.03,
+    "wholesalePrice": 53.96,
+    "featured": false
   },
   {
     "id": 98,
@@ -1176,7 +1467,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 62.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.2,
+    "wholesalePrice": 60.04,
+    "featured": false
   },
   {
     "id": 99,
@@ -1188,7 +1482,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 61.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Energético 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Energético 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.18,
+    "wholesalePrice": 59.94,
+    "featured": false
   },
   {
     "id": 100,
@@ -1200,7 +1497,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 127.81,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Randm Melancia com Gelo 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Melancia com Gelo 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.42,
+    "wholesalePrice": 107.98,
+    "featured": false
   },
   {
     "id": 101,
@@ -1212,7 +1512,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 72.19,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Melancia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Melancia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.93,
+    "wholesalePrice": 58.64,
+    "featured": false
   },
   {
     "id": 102,
@@ -1224,7 +1527,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.95,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Oxbar Kiwi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Oxbar Kiwi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.24,
+    "wholesalePrice": 29.05,
+    "featured": false
   },
   {
     "id": 103,
@@ -1236,7 +1542,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Manga 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Manga 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.58,
+    "wholesalePrice": 36.02,
+    "featured": false
   },
   {
     "id": 104,
@@ -1248,7 +1557,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.85,
+    "wholesalePrice": 47.82,
+    "featured": false
   },
   {
     "id": 105,
@@ -1260,7 +1572,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 30.95,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Nasty Bar Abacaxi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Nasty Bar Abacaxi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.15,
+    "wholesalePrice": 23.38,
+    "featured": false
   },
   {
     "id": 106,
@@ -1272,7 +1587,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 61.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.31,
+    "wholesalePrice": 50.21,
+    "featured": false
   },
   {
     "id": 107,
@@ -1284,7 +1602,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.84,
+    "wholesalePrice": 26.97,
+    "featured": false
   },
   {
     "id": 108,
@@ -1296,7 +1617,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 89.95,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Tugboat Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Baunilha 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.06,
+    "wholesalePrice": 80.11,
+    "featured": false
   },
   {
     "id": 109,
@@ -1308,7 +1632,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 76.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.31,
+    "wholesalePrice": 65.81,
+    "featured": false
   },
   {
     "id": 110,
@@ -1320,7 +1647,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Café Gelado 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Café Gelado 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.7,
+    "wholesalePrice": 41.84,
+    "featured": false
   },
   {
     "id": 111,
@@ -1332,7 +1662,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 121.97,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 23.37,
+    "wholesalePrice": 128.52,
+    "featured": false
   },
   {
     "id": 112,
@@ -1344,7 +1677,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 82.31,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.68,
+    "wholesalePrice": 78.14,
+    "featured": false
   },
   {
     "id": 113,
@@ -1356,7 +1692,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.73,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.41,
+    "wholesalePrice": 55.93,
+    "featured": false
   },
   {
     "id": 114,
@@ -1368,7 +1707,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.96,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Manga 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Manga 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.54,
+    "wholesalePrice": 61.81,
+    "featured": false
   },
   {
     "id": 115,
@@ -1380,7 +1722,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.71,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Pêssego 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Pêssego 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.8,
+    "wholesalePrice": 31.96,
+    "featured": false
   },
   {
     "id": 116,
@@ -1392,7 +1737,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 111.67,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.1,
+    "wholesalePrice": 90.72,
+    "featured": false
   },
   {
     "id": 117,
@@ -1404,7 +1752,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.03,
+    "wholesalePrice": 69.56,
+    "featured": false
   },
   {
     "id": 118,
@@ -1416,7 +1767,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 60.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.49,
+    "wholesalePrice": 56.35,
+    "featured": false
   },
   {
     "id": 119,
@@ -1428,7 +1782,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.63,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Limão 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Limão 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.62,
+    "wholesalePrice": 46.62,
+    "featured": false
   },
   {
     "id": 120,
@@ -1440,7 +1797,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 96.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Frutas Vermelhas 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Frutas Vermelhas 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.97,
+    "wholesalePrice": 95.24,
+    "featured": false
   },
   {
     "id": 121,
@@ -1452,7 +1812,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Melancia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Melancia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.19,
+    "wholesalePrice": 49.59,
+    "featured": false
   },
   {
     "id": 122,
@@ -1464,7 +1827,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 78.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.79,
+    "wholesalePrice": 68.31,
+    "featured": false
   },
   {
     "id": 123,
@@ -1476,7 +1842,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.41,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Café Gelado 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Café Gelado 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.15,
+    "wholesalePrice": 33.78,
+    "featured": false
   },
   {
     "id": 124,
@@ -1488,7 +1857,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.14,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Fume Café Gelado - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Fume Café Gelado - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.83,
+    "wholesalePrice": 37.32,
+    "featured": false
   },
   {
     "id": 125,
@@ -1500,7 +1872,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.89,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.5,
+    "wholesalePrice": 40.8,
+    "featured": false
   },
   {
     "id": 126,
@@ -1512,7 +1887,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.28,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Vozol Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.08,
+    "wholesalePrice": 54.22,
+    "featured": false
   },
   {
     "id": 127,
@@ -1524,7 +1902,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 128.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Morango 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Morango 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.84,
+    "wholesalePrice": 110.17,
+    "featured": false
   },
   {
     "id": 128,
@@ -1536,7 +1917,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 18.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 0.9,
+    "wholesalePrice": 11.68,
+    "featured": false
   },
   {
     "id": 129,
@@ -1548,7 +1932,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.17,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.85,
+    "wholesalePrice": 73.82,
+    "featured": false
   },
   {
     "id": 130,
@@ -1560,7 +1947,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 42.19,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.53,
+    "wholesalePrice": 30.56,
+    "featured": false
   },
   {
     "id": 131,
@@ -1572,7 +1962,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 128.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.57,
+    "wholesalePrice": 103.56,
+    "featured": false
   },
   {
     "id": 132,
@@ -1584,7 +1977,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 80.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.33,
+    "wholesalePrice": 65.92,
+    "featured": false
   },
   {
     "id": 133,
@@ -1596,7 +1992,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.38,
+    "wholesalePrice": 45.38,
+    "featured": false
   },
   {
     "id": 134,
@@ -1608,7 +2007,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 138.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 22.83,
+    "wholesalePrice": 125.72,
+    "featured": false
   },
   {
     "id": 135,
@@ -1620,7 +2022,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.95,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Coco 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Coco 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.76,
+    "wholesalePrice": 36.95,
+    "featured": false
   },
   {
     "id": 136,
@@ -1632,7 +2037,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Morango 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Morango 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.86,
+    "wholesalePrice": 53.07,
+    "featured": false
   },
   {
     "id": 137,
@@ -1644,7 +2052,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.65,
+    "wholesalePrice": 51.98,
+    "featured": false
   },
   {
     "id": 138,
@@ -1656,7 +2067,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Chiclete 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Chiclete 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.64,
+    "wholesalePrice": 36.33,
+    "featured": false
   },
   {
     "id": 139,
@@ -1668,7 +2082,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 143.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Menta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Menta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 22.91,
+    "wholesalePrice": 126.13,
+    "featured": false
   },
   {
     "id": 140,
@@ -1680,7 +2097,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Cereja 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Cereja 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.53,
+    "wholesalePrice": 46.16,
+    "featured": false
   },
   {
     "id": 141,
@@ -1692,7 +2112,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Cola Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Cola Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.97,
+    "wholesalePrice": 74.44,
+    "featured": false
   },
   {
     "id": 142,
@@ -1704,7 +2127,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 97.6,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.09,
+    "wholesalePrice": 80.27,
+    "featured": false
   },
   {
     "id": 143,
@@ -1716,7 +2142,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.1,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.54,
+    "wholesalePrice": 35.81,
+    "featured": false
   },
   {
     "id": 144,
@@ -1728,7 +2157,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Fume Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Fume Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.6,
+    "wholesalePrice": 46.52,
+    "featured": false
   },
   {
     "id": 145,
@@ -1740,7 +2172,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Morango 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Morango 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.48,
+    "wholesalePrice": 45.9,
+    "featured": false
   },
   {
     "id": 146,
@@ -1752,7 +2187,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 93.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Baunilha 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Baunilha 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.94,
+    "wholesalePrice": 84.69,
+    "featured": false
   },
   {
     "id": 147,
@@ -1764,7 +2202,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 95.36,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Randm Framboesa 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Framboesa 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.53,
+    "wholesalePrice": 77.36,
+    "featured": false
   },
   {
     "id": 148,
@@ -1776,7 +2217,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Pêssego 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Pêssego 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.48,
+    "wholesalePrice": 40.7,
+    "featured": false
   },
   {
     "id": 149,
@@ -1788,7 +2232,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Oxbar Menta - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Oxbar Menta - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.18,
+    "wholesalePrice": 33.94,
+    "featured": false
   },
   {
     "id": 150,
@@ -1800,7 +2247,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Tabaco Clássico 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.54,
+    "wholesalePrice": 72.21,
+    "featured": false
   },
   {
     "id": 151,
@@ -1812,7 +2262,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.43,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Oxbar Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Oxbar Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.22,
+    "wholesalePrice": 39.34,
+    "featured": false
   },
   {
     "id": 152,
@@ -1824,7 +2277,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 73.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Maçã Verde 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Maçã Verde 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.14,
+    "wholesalePrice": 59.73,
+    "featured": false
   },
   {
     "id": 153,
@@ -1836,7 +2292,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 60.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.55,
+    "wholesalePrice": 46.26,
+    "featured": false
   },
   {
     "id": 154,
@@ -1848,7 +2307,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Maracujá 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Maracujá 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.65,
+    "wholesalePrice": 62.38,
+    "featured": false
   },
   {
     "id": 155,
@@ -1860,7 +2322,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 61.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Lichia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Lichia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.97,
+    "wholesalePrice": 53.64,
+    "featured": false
   },
   {
     "id": 156,
@@ -1872,7 +2337,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.32,
+    "wholesalePrice": 71.06,
+    "featured": false
   },
   {
     "id": 157,
@@ -1884,7 +2352,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.09,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Nasty Bar Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Nasty Bar Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.03,
+    "wholesalePrice": 43.56,
+    "featured": false
   },
   {
     "id": 158,
@@ -1896,7 +2367,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 57.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.07,
+    "wholesalePrice": 43.76,
+    "featured": false
   },
   {
     "id": 159,
@@ -1908,7 +2382,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 28.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Geek Bar Cola Gelada - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Geek Bar Cola Gelada - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.67,
+    "wholesalePrice": 20.88,
+    "featured": false
   },
   {
     "id": 160,
@@ -1920,7 +2397,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Maracujá 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Maracujá 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.87,
+    "wholesalePrice": 68.72,
+    "featured": false
   },
   {
     "id": 161,
@@ -1932,7 +2412,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 146.4,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Tropical Mix 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Tropical Mix 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 28.02,
+    "wholesalePrice": 152.7,
+    "featured": false
   },
   {
     "id": 162,
@@ -1944,7 +2427,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.0,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.2,
+    "wholesalePrice": 65.24,
+    "featured": false
   },
   {
     "id": 163,
@@ -1956,7 +2442,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 84.45,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Nasty Bar Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.4,
+    "wholesalePrice": 71.48,
+    "featured": false
   },
   {
     "id": 164,
@@ -1968,7 +2457,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.45,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.13,
+    "wholesalePrice": 54.48,
+    "featured": false
   },
   {
     "id": 165,
@@ -1980,7 +2472,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 95.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Morango com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Morango com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.93,
+    "wholesalePrice": 79.44,
+    "featured": false
   },
   {
     "id": 166,
@@ -1992,7 +2487,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Menta Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Menta Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.34,
+    "wholesalePrice": 29.57,
+    "featured": false
   },
   {
     "id": 167,
@@ -2004,7 +2502,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 115.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.54,
+    "wholesalePrice": 108.61,
+    "featured": false
   },
   {
     "id": 168,
@@ -2016,7 +2517,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.34,
+    "wholesalePrice": 65.97,
+    "featured": false
   },
   {
     "id": 169,
@@ -2028,7 +2532,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Melancia com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.06,
+    "wholesalePrice": 43.71,
+    "featured": false
   },
   {
     "id": 170,
@@ -2040,7 +2547,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 80.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Banana 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Banana 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.49,
+    "wholesalePrice": 66.75,
+    "featured": false
   },
   {
     "id": 171,
@@ -2052,7 +2562,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.74,
+    "wholesalePrice": 68.05,
+    "featured": false
   },
   {
     "id": 172,
@@ -2064,7 +2577,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 109.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.75,
+    "wholesalePrice": 114.9,
+    "featured": false
   },
   {
     "id": 173,
@@ -2076,7 +2592,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.75,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Fume Menta - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Fume Menta - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.33,
+    "wholesalePrice": 39.92,
+    "featured": false
   },
   {
     "id": 174,
@@ -2088,7 +2607,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 83.66,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Amora 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Amora 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.42,
+    "wholesalePrice": 81.98,
+    "featured": false
   },
   {
     "id": 175,
@@ -2100,7 +2622,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 110.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Framboesa 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Framboesa 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.21,
+    "wholesalePrice": 112.09,
+    "featured": false
   },
   {
     "id": 176,
@@ -2112,7 +2637,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 139.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.75,
+    "wholesalePrice": 140.9,
+    "featured": false
   },
   {
     "id": 177,
@@ -2124,7 +2652,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.3,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.76,
+    "wholesalePrice": 26.55,
+    "featured": false
   },
   {
     "id": 178,
@@ -2136,7 +2667,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 94.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.38,
+    "wholesalePrice": 86.98,
+    "featured": false
   },
   {
     "id": 179,
@@ -2148,7 +2682,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.35,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Lichia 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Lichia 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.13,
+    "wholesalePrice": 75.28,
+    "featured": false
   },
   {
     "id": 180,
@@ -2160,7 +2697,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 33.82,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Blue Razz 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Blue Razz 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.11,
+    "wholesalePrice": 23.17,
+    "featured": false
   },
   {
     "id": 181,
@@ -2172,7 +2712,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Maracujá 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Maracujá 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.62,
+    "wholesalePrice": 51.82,
+    "featured": false
   },
   {
     "id": 182,
@@ -2184,7 +2727,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.46,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.06,
+    "wholesalePrice": 54.11,
+    "featured": false
   },
   {
     "id": 183,
@@ -2196,7 +2742,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.17,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Lichia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Lichia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.99,
+    "wholesalePrice": 43.35,
+    "featured": false
   },
   {
     "id": 184,
@@ -2208,7 +2757,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.24,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Framboesa 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.49,
+    "wholesalePrice": 82.35,
+    "featured": false
   },
   {
     "id": 185,
@@ -2220,7 +2772,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 111.94,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Ignite Groselha Preta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Groselha Preta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.2,
+    "wholesalePrice": 117.24,
+    "featured": false
   },
   {
     "id": 186,
@@ -2232,7 +2787,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.28,
+    "wholesalePrice": 60.46,
+    "featured": false
   },
   {
     "id": 187,
@@ -2244,7 +2802,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 145.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Abacaxi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Abacaxi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 28.49,
+    "wholesalePrice": 155.15,
+    "featured": false
   },
   {
     "id": 188,
@@ -2256,7 +2817,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 52.21,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Kiwi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Kiwi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.2,
+    "wholesalePrice": 49.64,
+    "featured": false
   },
   {
     "id": 189,
@@ -2268,7 +2832,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Framboesa 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Framboesa 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.59,
+    "wholesalePrice": 41.27,
+    "featured": false
   },
   {
     "id": 190,
@@ -2280,7 +2847,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.66,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Refil Uwell Caliburn Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Uwell Caliburn Chiclete - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.58,
+    "wholesalePrice": 41.22,
+    "featured": false
   },
   {
     "id": 191,
@@ -2292,7 +2862,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.34,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Refil Randm Pêssego - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Randm Pêssego - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.17,
+    "wholesalePrice": 33.88,
+    "featured": false
   },
   {
     "id": 192,
@@ -2304,7 +2877,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Waka Melancia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Waka Melancia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.79,
+    "wholesalePrice": 42.31,
+    "featured": false
   },
   {
     "id": 193,
@@ -2316,7 +2892,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 138.94,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Ignite Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.67,
+    "wholesalePrice": 119.68,
+    "featured": false
   },
   {
     "id": 194,
@@ -2328,7 +2907,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.61,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.14,
+    "wholesalePrice": 28.53,
+    "featured": false
   },
   {
     "id": 195,
@@ -2340,7 +2922,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Kiwi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Kiwi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.7,
+    "wholesalePrice": 36.64,
+    "featured": false
   },
   {
     "id": 196,
@@ -2352,7 +2937,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 139.0,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Energético 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Energético 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 26.71,
+    "wholesalePrice": 145.89,
+    "featured": false
   },
   {
     "id": 197,
@@ -2364,7 +2952,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 32.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Morango com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Morango com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.74,
+    "wholesalePrice": 26.45,
+    "featured": false
   },
   {
     "id": 198,
@@ -2376,7 +2967,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Kiwi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Kiwi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.74,
+    "wholesalePrice": 31.65,
+    "featured": false
   },
   {
     "id": 199,
@@ -2388,7 +2982,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.52,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Maçã Verde 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Maçã Verde 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.13,
+    "wholesalePrice": 33.68,
+    "featured": false
   },
   {
     "id": 200,
@@ -2400,7 +2997,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 102.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Chiclete 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Chiclete 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.42,
+    "wholesalePrice": 102.78,
+    "featured": false
   },
   {
     "id": 201,
@@ -2412,7 +3012,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Chiclete 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Chiclete 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.73,
+    "wholesalePrice": 21.2,
+    "featured": false
   },
   {
     "id": 202,
@@ -2424,7 +3027,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 81.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Coco 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Coco 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.35,
+    "wholesalePrice": 76.42,
+    "featured": false
   },
   {
     "id": 203,
@@ -2436,7 +3042,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 33.52,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Frutas Vermelhas 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.0,
+    "wholesalePrice": 27.8,
+    "featured": false
   },
   {
     "id": 204,
@@ -2448,7 +3057,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.17,
+    "wholesalePrice": 54.68,
+    "featured": false
   },
   {
     "id": 205,
@@ -2460,7 +3072,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 93.28,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Tugboat Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.18,
+    "wholesalePrice": 91.14,
+    "featured": false
   },
   {
     "id": 206,
@@ -2472,7 +3087,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 71.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.71,
+    "wholesalePrice": 62.69,
+    "featured": false
   },
   {
     "id": 207,
@@ -2484,7 +3102,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 32.86,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "VaporEsse Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.1,
+    "wholesalePrice": 23.12,
+    "featured": false
   },
   {
     "id": 208,
@@ -2496,7 +3117,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.73,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.59,
+    "wholesalePrice": 36.07,
+    "featured": false
   },
   {
     "id": 209,
@@ -2508,7 +3132,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Baunilha 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Baunilha 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.95,
+    "wholesalePrice": 58.74,
+    "featured": false
   },
   {
     "id": 210,
@@ -2520,7 +3147,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 26.54,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Tugboat Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Tugboat Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.42,
+    "wholesalePrice": 19.58,
+    "featured": false
   },
   {
     "id": 211,
@@ -2532,7 +3162,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 81.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Limão 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Limão 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.54,
+    "wholesalePrice": 82.61,
+    "featured": false
   },
   {
     "id": 212,
@@ -2544,7 +3177,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 84.35,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.92,
+    "wholesalePrice": 74.18,
+    "featured": false
   },
   {
     "id": 213,
@@ -2556,7 +3192,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 96.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Blue Razz 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Blue Razz 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.21,
+    "wholesalePrice": 86.09,
+    "featured": false
   },
   {
     "id": 214,
@@ -2568,7 +3207,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.88,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Elf Bar Framboesa - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Elf Bar Framboesa - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.61,
+    "wholesalePrice": 46.57,
+    "featured": false
   },
   {
     "id": 215,
@@ -2580,7 +3222,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 62.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Energético 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Energético 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.84,
+    "wholesalePrice": 58.17,
+    "featured": false
   },
   {
     "id": 216,
@@ -2592,7 +3237,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 135.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.8,
+    "wholesalePrice": 115.16,
+    "featured": false
   },
   {
     "id": 217,
@@ -2604,7 +3252,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.52,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Morango 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Morango 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.04,
+    "wholesalePrice": 33.21,
+    "featured": false
   },
   {
     "id": 218,
@@ -2616,7 +3267,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.54,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Limão 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Limão 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.05,
+    "wholesalePrice": 54.06,
+    "featured": false
   },
   {
     "id": 219,
@@ -2628,7 +3282,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.59,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Ignite Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.46,
+    "wholesalePrice": 45.79,
+    "featured": false
   },
   {
     "id": 220,
@@ -2640,7 +3297,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 66.71,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Energético 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Energético 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.86,
+    "wholesalePrice": 63.47,
+    "featured": false
   },
   {
     "id": 221,
@@ -2652,7 +3312,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 87.61,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Waka Melancia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Melancia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.48,
+    "wholesalePrice": 71.9,
+    "featured": false
   },
   {
     "id": 222,
@@ -2664,7 +3327,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Maçã Verde 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Maçã Verde 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.1,
+    "wholesalePrice": 28.32,
+    "featured": false
   },
   {
     "id": 223,
@@ -2676,7 +3342,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 52.35,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.22,
+    "wholesalePrice": 49.74,
+    "featured": false
   },
   {
     "id": 224,
@@ -2688,7 +3357,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 81.94,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.48,
+    "wholesalePrice": 77.1,
+    "featured": false
   },
   {
     "id": 225,
@@ -2700,7 +3372,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 88.17,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.44,
+    "wholesalePrice": 76.89,
+    "featured": false
   },
   {
     "id": 226,
@@ -2712,7 +3387,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Morango 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Morango 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.63,
+    "wholesalePrice": 31.08,
+    "featured": false
   },
   {
     "id": 227,
@@ -2724,7 +3402,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Maracujá 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Maracujá 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.14,
+    "wholesalePrice": 54.53,
+    "featured": false
   },
   {
     "id": 228,
@@ -2736,7 +3417,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 96.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.44,
+    "wholesalePrice": 76.89,
+    "featured": false
   },
   {
     "id": 229,
@@ -2748,7 +3432,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Morango 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.58,
+    "wholesalePrice": 30.82,
+    "featured": false
   },
   {
     "id": 230,
@@ -2760,7 +3447,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.73,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.61,
+    "wholesalePrice": 72.57,
+    "featured": false
   },
   {
     "id": 231,
@@ -2772,7 +3462,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 87.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.0,
+    "wholesalePrice": 79.8,
+    "featured": false
   },
   {
     "id": 232,
@@ -2784,7 +3477,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 143.3,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Limão 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Limão 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 27.88,
+    "wholesalePrice": 151.98,
+    "featured": false
   },
   {
     "id": 233,
@@ -2796,7 +3492,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 105.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Energético 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Energético 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.98,
+    "wholesalePrice": 95.3,
+    "featured": false
   },
   {
     "id": 234,
@@ -2808,7 +3507,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.16,
+    "wholesalePrice": 39.03,
+    "featured": false
   },
   {
     "id": 235,
@@ -2820,7 +3522,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Uwell Caliburn Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Uwell Caliburn Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.69,
+    "wholesalePrice": 36.59,
+    "featured": false
   },
   {
     "id": 236,
@@ -2832,7 +3537,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Aroma King Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Aroma King Maracujá - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.42,
+    "wholesalePrice": 24.78,
+    "featured": false
   },
   {
     "id": 237,
@@ -2844,7 +3552,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.33,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.36,
+    "wholesalePrice": 45.27,
+    "featured": false
   },
   {
     "id": 238,
@@ -2856,7 +3567,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.14,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Tabaco Clássico 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.91,
+    "wholesalePrice": 22.13,
+    "featured": false
   },
   {
     "id": 239,
@@ -2868,7 +3582,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 109.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.71,
+    "wholesalePrice": 93.89,
+    "featured": false
   },
   {
     "id": 240,
@@ -2880,7 +3597,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 75.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Amora 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.85,
+    "wholesalePrice": 68.62,
+    "featured": false
   },
   {
     "id": 241,
@@ -2892,7 +3612,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 71.65,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Menta Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Menta Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.11,
+    "wholesalePrice": 59.57,
+    "featured": false
   },
   {
     "id": 242,
@@ -2904,7 +3627,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Maçã Verde 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Maçã Verde 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.02,
+    "wholesalePrice": 33.1,
+    "featured": false
   },
   {
     "id": 243,
@@ -2916,7 +3642,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 107.83,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.88,
+    "wholesalePrice": 89.58,
+    "featured": false
   },
   {
     "id": 244,
@@ -2928,7 +3657,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Morango 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Morango 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.32,
+    "wholesalePrice": 91.86,
+    "featured": false
   },
   {
     "id": 245,
@@ -2940,7 +3672,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 129.83,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.11,
+    "wholesalePrice": 116.77,
+    "featured": false
   },
   {
     "id": 246,
@@ -2952,7 +3687,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 37.19,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Uva 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Uva 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.21,
+    "wholesalePrice": 28.89,
+    "featured": false
   },
   {
     "id": 247,
@@ -2964,7 +3702,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 145.25,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Aroma King Lichia 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Lichia 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.67,
+    "wholesalePrice": 140.48,
+    "featured": false
   },
   {
     "id": 248,
@@ -2976,7 +3717,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.31,
+    "wholesalePrice": 55.41,
+    "featured": false
   },
   {
     "id": 249,
@@ -2988,7 +3732,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 57.0,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.88,
+    "wholesalePrice": 47.98,
+    "featured": false
   },
   {
     "id": 250,
@@ -3000,7 +3747,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 121.67,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 23.08,
+    "wholesalePrice": 127.02,
+    "featured": false
   },
   {
     "id": 251,
@@ -3012,7 +3762,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Baunilha 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Baunilha 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.24,
+    "wholesalePrice": 96.65,
+    "featured": false
   },
   {
     "id": 252,
@@ -3024,7 +3777,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 124.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.3,
+    "wholesalePrice": 117.76,
+    "featured": false
   },
   {
     "id": 253,
@@ -3036,7 +3792,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 141.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Menta Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Menta Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 24.48,
+    "wholesalePrice": 134.3,
+    "featured": false
   },
   {
     "id": 254,
@@ -3048,7 +3807,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 71.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.33,
+    "wholesalePrice": 55.52,
+    "featured": false
   },
   {
     "id": 255,
@@ -3060,7 +3822,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 114.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Banana 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Banana 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.75,
+    "wholesalePrice": 104.5,
+    "featured": false
   },
   {
     "id": 256,
@@ -3072,7 +3837,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 100.23,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.83,
+    "wholesalePrice": 84.12,
+    "featured": false
   },
   {
     "id": 257,
@@ -3084,7 +3852,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Lichia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Lichia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.69,
+    "wholesalePrice": 83.39,
+    "featured": false
   },
   {
     "id": 258,
@@ -3096,7 +3867,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.23,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Maracujá 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Maracujá 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.34,
+    "wholesalePrice": 39.97,
+    "featured": false
   },
   {
     "id": 259,
@@ -3108,7 +3882,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.96,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Tabaco Clássico 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Tabaco Clássico 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.33,
+    "wholesalePrice": 29.52,
+    "featured": false
   },
   {
     "id": 260,
@@ -3120,7 +3897,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.33,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Lichia 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Lichia 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.31,
+    "wholesalePrice": 45.01,
+    "featured": false
   },
   {
     "id": 261,
@@ -3132,7 +3912,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 84.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Coco 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Coco 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.26,
+    "wholesalePrice": 81.15,
+    "featured": false
   },
   {
     "id": 262,
@@ -3144,7 +3927,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Limão 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Limão 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.88,
+    "wholesalePrice": 63.58,
+    "featured": false
   },
   {
     "id": 263,
@@ -3156,7 +3942,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.74,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.78,
+    "wholesalePrice": 26.66,
+    "featured": false
   },
   {
     "id": 264,
@@ -3168,7 +3957,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 79.31,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.44,
+    "wholesalePrice": 71.69,
+    "featured": false
   },
   {
     "id": 265,
@@ -3180,7 +3972,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Energético 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Energético 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.96,
+    "wholesalePrice": 37.99,
+    "featured": false
   },
   {
     "id": 266,
@@ -3192,7 +3987,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 84.09,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Tugboat Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.42,
+    "wholesalePrice": 81.98,
+    "featured": false
   },
   {
     "id": 267,
@@ -3204,7 +4002,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.48,
+    "wholesalePrice": 51.1,
+    "featured": false
   },
   {
     "id": 268,
@@ -3216,7 +4017,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 137.31,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Framboesa 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Framboesa 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 23.95,
+    "wholesalePrice": 131.54,
+    "featured": false
   },
   {
     "id": 269,
@@ -3228,7 +4032,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 109.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Tabaco Clássico 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Tabaco Clássico 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.72,
+    "wholesalePrice": 93.94,
+    "featured": false
   },
   {
     "id": 270,
@@ -3240,7 +4047,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Randm Morango - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Randm Morango - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.72,
+    "wholesalePrice": 31.54,
+    "featured": false
   },
   {
     "id": 271,
@@ -3252,7 +4062,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 110.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Abacaxi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Abacaxi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.94,
+    "wholesalePrice": 110.69,
+    "featured": false
   },
   {
     "id": 272,
@@ -3264,7 +4077,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 37.9,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Tropical Mix 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Tropical Mix 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.41,
+    "wholesalePrice": 29.93,
+    "featured": false
   },
   {
     "id": 273,
@@ -3276,7 +4092,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.67,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Cereja 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Cereja 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.77,
+    "wholesalePrice": 47.4,
+    "featured": false
   },
   {
     "id": 274,
@@ -3288,7 +4107,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.74,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Morango 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Morango 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.93,
+    "wholesalePrice": 63.84,
+    "featured": false
   },
   {
     "id": 275,
@@ -3300,7 +4122,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.6,
+    "wholesalePrice": 51.72,
+    "featured": false
   },
   {
     "id": 276,
@@ -3312,7 +4137,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 130.82,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Energético 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Energético 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.89,
+    "wholesalePrice": 120.83,
+    "featured": false
   },
   {
     "id": 277,
@@ -3324,7 +4152,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.36,
+    "wholesalePrice": 40.07,
+    "featured": false
   },
   {
     "id": 278,
@@ -3336,7 +4167,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Tropical Mix 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Tropical Mix 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.4,
+    "wholesalePrice": 55.88,
+    "featured": false
   },
   {
     "id": 279,
@@ -3348,7 +4182,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil VaporEsse Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil VaporEsse Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.94,
+    "wholesalePrice": 32.69,
+    "featured": false
   },
   {
     "id": 280,
@@ -3360,7 +4197,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Morango 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Morango 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.19,
+    "wholesalePrice": 39.19,
+    "featured": false
   },
   {
     "id": 281,
@@ -3372,7 +4212,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.42,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Frutas Vermelhas 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Frutas Vermelhas 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.28,
+    "wholesalePrice": 44.86,
+    "featured": false
   },
   {
     "id": 282,
@@ -3384,7 +4227,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.26,
+    "wholesalePrice": 60.35,
+    "featured": false
   },
   {
     "id": 283,
@@ -3396,7 +4242,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 23.24,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 1.57,
+    "wholesalePrice": 15.16,
+    "featured": false
   },
   {
     "id": 284,
@@ -3408,7 +4257,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.73,
+    "wholesalePrice": 62.8,
+    "featured": false
   },
   {
     "id": 285,
@@ -3420,7 +4272,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 115.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.49,
+    "wholesalePrice": 113.55,
+    "featured": false
   },
   {
     "id": 286,
@@ -3432,7 +4287,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.33,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Morango 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Morango 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.54,
+    "wholesalePrice": 139.81,
+    "featured": false
   },
   {
     "id": 287,
@@ -3444,7 +4302,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Framboesa 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Framboesa 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.46,
+    "wholesalePrice": 87.39,
+    "featured": false
   },
   {
     "id": 288,
@@ -3456,7 +4317,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 59.96,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Kiwi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Kiwi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.02,
+    "wholesalePrice": 48.7,
+    "featured": false
   },
   {
     "id": 289,
@@ -3468,7 +4332,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.77,
+    "wholesalePrice": 37.0,
+    "featured": false
   },
   {
     "id": 290,
@@ -3480,7 +4347,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.17,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Energético 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Energético 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.55,
+    "wholesalePrice": 77.46,
+    "featured": false
   },
   {
     "id": 291,
@@ -3492,7 +4362,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.04,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Melancia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Melancia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.31,
+    "wholesalePrice": 34.61,
+    "featured": false
   },
   {
     "id": 292,
@@ -3504,7 +4377,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 113.43,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Morango 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Morango 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.87,
+    "wholesalePrice": 94.72,
+    "featured": false
   },
   {
     "id": 293,
@@ -3516,7 +4392,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.74,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.75,
+    "wholesalePrice": 36.9,
+    "featured": false
   },
   {
     "id": 294,
@@ -3528,7 +4407,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.43,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.62,
+    "wholesalePrice": 31.02,
+    "featured": false
   },
   {
     "id": 295,
@@ -3540,7 +4422,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 88.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Melancia com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Melancia com Gelo 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.38,
+    "wholesalePrice": 71.38,
+    "featured": false
   },
   {
     "id": 296,
@@ -3552,7 +4437,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 18.89,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 0.92,
+    "wholesalePrice": 11.78,
+    "featured": false
   },
   {
     "id": 297,
@@ -3564,7 +4452,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Tabaco Clássico 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Tabaco Clássico 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.48,
+    "wholesalePrice": 61.5,
+    "featured": false
   },
   {
     "id": 298,
@@ -3576,7 +4467,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Uva - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Uva - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.92,
+    "wholesalePrice": 37.78,
+    "featured": false
   },
   {
     "id": 299,
@@ -3588,7 +4482,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 111.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Uva 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Uva 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.07,
+    "wholesalePrice": 111.36,
+    "featured": false
   },
   {
     "id": 300,
@@ -3600,7 +4497,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.63,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Coco 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Coco 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.81,
+    "wholesalePrice": 42.41,
+    "featured": false
   },
   {
     "id": 301,
@@ -3612,7 +4512,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Manga 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Manga 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.98,
+    "wholesalePrice": 32.9,
+    "featured": false
   },
   {
     "id": 302,
@@ -3624,7 +4527,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.7,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.11,
+    "wholesalePrice": 43.97,
+    "featured": false
   },
   {
     "id": 303,
@@ -3636,7 +4542,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 78.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.87,
+    "wholesalePrice": 73.92,
+    "featured": false
   },
   {
     "id": 304,
@@ -3648,7 +4557,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 108.75,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Manga 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.1,
+    "wholesalePrice": 90.72,
+    "featured": false
   },
   {
     "id": 305,
@@ -3660,7 +4572,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Lichia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Lichia 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.43,
+    "wholesalePrice": 61.24,
+    "featured": false
   },
   {
     "id": 306,
@@ -3672,7 +4587,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 110.33,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Groselha Preta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Groselha Preta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.9,
+    "wholesalePrice": 115.68,
+    "featured": false
   },
   {
     "id": 307,
@@ -3684,7 +4602,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 57.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.46,
+    "wholesalePrice": 45.79,
+    "featured": false
   },
   {
     "id": 308,
@@ -3696,7 +4617,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 83.79,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Puff Bar Blue Razz 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Blue Razz 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.02,
+    "wholesalePrice": 85.1,
+    "featured": false
   },
   {
     "id": 309,
@@ -3708,7 +4632,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 76.29,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Manga 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.43,
+    "wholesalePrice": 66.44,
+    "featured": false
   },
   {
     "id": 310,
@@ -3720,7 +4647,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 118.74,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.87,
+    "wholesalePrice": 110.32,
+    "featured": false
   },
   {
     "id": 311,
@@ -3732,7 +4662,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Uva 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Uva 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.84,
+    "wholesalePrice": 110.17,
+    "featured": false
   },
   {
     "id": 312,
@@ -3744,7 +4677,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.82,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Uwell Caliburn Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.25,
+    "wholesalePrice": 34.3,
+    "featured": false
   },
   {
     "id": 313,
@@ -3756,7 +4692,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.13,
+    "wholesalePrice": 44.08,
+    "featured": false
   },
   {
     "id": 314,
@@ -3768,7 +4707,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 55.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.68,
+    "wholesalePrice": 46.94,
+    "featured": false
   },
   {
     "id": 315,
@@ -3780,7 +4722,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 61.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Cola Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Cola Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.05,
+    "wholesalePrice": 54.06,
+    "featured": false
   },
   {
     "id": 316,
@@ -3792,7 +4737,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 52.97,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Melancia com Gelo 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Melancia com Gelo 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.95,
+    "wholesalePrice": 43.14,
+    "featured": false
   },
   {
     "id": 317,
@@ -3804,7 +4752,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Tabaco Clássico 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Tabaco Clássico 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.3,
+    "wholesalePrice": 29.36,
+    "featured": false
   },
   {
     "id": 318,
@@ -3816,7 +4767,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.01,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Cereja 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Cereja 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.18,
+    "wholesalePrice": 28.74,
+    "featured": false
   },
   {
     "id": 319,
@@ -3828,7 +4782,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.73,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Limão 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Limão 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.87,
+    "wholesalePrice": 32.32,
+    "featured": false
   },
   {
     "id": 320,
@@ -3840,7 +4797,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.41,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Waka - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.36,
+    "wholesalePrice": 24.47,
+    "featured": false
   },
   {
     "id": 321,
@@ -3852,7 +4812,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.41,
+    "wholesalePrice": 55.93,
+    "featured": false
   },
   {
     "id": 322,
@@ -3864,7 +4827,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.0,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Melancia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Melancia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.82,
+    "wholesalePrice": 58.06,
+    "featured": false
   },
   {
     "id": 323,
@@ -3876,7 +4842,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.26,
+    "wholesalePrice": 60.35,
+    "featured": false
   },
   {
     "id": 324,
@@ -3888,7 +4857,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Geek Bar Frutas Vermelhas - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Geek Bar Frutas Vermelhas - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.57,
+    "wholesalePrice": 25.56,
+    "featured": false
   },
   {
     "id": 325,
@@ -3900,7 +4872,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 87.65,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Kiwi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Kiwi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.49,
+    "wholesalePrice": 82.35,
+    "featured": false
   },
   {
     "id": 326,
@@ -3912,7 +4887,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.5,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Fume Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.8,
+    "wholesalePrice": 78.76,
+    "featured": false
   },
   {
     "id": 327,
@@ -3924,7 +4902,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 127.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.81,
+    "wholesalePrice": 104.81,
+    "featured": false
   },
   {
     "id": 328,
@@ -3936,7 +4917,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.21,
+    "wholesalePrice": 70.49,
+    "featured": false
   },
   {
     "id": 329,
@@ -3948,7 +4932,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 62.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.93,
+    "wholesalePrice": 58.64,
+    "featured": false
   },
   {
     "id": 330,
@@ -3960,7 +4947,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 60.38,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Melancia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Melancia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.96,
+    "wholesalePrice": 58.79,
+    "featured": false
   },
   {
     "id": 331,
@@ -3972,7 +4962,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 120.41,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Coco 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Coco 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.87,
+    "wholesalePrice": 99.92,
+    "featured": false
   },
   {
     "id": 332,
@@ -3984,7 +4977,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.94,
+    "wholesalePrice": 37.89,
+    "featured": false
   },
   {
     "id": 333,
@@ -3996,7 +4992,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Maçã Verde 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Maçã Verde 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.76,
+    "wholesalePrice": 31.75,
+    "featured": false
   },
   {
     "id": 334,
@@ -4008,7 +5007,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 111.46,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.1,
+    "wholesalePrice": 111.52,
+    "featured": false
   },
   {
     "id": 335,
@@ -4020,7 +5022,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 33.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil VaporEsse Melancia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil VaporEsse Melancia - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.29,
+    "wholesalePrice": 24.11,
+    "featured": false
   },
   {
     "id": 336,
@@ -4032,7 +5037,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.12,
+    "wholesalePrice": 38.82,
+    "featured": false
   },
   {
     "id": 337,
@@ -4044,7 +5052,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Limão 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Limão 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.62,
+    "wholesalePrice": 41.42,
+    "featured": false
   },
   {
     "id": 338,
@@ -4056,7 +5067,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Cereja 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Cereja 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.45,
+    "wholesalePrice": 61.34,
+    "featured": false
   },
   {
     "id": 339,
@@ -4068,7 +5082,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.25,
+    "wholesalePrice": 39.5,
+    "featured": false
   },
   {
     "id": 340,
@@ -4080,7 +5097,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Melancia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Melancia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.34,
+    "wholesalePrice": 117.97,
+    "featured": false
   },
   {
     "id": 341,
@@ -4092,7 +5112,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 106.79,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.8,
+    "wholesalePrice": 89.16,
+    "featured": false
   },
   {
     "id": 342,
@@ -4104,7 +5127,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.25,
+    "wholesalePrice": 34.3,
+    "featured": false
   },
   {
     "id": 343,
@@ -4116,7 +5142,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 137.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Baunilha 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Baunilha 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 23.99,
+    "wholesalePrice": 131.75,
+    "featured": false
   },
   {
     "id": 344,
@@ -4128,7 +5157,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 76.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Coco 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Coco 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.55,
+    "wholesalePrice": 72.26,
+    "featured": false
   },
   {
     "id": 345,
@@ -4140,7 +5172,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.16,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Fume Frutas Vermelhas 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Frutas Vermelhas 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.59,
+    "wholesalePrice": 36.07,
+    "featured": false
   },
   {
     "id": 346,
@@ -4152,7 +5187,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.55,
+    "wholesalePrice": 35.86,
+    "featured": false
   },
   {
     "id": 347,
@@ -4164,7 +5202,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Vozol Amora - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Vozol Amora - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.11,
+    "wholesalePrice": 49.17,
+    "featured": false
   },
   {
     "id": 348,
@@ -4176,7 +5217,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.86,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil VaporEsse Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil VaporEsse Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.31,
+    "wholesalePrice": 45.01,
+    "featured": false
   },
   {
     "id": 349,
@@ -4188,7 +5232,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Menta 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.95,
+    "wholesalePrice": 84.74,
+    "featured": false
   },
   {
     "id": 350,
@@ -4200,7 +5247,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil VaporEsse Banana - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil VaporEsse Banana - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.73,
+    "wholesalePrice": 47.2,
+    "featured": false
   },
   {
     "id": 351,
@@ -4212,7 +5262,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.12,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Blue Razz 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Blue Razz 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.83,
+    "wholesalePrice": 42.52,
+    "featured": false
   },
   {
     "id": 352,
@@ -4224,7 +5277,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 55.86,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Menta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Menta 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.57,
+    "wholesalePrice": 51.56,
+    "featured": false
   },
   {
     "id": 353,
@@ -4236,7 +5292,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 126.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Framboesa 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Framboesa 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.71,
+    "wholesalePrice": 104.29,
+    "featured": false
   },
   {
     "id": 354,
@@ -4248,7 +5307,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.13,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Abacaxi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Abacaxi 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.33,
+    "wholesalePrice": 50.32,
+    "featured": false
   },
   {
     "id": 355,
@@ -4260,7 +5322,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Menta 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.17,
+    "wholesalePrice": 33.88,
+    "featured": false
   },
   {
     "id": 356,
@@ -4272,7 +5337,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 102.23,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Tabaco Clássico 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Tabaco Clássico 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.6,
+    "wholesalePrice": 103.72,
+    "featured": false
   },
   {
     "id": 357,
@@ -4284,7 +5352,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 73.14,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Menta Gelada 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.03,
+    "wholesalePrice": 64.36,
+    "featured": false
   },
   {
     "id": 358,
@@ -4296,7 +5367,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.85,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Café Gelado 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Café Gelado 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.74,
+    "wholesalePrice": 42.05,
+    "featured": false
   },
   {
     "id": 359,
@@ -4308,7 +5382,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 109.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Cola Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Cola Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.46,
+    "wholesalePrice": 102.99,
+    "featured": false
   },
   {
     "id": 360,
@@ -4320,7 +5397,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 143.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Cereja 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Cereja 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 27.88,
+    "wholesalePrice": 151.98,
+    "featured": false
   },
   {
     "id": 361,
@@ -4332,7 +5412,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Maçã Verde 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.9,
+    "wholesalePrice": 42.88,
+    "featured": false
   },
   {
     "id": 362,
@@ -4344,7 +5427,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 81.04,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Lichia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Lichia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.29,
+    "wholesalePrice": 65.71,
+    "featured": false
   },
   {
     "id": 363,
@@ -4356,7 +5442,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.3,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Frutas Vermelhas 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.53,
+    "wholesalePrice": 61.76,
+    "featured": false
   },
   {
     "id": 364,
@@ -4368,7 +5457,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 124.7,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Morango 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Morango 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.44,
+    "wholesalePrice": 108.09,
+    "featured": false
   },
   {
     "id": 365,
@@ -4380,7 +5472,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Chiclete 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Chiclete 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.1,
+    "wholesalePrice": 69.92,
+    "featured": false
   },
   {
     "id": 366,
@@ -4392,7 +5487,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Abacaxi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Abacaxi 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.17,
+    "wholesalePrice": 33.88,
+    "featured": false
   },
   {
     "id": 367,
@@ -4404,7 +5502,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.82,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Lost Mary Coco 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Coco 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.46,
+    "wholesalePrice": 30.19,
+    "featured": false
   },
   {
     "id": 368,
@@ -4416,7 +5517,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 52.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Amora 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Amora 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.6,
+    "wholesalePrice": 41.32,
+    "featured": false
   },
   {
     "id": 369,
@@ -4428,7 +5532,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 90.05,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Chiclete 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.62,
+    "wholesalePrice": 77.82,
+    "featured": false
   },
   {
     "id": 370,
@@ -4440,7 +5547,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 74.28,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.73,
+    "wholesalePrice": 62.8,
+    "featured": false
   },
   {
     "id": 371,
@@ -4452,7 +5562,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.04,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Geek Bar Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Geek Bar Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.26,
+    "wholesalePrice": 44.75,
+    "featured": false
   },
   {
     "id": 372,
@@ -4464,7 +5577,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Chiclete 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Chiclete 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.7,
+    "wholesalePrice": 73.04,
+    "featured": false
   },
   {
     "id": 373,
@@ -4476,7 +5592,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.01,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.81,
+    "wholesalePrice": 32.01,
+    "featured": false
   },
   {
     "id": 374,
@@ -4488,7 +5607,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 109.19,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Menta Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Menta Gelada 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.36,
+    "wholesalePrice": 92.07,
+    "featured": false
   },
   {
     "id": 375,
@@ -4500,7 +5622,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 42.88,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Melancia com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Melancia com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.12,
+    "wholesalePrice": 33.62,
+    "featured": false
   },
   {
     "id": 376,
@@ -4512,7 +5637,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.35,
+    "wholesalePrice": 50.42,
+    "featured": false
   },
   {
     "id": 377,
@@ -4524,7 +5652,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Uva 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Uva 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.08,
+    "wholesalePrice": 38.62,
+    "featured": false
   },
   {
     "id": 378,
@@ -4536,7 +5667,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 143.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.1,
+    "wholesalePrice": 116.72,
+    "featured": false
   },
   {
     "id": 379,
@@ -4548,7 +5682,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.01,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Baunilha 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Baunilha 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.88,
+    "wholesalePrice": 58.38,
+    "featured": false
   },
   {
     "id": 380,
@@ -4560,7 +5697,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.91,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.04,
+    "wholesalePrice": 80.01,
+    "featured": false
   },
   {
     "id": 381,
@@ -4572,7 +5712,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.17,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Blue Razz 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Blue Razz 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.75,
+    "wholesalePrice": 52.5,
+    "featured": false
   },
   {
     "id": 382,
@@ -4584,7 +5727,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.44,
+    "wholesalePrice": 45.69,
+    "featured": false
   },
   {
     "id": 383,
@@ -4596,7 +5742,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.25,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Blue Razz 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.71,
+    "wholesalePrice": 36.69,
+    "featured": false
   },
   {
     "id": 384,
@@ -4608,7 +5757,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.61,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Abacaxi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Abacaxi 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.85,
+    "wholesalePrice": 32.22,
+    "featured": false
   },
   {
     "id": 385,
@@ -4620,7 +5772,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 91.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Maracujá 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.12,
+    "wholesalePrice": 90.82,
+    "featured": false
   },
   {
     "id": 386,
@@ -4632,7 +5787,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 102.79,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Waka Abacaxi 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Abacaxi 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.54,
+    "wholesalePrice": 93.01,
+    "featured": false
   },
   {
     "id": 387,
@@ -4644,7 +5802,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Cola Gelada 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.27,
+    "wholesalePrice": 50.0,
+    "featured": false
   },
   {
     "id": 388,
@@ -4656,7 +5817,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.94,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Amora 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Amora 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.55,
+    "wholesalePrice": 41.06,
+    "featured": false
   },
   {
     "id": 389,
@@ -4668,7 +5832,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.93,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Café Gelado 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.57,
+    "wholesalePrice": 35.96,
+    "featured": false
   },
   {
     "id": 390,
@@ -4680,7 +5847,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.67,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Cereja 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.08,
+    "wholesalePrice": 69.82,
+    "featured": false
   },
   {
     "id": 391,
@@ -4692,7 +5862,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 76.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Limão 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Limão 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.46,
+    "wholesalePrice": 71.79,
+    "featured": false
   },
   {
     "id": 392,
@@ -4704,7 +5877,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 89.66,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.44,
+    "wholesalePrice": 92.49,
+    "featured": false
   },
   {
     "id": 393,
@@ -4716,7 +5892,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 55.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Tropical Mix 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Tropical Mix 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.43,
+    "wholesalePrice": 45.64,
+    "featured": false
   },
   {
     "id": 394,
@@ -4728,7 +5907,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.6,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Tabaco Clássico 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Tabaco Clássico 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.8,
+    "wholesalePrice": 52.76,
+    "featured": false
   },
   {
     "id": 395,
@@ -4740,7 +5922,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 133.75,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Cola Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Cola Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 24.25,
+    "wholesalePrice": 133.1,
+    "featured": false
   },
   {
     "id": 396,
@@ -4752,7 +5937,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 76.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.25,
+    "wholesalePrice": 70.7,
+    "featured": false
   },
   {
     "id": 397,
@@ -4764,7 +5952,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.41,
+    "wholesalePrice": 76.73,
+    "featured": false
   },
   {
     "id": 398,
@@ -4776,7 +5967,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.9,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Maçã Verde 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Maçã Verde 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.4,
+    "wholesalePrice": 40.28,
+    "featured": false
   },
   {
     "id": 399,
@@ -4788,7 +5982,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 131.63,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.43,
+    "wholesalePrice": 108.04,
+    "featured": false
   },
   {
     "id": 400,
@@ -4800,7 +5997,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.21,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Melancia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Melancia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.53,
+    "wholesalePrice": 40.96,
+    "featured": false
   },
   {
     "id": 401,
@@ -4812,7 +6012,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Baunilha 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Baunilha 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.3,
+    "wholesalePrice": 29.36,
+    "featured": false
   },
   {
     "id": 402,
@@ -4824,7 +6027,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 96.55,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Elf Bar Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.82,
+    "wholesalePrice": 94.46,
+    "featured": false
   },
   {
     "id": 403,
@@ -4836,7 +6042,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 30.38,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Tugboat Blue Razz - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Tugboat Blue Razz - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.74,
+    "wholesalePrice": 21.25,
+    "featured": false
   },
   {
     "id": 404,
@@ -4848,7 +6057,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 82.05,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Melancia com Gelo 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Melancia com Gelo 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.59,
+    "wholesalePrice": 67.27,
+    "featured": false
   },
   {
     "id": 405,
@@ -4860,7 +6072,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 66.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Morango 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.62,
+    "wholesalePrice": 51.82,
+    "featured": false
   },
   {
     "id": 406,
@@ -4872,7 +6087,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Tabaco Clássico 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Tabaco Clássico 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.16,
+    "wholesalePrice": 39.03,
+    "featured": false
   },
   {
     "id": 407,
@@ -4884,7 +6102,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Menta Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.52,
+    "wholesalePrice": 30.5,
+    "featured": false
   },
   {
     "id": 408,
@@ -4896,7 +6117,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 54.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Aroma King Kiwi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Aroma King Kiwi - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.93,
+    "wholesalePrice": 48.24,
+    "featured": false
   },
   {
     "id": 409,
@@ -4908,7 +6132,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 111.51,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Lost Mary Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Melancia com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.35,
+    "wholesalePrice": 97.22,
+    "featured": false
   },
   {
     "id": 410,
@@ -4920,7 +6147,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.56,
+    "wholesalePrice": 41.11,
+    "featured": false
   },
   {
     "id": 411,
@@ -4932,7 +6162,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.43,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Lost Mary Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Lost Mary Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.5,
+    "wholesalePrice": 25.2,
+    "featured": false
   },
   {
     "id": 412,
@@ -4944,7 +6177,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.31,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Cereja 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Cereja 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 22.67,
+    "wholesalePrice": 124.88,
+    "featured": false
   },
   {
     "id": 413,
@@ -4956,7 +6192,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 114.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Kiwi 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.11,
+    "wholesalePrice": 95.97,
+    "featured": false
   },
   {
     "id": 414,
@@ -4968,7 +6207,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Cereja 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Cereja 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.92,
+    "wholesalePrice": 32.58,
+    "featured": false
   },
   {
     "id": 415,
@@ -4980,7 +6222,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 37.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Morango com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Morango com Gelo 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.07,
+    "wholesalePrice": 28.16,
+    "featured": false
   },
   {
     "id": 416,
@@ -4992,7 +6237,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 132.47,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Cereja 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Cereja 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.72,
+    "wholesalePrice": 140.74,
+    "featured": false
   },
   {
     "id": 417,
@@ -5004,7 +6252,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.64,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.12,
+    "wholesalePrice": 64.82,
+    "featured": false
   },
   {
     "id": 418,
@@ -5016,7 +6267,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 123.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Morango 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Morango 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.23,
+    "wholesalePrice": 117.4,
+    "featured": false
   },
   {
     "id": 419,
@@ -5028,7 +6282,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 130.09,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Energético 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Energético 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.44,
+    "wholesalePrice": 113.29,
+    "featured": false
   },
   {
     "id": 420,
@@ -5040,7 +6297,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Morango com Gelo 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.41,
+    "wholesalePrice": 50.73,
+    "featured": false
   },
   {
     "id": 421,
@@ -5052,7 +6312,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 65.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Uva 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Uva 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.24,
+    "wholesalePrice": 55.05,
+    "featured": false
   },
   {
     "id": 422,
@@ -5064,7 +6327,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.08,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Morango com Gelo 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Morango com Gelo 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.85,
+    "wholesalePrice": 53.02,
+    "featured": false
   },
   {
     "id": 423,
@@ -5076,7 +6342,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 52.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Maracujá 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.18,
+    "wholesalePrice": 39.14,
+    "featured": false
   },
   {
     "id": 424,
@@ -5088,7 +6357,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.61,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 22.19,
+    "wholesalePrice": 122.39,
+    "featured": false
   },
   {
     "id": 425,
@@ -5100,7 +6372,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Energético 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Energético 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.69,
+    "wholesalePrice": 26.19,
+    "featured": false
   },
   {
     "id": 426,
@@ -5112,7 +6387,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 78.88,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Melancia com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Melancia com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.29,
+    "wholesalePrice": 70.91,
+    "featured": false
   },
   {
     "id": 427,
@@ -5124,7 +6402,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 60.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Lichia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Lichia 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.02,
+    "wholesalePrice": 48.7,
+    "featured": false
   },
   {
     "id": 428,
@@ -5136,7 +6417,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.58,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Tabaco Clássico 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Tabaco Clássico 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.08,
+    "wholesalePrice": 38.62,
+    "featured": false
   },
   {
     "id": 429,
@@ -5148,7 +6432,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 136.82,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.95,
+    "wholesalePrice": 110.74,
+    "featured": false
   },
   {
     "id": 430,
@@ -5160,7 +6447,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 64.3,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Frutas Vermelhas 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.81,
+    "wholesalePrice": 52.81,
+    "featured": false
   },
   {
     "id": 431,
@@ -5172,7 +6462,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 20.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 0.91,
+    "wholesalePrice": 11.73,
+    "featured": false
   },
   {
     "id": 432,
@@ -5184,7 +6477,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Tropical Mix 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Tropical Mix 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.74,
+    "wholesalePrice": 36.85,
+    "featured": false
   },
   {
     "id": 433,
@@ -5196,7 +6492,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 113.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.39,
+    "wholesalePrice": 92.23,
+    "featured": false
   },
   {
     "id": 434,
@@ -5208,7 +6507,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.57,
+    "wholesalePrice": 35.96,
+    "featured": false
   },
   {
     "id": 435,
@@ -5220,7 +6522,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 29.38,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.6,
+    "wholesalePrice": 20.52,
+    "featured": false
   },
   {
     "id": 436,
@@ -5232,7 +6537,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 66.03,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.03,
+    "wholesalePrice": 53.96,
+    "featured": false
   },
   {
     "id": 437,
@@ -5244,7 +6552,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 113.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Morango com Gelo 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Morango com Gelo 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.37,
+    "wholesalePrice": 107.72,
+    "featured": false
   },
   {
     "id": 438,
@@ -5256,7 +6567,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.94,
+    "wholesalePrice": 27.49,
+    "featured": false
   },
   {
     "id": 439,
@@ -5268,7 +6582,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 88.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Energético 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Energético 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.13,
+    "wholesalePrice": 85.68,
+    "featured": false
   },
   {
     "id": 440,
@@ -5280,7 +6597,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 82.45,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Chiclete 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Chiclete 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.58,
+    "wholesalePrice": 77.62,
+    "featured": false
   },
   {
     "id": 441,
@@ -5292,7 +6612,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 29.48,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar - Carregador USB-C - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.97,
+    "wholesalePrice": 22.44,
+    "featured": false
   },
   {
     "id": 442,
@@ -5304,7 +6627,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 87.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.61,
+    "wholesalePrice": 88.17,
+    "featured": false
   },
   {
     "id": 443,
@@ -5316,7 +6642,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.95,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Maçã Verde 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Maçã Verde 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.03,
+    "wholesalePrice": 59.16,
+    "featured": false
   },
   {
     "id": 444,
@@ -5328,7 +6657,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.2,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Uwell Caliburn Frutas Vermelhas 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Frutas Vermelhas 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.69,
+    "wholesalePrice": 36.59,
+    "featured": false
   },
   {
     "id": 445,
@@ -5340,7 +6672,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.1,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Groselha Preta 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Groselha Preta 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.39,
+    "wholesalePrice": 50.63,
+    "featured": false
   },
   {
     "id": 446,
@@ -5352,7 +6687,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Pêssego 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.14,
+    "wholesalePrice": 70.13,
+    "featured": false
   },
   {
     "id": 447,
@@ -5364,7 +6702,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 140.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Groselha Preta 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.69,
+    "wholesalePrice": 140.59,
+    "featured": false
   },
   {
     "id": 448,
@@ -5376,7 +6717,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 80.74,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Kiwi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Kiwi 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.19,
+    "wholesalePrice": 75.59,
+    "featured": false
   },
   {
     "id": 449,
@@ -5388,7 +6732,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 77.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Morango com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Morango com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.38,
+    "wholesalePrice": 60.98,
+    "featured": false
   },
   {
     "id": 450,
@@ -5400,7 +6747,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 37.96,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Framboesa 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Framboesa 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.86,
+    "wholesalePrice": 32.27,
+    "featured": false
   },
   {
     "id": 451,
@@ -5412,7 +6762,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 62.87,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Lichia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Lichia 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.29,
+    "wholesalePrice": 60.51,
+    "featured": false
   },
   {
     "id": 452,
@@ -5424,7 +6777,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 46.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Frutas Vermelhas 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Frutas Vermelhas 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.36,
+    "wholesalePrice": 40.07,
+    "featured": false
   },
   {
     "id": 453,
@@ -5436,7 +6792,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.76,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Maçã Verde 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Maçã Verde 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.47,
+    "wholesalePrice": 103.04,
+    "featured": false
   },
   {
     "id": 454,
@@ -5448,7 +6807,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 145.61,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Cola Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Cola Gelada 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 27.47,
+    "wholesalePrice": 149.84,
+    "featured": false
   },
   {
     "id": 455,
@@ -5460,7 +6822,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.79,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Cola Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Cola Gelada 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.42,
+    "wholesalePrice": 29.98,
+    "featured": false
   },
   {
     "id": 456,
@@ -5472,7 +6837,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.69,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Maracujá 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Maracujá 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.78,
+    "wholesalePrice": 31.86,
+    "featured": false
   },
   {
     "id": 457,
@@ -5484,7 +6852,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 75.18,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.59,
+    "wholesalePrice": 67.27,
+    "featured": false
   },
   {
     "id": 458,
@@ -5496,7 +6867,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 102.62,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Cola Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Cola Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.54,
+    "wholesalePrice": 103.41,
+    "featured": false
   },
   {
     "id": 459,
@@ -5508,7 +6882,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 82.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Menta Gelada 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Menta Gelada 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.22,
+    "wholesalePrice": 80.94,
+    "featured": false
   },
   {
     "id": 460,
@@ -5520,7 +6897,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.28,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Pêssego 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Pêssego 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.85,
+    "wholesalePrice": 105.02,
+    "featured": false
   },
   {
     "id": 461,
@@ -5532,7 +6912,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 120.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Pêssego 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.86,
+    "wholesalePrice": 115.47,
+    "featured": false
   },
   {
     "id": 462,
@@ -5544,7 +6927,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 142.03,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Coco 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 27.31,
+    "wholesalePrice": 149.01,
+    "featured": false
   },
   {
     "id": 463,
@@ -5556,7 +6942,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Chiclete 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Chiclete 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.03,
+    "wholesalePrice": 33.16,
+    "featured": false
   },
   {
     "id": 464,
@@ -5568,7 +6957,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 135.56,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Maracujá 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 24.53,
+    "wholesalePrice": 134.56,
+    "featured": false
   },
   {
     "id": 465,
@@ -5580,7 +6972,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Lichia 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Lichia 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.67,
+    "wholesalePrice": 31.28,
+    "featured": false
   },
   {
     "id": 466,
@@ -5592,7 +6987,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 33.78,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Vozol Frutas Vermelhas - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Vozol Frutas Vermelhas - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.1,
+    "wholesalePrice": 23.12,
+    "featured": false
   },
   {
     "id": 467,
@@ -5604,7 +7002,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Oxbar Uva - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Oxbar Uva - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.75,
+    "wholesalePrice": 36.9,
+    "featured": false
   },
   {
     "id": 468,
@@ -5616,7 +7017,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Maracujá 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Maracujá 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.51,
+    "wholesalePrice": 30.45,
+    "featured": false
   },
   {
     "id": 469,
@@ -5628,7 +7032,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 99.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Cereja 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Cereja 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.27,
+    "wholesalePrice": 81.2,
+    "featured": false
   },
   {
     "id": 470,
@@ -5640,7 +7047,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.51,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Groselha Preta 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.33,
+    "wholesalePrice": 65.92,
+    "featured": false
   },
   {
     "id": 471,
@@ -5652,7 +7062,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.39,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Abacaxi 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Abacaxi 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.49,
+    "wholesalePrice": 51.15,
+    "featured": false
   },
   {
     "id": 472,
@@ -5664,7 +7077,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.38,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Cola Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Cola Gelada 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.47,
+    "wholesalePrice": 40.64,
+    "featured": false
   },
   {
     "id": 473,
@@ -5676,7 +7092,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 44.05,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Ignite Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Ignite Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.8,
+    "wholesalePrice": 37.16,
+    "featured": false
   },
   {
     "id": 474,
@@ -5688,7 +7107,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.36,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.38,
+    "wholesalePrice": 50.58,
+    "featured": false
   },
   {
     "id": 475,
@@ -5700,7 +7122,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.26,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "VaporEsse Energético 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Energético 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.95,
+    "wholesalePrice": 43.14,
+    "featured": false
   },
   {
     "id": 476,
@@ -5712,7 +7137,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 142.25,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "VaporEsse Blue Razz 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Blue Razz 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.82,
+    "wholesalePrice": 115.26,
+    "featured": false
   },
   {
     "id": 477,
@@ -5724,7 +7152,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 43.33,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Uwell Caliburn Menta 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Menta 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.93,
+    "wholesalePrice": 37.84,
+    "featured": false
   },
   {
     "id": 478,
@@ -5736,7 +7167,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 51.99,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.64,
+    "wholesalePrice": 46.73,
+    "featured": false
   },
   {
     "id": 479,
@@ -5748,7 +7182,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.44,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.51,
+    "wholesalePrice": 30.45,
+    "featured": false
   },
   {
     "id": 480,
@@ -5760,7 +7197,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 59.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Menta Gelada 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Menta Gelada 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.55,
+    "wholesalePrice": 51.46,
+    "featured": false
   },
   {
     "id": 481,
@@ -5772,7 +7212,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Groselha Preta 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.23,
+    "wholesalePrice": 23.8,
+    "featured": false
   },
   {
     "id": 482,
@@ -5784,7 +7227,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 135.9,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Geek Bar Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Kiwi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.22,
+    "wholesalePrice": 112.14,
+    "featured": false
   },
   {
     "id": 483,
@@ -5796,7 +7242,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 70.88,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Lichia 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.51,
+    "wholesalePrice": 66.85,
+    "featured": false
   },
   {
     "id": 484,
@@ -5808,7 +7257,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 33.06,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Abacaxi 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Abacaxi 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.21,
+    "wholesalePrice": 23.69,
+    "featured": false
   },
   {
     "id": 485,
@@ -5820,7 +7272,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.33,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Uva 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Uva 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.42,
+    "wholesalePrice": 35.18,
+    "featured": false
   },
   {
     "id": 486,
@@ -5832,7 +7287,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 115.0,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Maçã Verde 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Maçã Verde 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.88,
+    "wholesalePrice": 99.98,
+    "featured": false
   },
   {
     "id": 487,
@@ -5844,7 +7302,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 69.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Groselha Preta 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Groselha Preta 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.16,
+    "wholesalePrice": 65.03,
+    "featured": false
   },
   {
     "id": 488,
@@ -5856,7 +7317,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 120.2,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Morango 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Morango 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.44,
+    "wholesalePrice": 102.89,
+    "featured": false
   },
   {
     "id": 489,
@@ -5868,7 +7332,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 34.44,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Nasty Bar Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Nasty Bar Limão - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.01,
+    "wholesalePrice": 27.85,
+    "featured": false
   },
   {
     "id": 490,
@@ -5880,7 +7347,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 89.02,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.27,
+    "wholesalePrice": 91.6,
+    "featured": false
   },
   {
     "id": 491,
@@ -5892,7 +7362,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 25.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Fume Cereja - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Fume Cereja - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.07,
+    "wholesalePrice": 17.76,
+    "featured": false
   },
   {
     "id": 492,
@@ -5904,7 +7377,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 80.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Melancia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Melancia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.2,
+    "wholesalePrice": 70.44,
+    "featured": false
   },
   {
     "id": 493,
@@ -5916,7 +7392,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 99.59,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Lost Mary Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Blue Razz 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.16,
+    "wholesalePrice": 91.03,
+    "featured": false
   },
   {
     "id": 494,
@@ -5928,7 +7407,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 94.77,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "VaporEsse Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Groselha Preta 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 16.19,
+    "wholesalePrice": 91.19,
+    "featured": false
   },
   {
     "id": 495,
@@ -5940,7 +7422,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 74.22,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Amora 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Amora 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.3,
+    "wholesalePrice": 70.96,
+    "featured": false
   },
   {
     "id": 496,
@@ -5952,7 +7437,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.09,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 14.15,
+    "wholesalePrice": 80.58,
+    "featured": false
   },
   {
     "id": 497,
@@ -5964,7 +7452,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Kiwi 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Kiwi 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.78,
+    "wholesalePrice": 42.26,
+    "featured": false
   },
   {
     "id": 498,
@@ -5976,7 +7467,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 92.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Maçã Verde 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.99,
+    "wholesalePrice": 74.55,
+    "featured": false
   },
   {
     "id": 499,
@@ -5988,7 +7482,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 89.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Nasty Bar Morango 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Nasty Bar Morango 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.78,
+    "wholesalePrice": 73.46,
+    "featured": false
   },
   {
     "id": 500,
@@ -6000,7 +7497,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.49,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Morango 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Morango 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.39,
+    "wholesalePrice": 45.43,
+    "featured": false
   },
   {
     "id": 501,
@@ -6012,7 +7512,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 140.62,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Aroma King Abacaxi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Abacaxi 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 25.92,
+    "wholesalePrice": 141.78,
+    "featured": false
   },
   {
     "id": 502,
@@ -6024,7 +7527,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 32.16,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Tugboat Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Tugboat Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.11,
+    "wholesalePrice": 23.17,
+    "featured": false
   },
   {
     "id": 503,
@@ -6036,7 +7542,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 103.1,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Morango com Gelo 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.29,
+    "wholesalePrice": 96.91,
+    "featured": false
   },
   {
     "id": 504,
@@ -6048,7 +7557,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Morango com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.5,
+    "wholesalePrice": 35.6,
+    "featured": false
   },
   {
     "id": 505,
@@ -6060,7 +7572,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.84,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Maçã Verde 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Maçã Verde 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.48,
+    "wholesalePrice": 35.5,
+    "featured": false
   },
   {
     "id": 506,
@@ -6072,7 +7587,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 86.8,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Waka Tropical Mix 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Waka Tropical Mix 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.85,
+    "wholesalePrice": 73.82,
+    "featured": false
   },
   {
     "id": 507,
@@ -6084,7 +7602,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 114.55,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Energético 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Energético 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.13,
+    "wholesalePrice": 111.68,
+    "featured": false
   },
   {
     "id": 508,
@@ -6096,7 +7617,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 105.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Menta Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Menta Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 18.37,
+    "wholesalePrice": 102.52,
+    "featured": false
   },
   {
     "id": 509,
@@ -6108,7 +7632,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.57,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Banana 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Banana 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.16,
+    "wholesalePrice": 28.63,
+    "featured": false
   },
   {
     "id": 510,
@@ -6120,7 +7647,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 63.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Maracujá 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.77,
+    "wholesalePrice": 52.6,
+    "featured": false
   },
   {
     "id": 511,
@@ -6132,7 +7662,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 50.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Geek Bar Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Geek Bar Manga - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.9,
+    "wholesalePrice": 42.88,
+    "featured": false
   },
   {
     "id": 512,
@@ -6144,7 +7677,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 75.32,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Melancia com Gelo 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 11.48,
+    "wholesalePrice": 66.7,
+    "featured": false
   },
   {
     "id": 513,
@@ -6156,7 +7692,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 96.63,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Manga 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.54,
+    "wholesalePrice": 87.81,
+    "featured": false
   },
   {
     "id": 514,
@@ -6168,7 +7707,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 59.97,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Banana 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.66,
+    "wholesalePrice": 46.83,
+    "featured": false
   },
   {
     "id": 515,
@@ -6180,7 +7722,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.01,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Ignite Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Pêssego 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.82,
+    "wholesalePrice": 52.86,
+    "featured": false
   },
   {
     "id": 516,
@@ -6192,7 +7737,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 74.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Tropical Mix 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.39,
+    "wholesalePrice": 61.03,
+    "featured": false
   },
   {
     "id": 517,
@@ -6204,7 +7752,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Hyppe Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Hyppe Tropical Mix - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.21,
+    "wholesalePrice": 44.49,
+    "featured": false
   },
   {
     "id": 518,
@@ -6216,7 +7767,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 47.83,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Amora 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Amora 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.14,
+    "wholesalePrice": 44.13,
+    "featured": false
   },
   {
     "id": 519,
@@ -6228,7 +7782,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 134.53,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Frutas Vermelhas 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.66,
+    "wholesalePrice": 109.23,
+    "featured": false
   },
   {
     "id": 520,
@@ -6240,7 +7797,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.4,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.77,
+    "wholesalePrice": 37.0,
+    "featured": false
   },
   {
     "id": 521,
@@ -6252,7 +7812,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 48.43,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Café Gelado 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Café Gelado 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.05,
+    "wholesalePrice": 43.66,
+    "featured": false
   },
   {
     "id": 522,
@@ -6264,7 +7827,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 137.96,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Tugboat Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Café Gelado 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 26.97,
+    "wholesalePrice": 147.24,
+    "featured": false
   },
   {
     "id": 523,
@@ -6276,7 +7842,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 58.5,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Oxbar Maçã Verde 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Oxbar Maçã Verde 6000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.24,
+    "wholesalePrice": 49.85,
+    "featured": false
   },
   {
     "id": 524,
@@ -6288,7 +7857,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 32.1,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Refil Tugboat Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Tugboat Baunilha - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 3.06,
+    "wholesalePrice": 22.91,
+    "featured": false
   },
   {
     "id": 525,
@@ -6300,7 +7872,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 85.44,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 12.37,
+    "wholesalePrice": 71.32,
+    "featured": false
   },
   {
     "id": 526,
@@ -6312,7 +7887,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 104.18,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Ignite Melancia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Ignite Melancia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 19.44,
+    "wholesalePrice": 108.09,
+    "featured": false
   },
   {
     "id": 527,
@@ -6324,7 +7902,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 41.72,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Uwell Caliburn Chiclete 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Chiclete 800 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.69,
+    "wholesalePrice": 31.39,
+    "featured": false
   },
   {
     "id": 528,
@@ -6336,7 +7917,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 61.55,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Hyppe Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Chiclete 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.17,
+    "wholesalePrice": 54.68,
+    "featured": false
   },
   {
     "id": 529,
@@ -6348,7 +7932,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 102.81,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Lichia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Lichia 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.07,
+    "wholesalePrice": 85.36,
+    "featured": false
   },
   {
     "id": 530,
@@ -6360,7 +7947,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Uva 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.01,
+    "wholesalePrice": 48.65,
+    "featured": false
   },
   {
     "id": 531,
@@ -6372,7 +7962,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 35.12,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Lost Mary Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Lost Mary Baunilha 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.39,
+    "wholesalePrice": 29.83,
+    "featured": false
   },
   {
     "id": 532,
@@ -6384,7 +7977,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 38.89,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Uwell Caliburn Pêssego 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Uwell Caliburn Pêssego 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.09,
+    "wholesalePrice": 28.27,
+    "featured": false
   },
   {
     "id": 533,
@@ -6396,7 +7992,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 39.61,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Morango com Gelo 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.19,
+    "wholesalePrice": 33.99,
+    "featured": false
   },
   {
     "id": 534,
@@ -6408,7 +8007,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 128.68,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Baunilha 20000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 21.92,
+    "wholesalePrice": 120.98,
+    "featured": false
   },
   {
     "id": 535,
@@ -6420,7 +8022,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.34,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Hyppe Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Hyppe Banana 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.58,
+    "wholesalePrice": 30.82,
+    "featured": false
   },
   {
     "id": 536,
@@ -6432,7 +8037,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.01,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Morango com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Morango com Gelo 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.82,
+    "wholesalePrice": 63.26,
+    "featured": false
   },
   {
     "id": 537,
@@ -6444,7 +8052,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.59,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Lichia 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Lichia 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.3,
+    "wholesalePrice": 55.36,
+    "featured": false
   },
   {
     "id": 538,
@@ -6456,7 +8067,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 40.0,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Limão 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Limão 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.38,
+    "wholesalePrice": 34.98,
+    "featured": false
   },
   {
     "id": 539,
@@ -6468,7 +8082,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 106.92,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Menta Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Menta Gelada 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 17.6,
+    "wholesalePrice": 98.52,
+    "featured": false
   },
   {
     "id": 540,
@@ -6480,7 +8097,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 31.75,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Banana 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Banana 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 2.76,
+    "wholesalePrice": 21.35,
+    "featured": false
   },
   {
     "id": 541,
@@ -6492,7 +8112,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 81.98,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Tugboat Melancia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Tugboat Melancia 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 10.96,
+    "wholesalePrice": 63.99,
+    "featured": false
   },
   {
     "id": 542,
@@ -6504,7 +8127,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 98.37,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Abacaxi 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 15.99,
+    "wholesalePrice": 90.15,
+    "featured": false
   },
   {
     "id": 543,
@@ -6516,7 +8142,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 59.77,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Amora 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.48,
+    "wholesalePrice": 51.1,
+    "featured": false
   },
   {
     "id": 544,
@@ -6528,7 +8157,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.67,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Aroma King Framboesa 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Aroma King Framboesa 3500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.55,
+    "wholesalePrice": 35.86,
+    "featured": false
   },
   {
     "id": 545,
@@ -6540,7 +8172,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 56.48,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Randm Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Cereja 2000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 7.12,
+    "wholesalePrice": 44.02,
+    "featured": false
   },
   {
     "id": 546,
@@ -6552,7 +8187,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 45.28,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Energético 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Energético 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.55,
+    "wholesalePrice": 35.86,
+    "featured": false
   },
   {
     "id": 547,
@@ -6564,7 +8202,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 68.12,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Vozol Manga 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Vozol Manga 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 9.65,
+    "wholesalePrice": 57.18,
+    "featured": false
   },
   {
     "id": 548,
@@ -6576,7 +8217,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 113.27,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Elf Bar Café Gelado 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Elf Bar Café Gelado 15000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 20.83,
+    "wholesalePrice": 115.32,
+    "featured": false
   },
   {
     "id": 549,
@@ -6588,7 +8232,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 67.76,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "VaporEsse Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "VaporEsse Pêssego 8000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.63,
+    "wholesalePrice": 51.88,
+    "featured": false
   },
   {
     "id": 550,
@@ -6600,7 +8247,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.63,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Puff Bar Menta 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Puff Bar Menta 600 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.47,
+    "wholesalePrice": 30.24,
+    "featured": false
   },
   {
     "id": 551,
@@ -6612,7 +8262,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 53.19,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Frutas Vermelhas 5000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 8.09,
+    "wholesalePrice": 49.07,
+    "featured": false
   },
   {
     "id": 552,
@@ -6624,7 +8277,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 94.21,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Geek Bar Cereja 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Geek Bar Cereja 10000 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 13.5,
+    "wholesalePrice": 77.2,
+    "featured": false
   },
   {
     "id": 553,
@@ -6636,7 +8292,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 36.87,
     "image": "assets/img/placeholder.svg",
     "inStock": false,
-    "description": "Refil Randm Café Gelado - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Refil Randm Café Gelado - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 4.74,
+    "wholesalePrice": 31.65,
+    "featured": false
   },
   {
     "id": 554,
@@ -6648,7 +8307,10 @@ const PRODUCTS_EMBEDDED = [
     "price": 49.15,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Fume Frutas Vermelhas 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Fume Frutas Vermelhas 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 6.99,
+    "wholesalePrice": 43.35,
+    "featured": false
   },
   {
     "id": 555,
@@ -6660,6 +8322,9 @@ const PRODUCTS_EMBEDDED = [
     "price": 42.07,
     "image": "assets/img/placeholder.svg",
     "inStock": true,
-    "description": "Randm Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods."
+    "description": "Randm Melancia com Gelo 1500 Puffs - produto de exemplo (placeholder) gerado automaticamente para desenvolvimento do site VIPpods.",
+    "costUSD": 5.83,
+    "wholesalePrice": 37.32,
+    "featured": false
   }
 ];

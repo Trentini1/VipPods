@@ -17,4 +17,22 @@ const CONFIG = {
 
   // Senha simples do painel admin (NÃO é segurança real, só evita acesso casual).
   ADMIN_PASSWORD: "vippods2026",
+
+  // Quantidade mínima total (somando todos os produtos) pra fechar pedido no atacado.
+  WHOLESALE_MIN_QTY: 50,
+
+  // Valores padrão da calculadora de preço do admin (cotação do dólar + margem em R$).
+  // O admin pode ajustar e reaplicar a qualquer momento; isso aqui é só o valor inicial.
+  DEFAULT_PRICING: {
+    retailRate: 5.2,
+    retailMarkup: 15,
+    wholesaleRate: 5.2,
+    wholesaleMarkup: 7,
+  },
 };
+
+// Preço final = (custo em US$ × cotação do dólar) + margem em R$.
+function calcPrice(costUSD, rate, markup) {
+  const value = Number(costUSD) * Number(rate) + Number(markup);
+  return Math.round(value * 100) / 100;
+}

@@ -10,54 +10,122 @@
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
-      <a href="index.html" class="site-header__logo" data-store-name>VIPpods</a>
-
-      <div class="site-header__search">
-        <label for="search-input" class="visually-hidden">Buscar produtos</label>
-        <input
-          type="search"
-          id="search-input"
-          class="search-input"
-          placeholder="Buscar por nome, marca ou sabor..."
-          autocomplete="off"
-        >
-      </div>
-
-      <button type="button" id="cart-toggle" class="cart-toggle" aria-haspopup="true" aria-controls="cart-drawer" aria-label="Abrir carrinho de compras">
-        🛒 Carrinho
-        <span id="cart-count" class="cart-count" hidden>0</span>
-      </button>
+      <span class="site-header__logo" data-store-name>VIPpods</span>
     </div>
   </header>
 
   <div id="load-error-banner" class="error-banner" role="alert" hidden></div>
 
-  <main class="container">
-    <div class="filters-bar">
-      <label for="category-filter" class="visually-hidden">Filtrar por categoria</label>
-      <select id="category-filter" aria-label="Filtrar por categoria">
-        <option value="">Todas as categorias</option>
-      </select>
+  <main class="app-main">
+    <!-- ABA: Início -->
+    <section id="tab-home" class="app-tab is-active" data-tab-panel="home">
+      <div class="container">
+        <h1 class="section-title">Destaques</h1>
 
-      <label for="brand-filter" class="visually-hidden">Filtrar por marca</label>
-      <select id="brand-filter" aria-label="Filtrar por marca">
-        <option value="">Todas as marcas</option>
-      </select>
+        <div class="carousel">
+          <div id="carousel-track" class="carousel__track"></div>
+          <button type="button" id="carousel-prev" class="carousel__nav carousel__nav--prev" aria-label="Destaque anterior">‹</button>
+          <button type="button" id="carousel-next" class="carousel__nav carousel__nav--next" aria-label="Próximo destaque">›</button>
+        </div>
+        <div id="carousel-dots" class="carousel__dots"></div>
 
-      <label for="sort-select" class="visually-hidden">Ordenar por</label>
-      <select id="sort-select" aria-label="Ordenar por">
-        <option value="relevance">Relevância</option>
-        <option value="price-asc">Menor preço</option>
-        <option value="price-desc">Maior preço</option>
-        <option value="name-asc">Nome (A-Z)</option>
-      </select>
+        <div class="home-cta">
+          <p>Confira todo o nosso catálogo de pods e descartáveis.</p>
+          <button type="button" class="btn btn--primary" data-goto-tab="products">Ver catálogo completo</button>
+        </div>
+      </div>
+    </section>
 
-      <p id="results-count" class="results-count" aria-live="polite"></p>
-    </div>
+    <!-- ABA: Produtos -->
+    <section id="tab-products" class="app-tab" data-tab-panel="products">
+      <div class="container">
+        <div class="filters-bar">
+          <label for="search-input" class="visually-hidden">Buscar produtos</label>
+          <input type="search" id="search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
 
-    <section id="product-grid" class="product-grid" aria-label="Lista de produtos"></section>
+          <label for="category-filter" class="visually-hidden">Filtrar por categoria</label>
+          <select id="category-filter" aria-label="Filtrar por categoria">
+            <option value="">Todas as categorias</option>
+          </select>
 
-    <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+          <label for="brand-filter" class="visually-hidden">Filtrar por marca</label>
+          <select id="brand-filter" aria-label="Filtrar por marca">
+            <option value="">Todas as marcas</option>
+          </select>
+
+          <label for="sort-select" class="visually-hidden">Ordenar por</label>
+          <select id="sort-select" aria-label="Ordenar por">
+            <option value="relevance">Relevância</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="name-asc">Nome (A-Z)</option>
+          </select>
+
+          <p id="results-count" class="results-count" aria-live="polite"></p>
+        </div>
+
+        <section id="product-grid" class="product-grid" aria-label="Lista de produtos"></section>
+
+        <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+      </div>
+    </section>
+
+    <!-- ABA: Atacado / Revendedor -->
+    <section id="tab-wholesale" class="app-tab" data-tab-panel="wholesale">
+      <div class="container">
+        <h1 class="section-title">Atacado / Revendedor</h1>
+        <div class="wholesale-banner">
+          Pedido mínimo de <strong><span id="wholesale-min-qty">50</span> unidades</strong> no total (pode misturar produtos diferentes à vontade).
+        </div>
+
+        <div class="filters-bar">
+          <label for="wholesale-search-input" class="visually-hidden">Buscar produtos no atacado</label>
+          <input type="search" id="wholesale-search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
+
+          <label for="wholesale-category-filter" class="visually-hidden">Filtrar por categoria</label>
+          <select id="wholesale-category-filter" aria-label="Filtrar por categoria">
+            <option value="">Todas as categorias</option>
+          </select>
+
+          <p id="wholesale-results-count" class="results-count" aria-live="polite"></p>
+        </div>
+
+        <section id="wholesale-grid" class="product-grid" aria-label="Lista de produtos no atacado"></section>
+
+        <p id="wholesale-empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+
+        <div class="wholesale-cart-summary">
+          <div class="wholesale-cart-summary__row">
+            <span>Total de unidades</span>
+            <strong id="wholesale-total-qty">0</strong>
+          </div>
+          <div class="wholesale-cart-summary__row">
+            <span>Total do pedido</span>
+            <strong id="wholesale-total-value">R$ 0,00</strong>
+          </div>
+          <p id="wholesale-min-warning" class="wholesale-min-warning" hidden></p>
+          <button type="button" id="wholesale-checkout-btn" class="btn checkout-btn" disabled>Finalizar pedido atacado no WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA: Carrinho -->
+    <section id="tab-cart" class="app-tab" data-tab-panel="cart">
+      <div class="container">
+        <h1 class="section-title">Seu carrinho</h1>
+        <ul id="cart-body" class="cart-body"></ul>
+        <p id="cart-empty" class="cart-empty">Seu carrinho está vazio.</p>
+
+        <div id="cart-footer" class="cart-footer" hidden>
+          <div class="cart-totals">
+            <div><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
+            <div><span>Frete</span><span id="cart-shipping">R$ 0,00</span></div>
+            <div class="cart-total-row"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
+          </div>
+          <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar pedido no WhatsApp</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -65,32 +133,32 @@
     <p><a href="admin.html" class="admin-access">Acesso admin</a></p>
   </footer>
 
-  <!-- Carrinho -->
-  <div id="cart-overlay" class="cart-overlay"></div>
-  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true" aria-label="Carrinho de compras">
-    <div class="cart-drawer__header">
-      <h2>Seu carrinho</h2>
-      <button type="button" id="cart-close" class="cart-close" aria-label="Fechar carrinho">&times;</button>
-    </div>
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button type="button" class="bottom-nav__item is-active" data-tab-target="home">
+      <span class="bottom-nav__icon" aria-hidden="true">🏠</span>
+      <span class="bottom-nav__label">Início</span>
+    </button>
+    <button type="button" class="bottom-nav__item" data-tab-target="products">
+      <span class="bottom-nav__icon" aria-hidden="true">🛍️</span>
+      <span class="bottom-nav__label">Produtos</span>
+    </button>
+    <button type="button" class="bottom-nav__item" data-tab-target="wholesale">
+      <span class="bottom-nav__icon" aria-hidden="true">📦</span>
+      <span class="bottom-nav__label">Atacado</span>
+    </button>
+    <button type="button" class="bottom-nav__item" data-tab-target="cart">
+      <span class="bottom-nav__icon" aria-hidden="true">🛒</span>
+      <span class="bottom-nav__label">Carrinho</span>
+      <span id="cart-count" class="cart-count" hidden>0</span>
+    </button>
+  </nav>
 
-    <ul id="cart-body" class="cart-body"></ul>
-    <p id="cart-empty" class="cart-empty">Seu carrinho está vazio.</p>
-
-    <div id="cart-footer" class="cart-footer" hidden>
-      <div class="cart-totals">
-        <div><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
-        <div><span>Frete</span><span id="cart-shipping">R$ 0,00</span></div>
-        <div class="cart-total-row"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
-      </div>
-      <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar pedido no WhatsApp</button>
-    </div>
-  </aside>
-
-  <!-- A ordem importa: config -> dados -> produtos -> carrinho -> lógica principal -->
+  <!-- A ordem importa: config -> dados -> produtos -> carrinho -> atacado -> lógica principal -->
   <script src="js/config.js"></script>
   <script src="js/products-data.js"></script>
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/wholesale.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

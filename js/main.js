@@ -1,4 +1,5 @@
-// Busca, filtros, ordenação e renderização do grid de produtos.
+// Navegação em abas, carrossel de destaques, busca/filtros/ordenação e
+// renderização do grid de produtos (aba "Produtos").
 (function () {
   const grid = document.getElementById("product-grid");
   const searchInput = document.getElementById("search-input");
@@ -156,6 +157,130 @@
 
   const debouncedRender = debounce(render, 200);
 
+  // ---------- Carrossel de destaques (aba Início) ----------
+  function initCarousel(products) {
+    const track = document.getElementById("carousel-track");
+    const dotsContainer = document.getElementById("carousel-dots");
+    const prevBtn = document.getElementById("carousel-prev");
+    const nextBtn = document.getElementById("carousel-next");
+
+    let featured = products.filter((p) => p.featured).slice(0, 3);
+    if (featured.length === 0) {
+      featured = products.slice(0, 3);
+    }
+    if (featured.length === 0) {
+      track.closest(".carousel").hidden = true;
+      return;
+    }
+
+    let currentIndex = 0;
+    let autoplayTimer = null;
+
+    featured.forEach((product) => {
+      const slide = document.createElement("div");
+      slide.className = "carousel__slide";
+      const subtitle = [product.brand, product.flavor].filter(Boolean).join(" · ");
+      slide.innerHTML = `
+        <img class="carousel__slide-img" src="${product.image}" alt="${product.name}" loading="lazy">
+        <div>
+          <p class="carousel__slide-category">${product.category}</p>
+          <h2 class="carousel__slide-name">${product.name}</h2>
+          <p class="carousel__slide-subtitle">${subtitle}</p>
+          <p class="carousel__slide-price">${formatCurrency(product.price)}</p>
+          <button type="button" class="btn btn--primary carousel__slide-add">Adicionar ao carrinho</button>
+        </div>
+      `;
+      slide.querySelector(".carousel__slide-add").addEventListener("click", () => {
+        Cart.addItem(product.id, 1);
+      });
+      track.appendChild(slide);
+    });
+
+    featured.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "carousel__dot" + (i === 0 ? " is-active" : "");
+      dot.setAttribute("aria-label", `Ir para destaque ${i + 1}`);
+      dot.addEventListener("click", () => {
+        goTo(i);
+        resetAutoplay();
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function updateDots() {
+      Array.from(dotsContainer.children).forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === currentIndex);
+      });
+    }
+
+    function goTo(index) {
+      currentIndex = (index + featured.length) % featured.length;
+      track.scrollTo({ left: track.clientWidth * currentIndex, behavior: "smooth" });
+      updateDots();
+    }
+
+    function startAutoplay() {
+      if (featured.length <= 1) return;
+      autoplayTimer = setInterval(() => goTo(currentIndex + 1), 5000);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      startAutoplay();
+    }
+
+    if (featured.length <= 1) {
+      prevBtn.hidden = true;
+      nextBtn.hidden = true;
+    } else {
+      prevBtn.addEventListener("click", () => {
+        goTo(currentIndex - 1);
+        resetAutoplay();
+      });
+      nextBtn.addEventListener("click", () => {
+        goTo(currentIndex + 1);
+        resetAutoplay();
+      });
+    }
+
+    let scrollDebounce;
+    track.addEventListener("scroll", () => {
+      clearTimeout(scrollDebounce);
+      scrollDebounce = setTimeout(() => {
+        const index = Math.round(track.scrollLeft / track.clientWidth);
+        if (index !== currentIndex) {
+          currentIndex = index;
+          updateDots();
+        }
+      }, 100);
+    });
+
+    track.addEventListener("pointerdown", () => clearInterval(autoplayTimer));
+
+    startAutoplay();
+  }
+
+  // ---------- Navegação em abas ----------
+  function activateTab(tabName) {
+    document.querySelectorAll(".app-tab").forEach((el) => {
+      el.classList.toggle("is-active", el.dataset.tabPanel === tabName);
+    });
+    document.querySelectorAll(".bottom-nav__item").forEach((el) => {
+      el.classList.toggle("is-active", el.dataset.tabTarget === tabName);
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function initTabs() {
+    document.querySelectorAll("[data-tab-target]").forEach((btn) => {
+      btn.addEventListener("click", () => activateTab(btn.dataset.tabTarget));
+    });
+    document.querySelectorAll("[data-goto-tab]").forEach((btn) => {
+      btn.addEventListener("click", () => activateTab(btn.dataset.gotoTab));
+    });
+  }
+
   async function bootstrap() {
     await Products.load();
     availableProducts = Products.getAvailable();
@@ -174,6 +299,11 @@
     populateFilterOptions(availableProducts);
     initGrid(availableProducts);
     render();
+    initCarousel(availableProducts);
+
+    if (typeof window.initWholesaleTab === "function") {
+      window.initWholesaleTab();
+    }
 
     searchInput.addEventListener("input", debouncedRender);
     categoryFilter.addEventListener("change", render);
@@ -184,12 +314,9 @@
   document.addEventListener("DOMContentLoaded", () => {
     Cart.load();
     Cart.renderCart();
+    initTabs();
     bootstrap();
 
-    const cartToggle = document.getElementById("cart-toggle");
-    const cartDrawer = document.getElementById("cart-drawer");
-    const cartClose = document.getElementById("cart-close");
-    const cartOverlay = document.getElementById("cart-overlay");
     const checkoutBtn = document.getElementById("checkout-btn");
     const storeNameEls = document.querySelectorAll("[data-store-name]");
 
@@ -198,20 +325,6 @@
     });
     document.title = `${CONFIG.STORE_NAME} - Catálogo`;
 
-    function openCart() {
-      cartDrawer.classList.add("is-open");
-      cartOverlay.classList.add("is-open");
-      cartDrawer.setAttribute("aria-hidden", "false");
-    }
-    function closeCart() {
-      cartDrawer.classList.remove("is-open");
-      cartOverlay.classList.remove("is-open");
-      cartDrawer.setAttribute("aria-hidden", "true");
-    }
-
-    cartToggle.addEventListener("click", openCart);
-    cartClose.addEventListener("click", closeCart);
-    cartOverlay.addEventListener("click", closeCart);
     checkoutBtn.addEventListener("click", () => Cart.checkout());
   });
 })();
