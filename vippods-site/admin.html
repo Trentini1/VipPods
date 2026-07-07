@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIPpods - Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo">VIPpods <span style="color: var(--text-muted); font-weight: 400;">/ admin</span></a>
+    </div>
+  </header>
+
+  <!-- Tela de login simples (não é segurança real, apenas evita acesso casual) -->
+  <section id="admin-login" class="admin-login">
+    <h1 style="font-size: 1.1rem; margin-top: 0;">Acesso restrito</h1>
+    <form id="admin-login-form">
+      <label for="admin-password">Senha</label>
+      <input type="password" id="admin-password" autocomplete="current-password" required>
+      <p id="admin-login-error" style="color: var(--danger); font-size: 0.85rem; display: none;">Senha incorreta.</p>
+      <button type="submit" class="btn btn--primary" style="width: 100%;">Entrar</button>
+    </form>
+  </section>
+
+  <!-- Painel principal -->
+  <main class="container" id="admin-panel" hidden>
+    <div id="admin-load-error" class="error-banner" role="alert" hidden></div>
+
+    <div class="admin-toolbar">
+      <input type="search" id="admin-search" placeholder="Buscar produto por nome ou marca...">
+      <button type="button" id="admin-logout" class="btn" style="background: var(--surface-elevated); color: var(--text-primary);">Sair</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Preço (R$)</th>
+            <th scope="col">Status</th>
+            <th scope="col">Fora de estoque</th>
+          </tr>
+        </thead>
+        <tbody id="admin-table-body"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <div class="admin-save-bar" id="admin-save-bar" hidden>
+    <span class="status" id="admin-status">Nenhuma alteração pendente.</span>
+    <button type="button" id="admin-save-file" class="btn btn--primary">Salvar em data/products.json</button>
+    <button type="button" id="admin-download" class="btn" style="background: var(--surface-elevated); color: var(--text-primary);">Baixar products.json</button>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

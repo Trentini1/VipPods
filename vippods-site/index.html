@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIPpods - Catálogo</title>
+  <meta name="description" content="Catálogo de pods e descartáveis VIPpods.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo" data-store-name>VIPpods</a>
+
+      <div class="site-header__search">
+        <label for="search-input" class="visually-hidden">Buscar produtos</label>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Buscar por nome, marca ou sabor..."
+          autocomplete="off"
+        >
+      </div>
+
+      <button type="button" id="cart-toggle" class="cart-toggle" aria-haspopup="true" aria-controls="cart-drawer" aria-label="Abrir carrinho de compras">
+        🛒 Carrinho
+        <span id="cart-count" class="cart-count" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <div id="load-error-banner" class="error-banner" role="alert" hidden></div>
+
+  <main class="container">
+    <div class="filters-bar">
+      <label for="category-filter" class="visually-hidden">Filtrar por categoria</label>
+      <select id="category-filter" aria-label="Filtrar por categoria">
+        <option value="">Todas as categorias</option>
+      </select>
+
+      <label for="brand-filter" class="visually-hidden">Filtrar por marca</label>
+      <select id="brand-filter" aria-label="Filtrar por marca">
+        <option value="">Todas as marcas</option>
+      </select>
+
+      <label for="sort-select" class="visually-hidden">Ordenar por</label>
+      <select id="sort-select" aria-label="Ordenar por">
+        <option value="relevance">Relevância</option>
+        <option value="price-asc">Menor preço</option>
+        <option value="price-desc">Maior preço</option>
+        <option value="name-asc">Nome (A-Z)</option>
+      </select>
+
+      <p id="results-count" class="results-count" aria-live="polite"></p>
+    </div>
+
+    <section id="product-grid" class="product-grid" aria-label="Lista de produtos"></section>
+
+    <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p><span data-store-name>VIPpods</span> &mdash; todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Carrinho -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true" aria-label="Carrinho de compras">
+    <div class="cart-drawer__header">
+      <h2>Seu carrinho</h2>
+      <button type="button" id="cart-close" class="cart-close" aria-label="Fechar carrinho">&times;</button>
+    </div>
+
+    <ul id="cart-body" class="cart-body"></ul>
+    <p id="cart-empty" class="cart-empty">Seu carrinho está vazio.</p>
+
+    <div id="cart-footer" class="cart-footer" hidden>
+      <div class="cart-totals">
+        <div><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
+        <div><span>Frete</span><span id="cart-shipping">R$ 0,00</span></div>
+        <div class="cart-total-row"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
+      </div>
+      <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar pedido no WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- A ordem importa: config -> dados -> produtos -> carrinho -> lógica principal -->
+  <script src="js/config.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
