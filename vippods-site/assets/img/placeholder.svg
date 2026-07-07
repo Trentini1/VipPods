@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Imagem do produto indisponível">
-  <rect width="200" height="200" rx="16" fill="#1e2130"/>
-  <rect x="82" y="40" width="36" height="120" rx="14" fill="#3a3f58"/>
-  <rect x="90" y="30" width="20" height="20" rx="6" fill="#5865f2"/>
-  <circle cx="100" cy="100" r="14" fill="#5865f2" opacity="0.5"/>
-  <text x="100" y="185" font-family="Arial, sans-serif" font-size="12" fill="#8a8fa3" text-anchor="middle">VIPpods</text>
-</svg>
