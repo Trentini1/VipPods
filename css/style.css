@@ -627,3 +627,25 @@ table.admin-table {
   color: var(--text-secondary);
   font-size: 0.85rem;
 }
+
+.admin-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: var(--surface-elevated);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.photo-input {
+  font-size: 0.75rem;
+  max-width: 140px;
+  color: var(--text-secondary);
+}
+
+.admin-access {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}

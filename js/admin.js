@@ -34,7 +34,40 @@
   }
 
   function persistOverrides() {
-    localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+    try {
+      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+    } catch (err) {
+      console.error("[VIPpods admin] Não foi possível salvar no localStorage (provavelmente cheio):", err);
+      alert(
+        "Não foi possível salvar essa alteração no navegador (armazenamento local cheio, geralmente por causa de fotos). " +
+          'Clique em "Baixar products.json" agora pra não perder o que já foi editado.'
+      );
+    }
+  }
+
+  // Redimensiona/comprime a imagem no navegador antes de embutir como base64,
+  // pra não estourar o limite de localStorage nem deixar o products.json gigante.
+  function resizeImageToDataUrl(file, maxSize = 400, quality = 0.82) {
+    return new Promise((resolve, reject) => {
+      const objectUrl = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => {
+        const scale = Math.min(1, maxSize / img.width, maxSize / img.height);
+        const width = Math.round(img.width * scale);
+        const height = Math.round(img.height * scale);
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(img, 0, 0, width, height);
+        URL.revokeObjectURL(objectUrl);
+        resolve(canvas.toDataURL("image/jpeg", quality));
+      };
+      img.onerror = () => {
+        URL.revokeObjectURL(objectUrl);
+        reject(new Error("Não foi possível ler essa imagem."));
+      };
+      img.src = objectUrl;
+    });
   }
 
   function setDirty(isDirty) {
@@ -73,6 +106,10 @@
 
     tr.innerHTML = `
       <td>${product.id}</td>
+      <td>
+        <img src="${product.image}" alt="" class="admin-thumb">
+        <input type="file" accept="image/*" class="photo-input" aria-label="Trocar foto de ${product.name}">
+      </td>
       <td>${product.name}</td>
       <td>${product.brand}</td>
       <td>${product.category}</td>
@@ -84,6 +121,30 @@
     const priceInput = tr.querySelector(".price-input");
     const stockCheckbox = tr.querySelector(".stock-checkbox");
     const badge = tr.querySelector(".badge");
+    const photoInput = tr.querySelector(".photo-input");
+    const thumb = tr.querySelector(".admin-thumb");
+
+    photoInput.addEventListener("change", async () => {
+      const file = photoInput.files[0];
+      if (!file) return;
+      if (!file.type.startsWith("image/")) {
+        alert("Selecione um arquivo de imagem válido.");
+        photoInput.value = "";
+        return;
+      }
+      try {
+        const dataUrl = await resizeImageToDataUrl(file);
+        overrides[product.id] = { ...(overrides[product.id] || {}), image: dataUrl };
+        persistOverrides();
+        setDirty(true);
+        thumb.src = dataUrl;
+      } catch (err) {
+        console.error("[VIPpods admin] Erro ao processar imagem:", err);
+        alert("Não foi possível processar essa imagem.");
+      } finally {
+        photoInput.value = "";
+      }
+    });
 
     priceInput.addEventListener("change", () => {
       const value = Number(priceInput.value);

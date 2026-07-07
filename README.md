@@ -4,9 +4,12 @@ Site de catálogo e vendas VIPpods.
 
 ## Estrutura de pastas
 
-vippods-site/
+Tudo direto na raiz do repositório (sem subpasta), pra funcionar de cara em
+qualquer hospedagem estática que sirva a partir da raiz (GitHub Pages, Vercel,
+Netlify):
+
 ├── index.html            -> página principal (catálogo público)
-├── admin.html            -> painel admin (preço / estoque), protegido por senha simples
+├── admin.html            -> painel admin (preço / estoque / fotos), protegido por senha simples
 ├── css/
 │   └── style.css         -> estilos do site (dark theme, responsivo 320-768px+)
 ├── js/
@@ -43,9 +46,17 @@ Funciona das duas formas:
 
 ## Painel admin
 
-Acesse `admin.html`, senha padrão definida em `js/config.js` (`ADMIN_PASSWORD`).
-Permite editar preço e marcar produtos como fora de estoque (somem do catálogo
-público). Não escreve no disco automaticamente — no Chrome/Edge, "Salvar em
+Acesse `admin.html` (tem um link "Acesso admin" no rodapé do catálogo), senha
+padrão definida em `js/config.js` (`ADMIN_PASSWORD`). Permite:
+
+- Editar preço e marcar produtos como fora de estoque (somem do catálogo público).
+- Trocar a foto do produto: a imagem enviada é redimensionada/comprimida no
+  navegador e embutida como base64 direto no campo `image` do produto (não
+  precisa de servidor/backend). Isso deixa o `products.json` mais pesado quanto
+  mais fotos forem trocadas — se o navegador acusar que o localStorage encheu,
+  clique em "Baixar products.json" imediatamente pra não perder as edições.
+
+Nada disso escreve no disco automaticamente — no Chrome/Edge, "Salvar em
 data/products.json" abre um seletor de arquivo (aponte para o `data/products.json`
 do projeto); em outros navegadores, use "Baixar products.json" e substitua o
 arquivo manualmente. Isso não é autenticação real, apenas uma barreira simples.
