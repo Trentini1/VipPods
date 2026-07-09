@@ -15,8 +15,11 @@ const CONFIG = {
   CURRENCY_LOCALE: "pt-BR",
   CURRENCY: "BRL",
 
-  // Senha simples do painel admin (NÃO é segurança real, só evita acesso casual).
-  ADMIN_PASSWORD: "vippods2026",
+  // E-mail da conta de administrador cadastrada no Firebase Authentication.
+  // A senha NÃO fica mais aqui: crie esse usuário em
+  // Firebase Console > Authentication > Sign-in method > Email/senha > Add user,
+  // com o e-mail abaixo e a senha que você quiser usar pra entrar no /admin.html.
+  ADMIN_EMAIL: "admin@vippods.app",
 
   // Quantidade mínima total (somando todos os produtos) pra fechar pedido no atacado.
   WHOLESALE_MIN_QTY: 50,

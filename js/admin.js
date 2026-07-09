@@ -1,10 +1,10 @@
-// Painel admin simples. Senha fica em texto puro no config.js e a sessão
-// autenticada é lembrada via localStorage — isso NÃO é segurança real,
-// é apenas uma barreira contra acesso casual, como pedido.
+// Painel admin. Login usa Firebase Authentication (e-mail fixo em
+// CONFIG.ADMIN_EMAIL + senha cadastrada no Firebase Console) e as edições
+// (preço, custo, estoque, foto) são gravadas no Firebase Realtime Database,
+// então valem na hora pra todo mundo que visita o site — não só pra quem editou.
 (function () {
-  const AUTH_KEY = "vippods_admin_auth";
-  const OVERRIDES_KEY = "vippods_admin_overrides";
-  const PRICING_KEY = "vippods_pricing_settings";
+  const OVERRIDES_PATH = "overrides";
+  const PRICING_PATH = "pricing";
 
   const loginSection = document.getElementById("admin-login");
   const loginForm = document.getElementById("admin-login-form");
@@ -38,32 +38,30 @@
   let currentTab = "in"; // 'in' | 'out'
   const rowRefs = new Map(); // id -> { row, badge, checkbox, priceInput, costInput, wholesaleInput, thumb }
 
-  function loadOverrides() {
+  async function loadOverrides() {
     try {
-      const raw = localStorage.getItem(OVERRIDES_KEY);
-      overrides = raw ? JSON.parse(raw) : {};
+      const snap = await firebaseDb.ref(OVERRIDES_PATH).once("value");
+      overrides = snap.val() || {};
     } catch (err) {
-      console.warn("[VIPpods admin] Overrides salvos estavam corrompidos, ignorando.", err);
+      console.warn("[VIPpods admin] Não foi possível carregar overrides do Firebase.", err);
       overrides = {};
     }
   }
 
   function persistOverrides() {
-    try {
-      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
-    } catch (err) {
-      console.error("[VIPpods admin] Não foi possível salvar no localStorage (provavelmente cheio):", err);
+    firebaseDb.ref(OVERRIDES_PATH).set(overrides).catch((err) => {
+      console.error("[VIPpods admin] Não foi possível salvar no Firebase:", err);
       alert(
-        "Não foi possível salvar essa alteração no navegador (armazenamento local cheio, geralmente por causa de fotos). " +
+        "Não foi possível sincronizar essa alteração com o Firebase (verifique sua conexão e se você continua logado). " +
           'Clique em "Baixar products.json" agora pra não perder o que já foi editado.'
       );
-    }
+    });
   }
 
-  function loadPricing() {
+  async function loadPricing() {
     try {
-      const raw = localStorage.getItem(PRICING_KEY);
-      pricing = raw ? JSON.parse(raw) : { ...CONFIG.DEFAULT_PRICING };
+      const snap = await firebaseDb.ref(PRICING_PATH).once("value");
+      pricing = snap.val() || { ...CONFIG.DEFAULT_PRICING };
     } catch (err) {
       pricing = { ...CONFIG.DEFAULT_PRICING };
     }
@@ -80,7 +78,9 @@
       wholesaleRate: Number(wholesaleRateInput.value) || 0,
       wholesaleMarkup: Number(wholesaleMarkupInput.value) || 0,
     };
-    localStorage.setItem(PRICING_KEY, JSON.stringify(pricing));
+    firebaseDb.ref(PRICING_PATH).set(pricing).catch((err) => {
+      console.error("[VIPpods admin] Não foi possível salvar a precificação no Firebase:", err);
+    });
   }
 
   // Redimensiona/comprime a imagem no navegador antes de embutir como base64,
@@ -112,7 +112,7 @@
     dirty = isDirty;
     saveBar.hidden = false;
     statusEl.textContent = dirty
-      ? "Há alterações não salvas no arquivo do projeto."
+      ? "Salvo no Firebase — já está valendo pra quem visitar o site agora."
       : "Nenhuma alteração pendente.";
   }
 
@@ -330,10 +330,9 @@
       const writable = await handle.createWritable();
       await writable.write(JSON.stringify(getMergedProducts(), null, 2));
       await writable.close();
-      statusEl.textContent = `Salvo em "${handle.name}". Confirme que sobrescreveu data/products.json.`;
-      overrides = {};
-      persistOverrides();
-      dirty = false;
+      statusEl.textContent =
+        `Exportado como "${handle.name}" (snapshot do catálogo atual, incluindo as alterações do Firebase). ` +
+        "As alterações continuam ativas no site normalmente através do Firebase.";
     } catch (err) {
       if (err.name !== "AbortError") {
         console.error("[VIPpods admin] Erro ao salvar arquivo:", err);
@@ -354,15 +353,14 @@
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
-    statusEl.textContent = "Arquivo baixado. Substitua data/products.json no projeto por ele.";
-    overrides = {};
-    persistOverrides();
-    dirty = false;
+    statusEl.textContent =
+      "Arquivo baixado (snapshot do catálogo atual, incluindo as alterações do Firebase). " +
+      "As alterações continuam ativas no site normalmente através do Firebase.";
   }
 
   async function initPanel() {
-    loadOverrides();
-    loadPricing();
+    await loadOverrides();
+    await loadPricing();
     await Products.load();
     let products = Products.getAll();
 
@@ -417,33 +415,45 @@
     });
   }
 
+  let panelStarted = false;
+
   function showPanel() {
     loginSection.hidden = true;
     panel.hidden = false;
-    initPanel();
-  }
-
-  function checkAuth() {
-    if (localStorage.getItem(AUTH_KEY) === "1") {
-      showPanel();
+    if (!panelStarted) {
+      panelStarted = true;
+      initPanel();
     }
   }
 
-  loginForm.addEventListener("submit", (e) => {
+  function showLogin() {
+    panelStarted = false;
+    loginSection.hidden = false;
+    panel.hidden = true;
+  }
+
+  loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    if (passwordInput.value === CONFIG.ADMIN_PASSWORD) {
-      localStorage.setItem(AUTH_KEY, "1");
-      loginError.style.display = "none";
-      showPanel();
-    } else {
+    loginError.style.display = "none";
+    try {
+      await firebaseAuth.signInWithEmailAndPassword(CONFIG.ADMIN_EMAIL, passwordInput.value);
+      passwordInput.value = "";
+    } catch (err) {
+      console.warn("[VIPpods admin] Falha no login:", err);
+      loginError.textContent = "Senha incorreta.";
       loginError.style.display = "block";
     }
   });
 
   logoutBtn.addEventListener("click", () => {
-    localStorage.removeItem(AUTH_KEY);
-    window.location.reload();
+    firebaseAuth.signOut();
   });
 
-  document.addEventListener("DOMContentLoaded", checkAuth);
+  firebaseAuth.onAuthStateChanged((user) => {
+    if (user) {
+      showPanel();
+    } else {
+      showLogin();
+    }
+  });
 })();

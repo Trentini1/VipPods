@@ -29,7 +29,29 @@ const Products = {
       this.items = typeof PRODUCTS_EMBEDDED !== "undefined" ? PRODUCTS_EMBEDDED : [];
       this.source = "embedded";
     }
+
+    await this.applyRemoteOverrides();
     return this.items;
+  },
+
+  // Aplica por cima do catálogo base as alterações feitas no painel admin
+  // (preço, custo, estoque, foto), que ficam salvas no Firebase e valem
+  // pra todo mundo que visita o site, não só pra quem editou.
+  async applyRemoteOverrides() {
+    if (typeof firebaseDb === "undefined") return;
+    try {
+      const snap = await firebaseDb.ref("overrides").once("value");
+      const overrides = snap.val() || {};
+      this.items = this.items.map((p) => {
+        const ov = overrides[p.id];
+        return ov ? { ...p, ...ov } : p;
+      });
+    } catch (err) {
+      console.warn(
+        "[VIPpods] Não foi possível carregar as atualizações do Firebase, exibindo catálogo local.",
+        err
+      );
+    }
   },
 
   getAll() {
