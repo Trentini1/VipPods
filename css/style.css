@@ -789,6 +789,80 @@ input, select {
   padding: var(--s-2);
 }
 
+/* ==========================================================================
+   Perfumes — catálogo pequeno cadastrado à mão (sem filtro/busca)
+   ========================================================================== */
+
+.perfume-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding-bottom: var(--s-4);
+}
+
+.perfume-card {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: var(--s-3);
+  background: var(--branco);
+  border: 1px solid var(--aluminio);
+  border-radius: var(--r-card);
+  padding: var(--s-3);
+  box-shadow: var(--e-1);
+}
+
+.perfume-card__img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: var(--aluminio-2);
+  border-radius: var(--r-chip);
+  padding: var(--s-2);
+}
+
+.perfume-card__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.perfume-card__name {
+  font: 600 15px/20px var(--font-ui);
+  letter-spacing: -0.01em;
+  color: var(--grafite-900);
+  margin: 0 0 var(--s-1);
+}
+
+.perfume-card__desc {
+  font: 400 13px/18px var(--font-ui);
+  color: var(--grafite-500);
+  margin: 0 0 var(--s-2);
+}
+
+.perfume-card__footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+}
+
+.perfume-card__price {
+  font: 600 16px/20px var(--font-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--grafite-900);
+}
+
+.perfume-card__buy {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: var(--s-1) var(--s-3);
+  min-height: 36px;
+  font-size: 13px;
+}
+
 /* ---------- Destaques (Início) ---------- */
 
 .home-cta {

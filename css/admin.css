@@ -955,6 +955,123 @@ table.admin-table {
   color: var(--danger);
 }
 
+/* ---------- Perfumes ---------- */
+
+.perfume-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.perfume-form__fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.perfume-form__fields .pricing-panel__field {
+  flex: 1 1 160px;
+}
+
+.perfume-form textarea,
+.perfume-admin-row__desc {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: inherit;
+  resize: vertical;
+}
+
+.perfume-admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.perfume-admin-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 12px;
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.perfume-admin-row__thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: var(--surface-elevated);
+  grid-row: 1 / 3;
+}
+
+.perfume-admin-row__photo {
+  grid-column: 1;
+  font-size: 0.72rem;
+  max-width: 96px;
+  color: var(--text-secondary);
+}
+
+.perfume-admin-row__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perfume-admin-row__name {
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.perfume-admin-row__price {
+  width: 120px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.perfume-admin-row__active {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.perfume-admin-row__remove {
+  align-self: start;
+}
+
+@media (max-width: 560px) {
+  .perfume-admin-row {
+    grid-template-columns: 64px 1fr;
+  }
+  .perfume-admin-row__remove {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+}
+
+.admin-save-bar[hidden] {
+  display: none;
+}
+
 .admin-save-bar {
   position: sticky;
   bottom: 0;

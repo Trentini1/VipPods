@@ -11,6 +11,11 @@
     "pricing": {
       ".read": true,
       ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
+    },
+
+    "perfumes": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
     }
   }
 }

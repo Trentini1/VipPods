@@ -100,6 +100,36 @@
         <tbody id="admin-table-body"></tbody>
       </table>
     </div>
+
+    <h1 class="section-title">Perfumes</h1>
+    <p style="color: var(--text-secondary); font-size: 0.85rem; margin: -8px 0 14px;">
+      Catálogo à parte, cadastrado à mão (sem custo/atacado/estoque em lote como os pods) — aparece na aba "Perfumes" do site.
+    </p>
+
+    <form id="perfume-form" class="perfume-form">
+      <div class="perfume-form__fields">
+        <div class="pricing-panel__field">
+          <label for="perfume-name">Nome</label>
+          <input type="text" id="perfume-name" required>
+        </div>
+        <div class="pricing-panel__field">
+          <label for="perfume-price">Preço (R$)</label>
+          <input type="number" id="perfume-price" min="0" step="0.01" required>
+        </div>
+        <div class="pricing-panel__field" style="flex-basis: 100%;">
+          <label for="perfume-description">Descrição</label>
+          <textarea id="perfume-description" rows="2"></textarea>
+        </div>
+        <div class="pricing-panel__field">
+          <label for="perfume-photo">Foto (opcional)</label>
+          <input type="file" id="perfume-photo" accept="image/*">
+        </div>
+      </div>
+      <button type="submit" class="btn btn--primary">Adicionar perfume</button>
+    </form>
+
+    <div id="perfume-admin-list" class="perfume-admin-list"></div>
+    <p id="perfume-admin-empty" class="empty-state" style="padding: 24px 16px;">Nenhum perfume cadastrado ainda.</p>
   </main>
 
   <div class="admin-save-bar" id="admin-save-bar" hidden>
@@ -116,5 +146,6 @@
   <script src="js/products-data.js"></script>
   <script src="js/products.js"></script>
   <script src="js/admin.js"></script>
+  <script src="js/admin-perfumes.js"></script>
 </body>
 </html>
