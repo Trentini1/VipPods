@@ -3,6 +3,7 @@
 // lida direto do Firebase (mesmo caminho "perfumes" que o admin escreve).
 const Perfumes = {
   items: [],
+  DEFAULT_LABEL: "Perfumes",
 
   async load() {
     try {
@@ -17,6 +18,20 @@ const Perfumes = {
     }
     return this.items;
   },
+
+  // Nome da aba/seção é editável no admin (o dono da loja não pretende vender
+  // só perfume pra sempre) — lido de settings/perfumesLabel, com "Perfumes"
+  // como valor padrão enquanto ele não muda nada.
+  async loadLabel() {
+    try {
+      const snap = await firebaseDb.ref("settings/perfumesLabel").once("value");
+      const label = snap.val();
+      return typeof label === "string" && label.trim() ? label.trim() : this.DEFAULT_LABEL;
+    } catch (err) {
+      console.warn("[VIPpods] Não foi possível carregar o nome da aba.", err);
+      return this.DEFAULT_LABEL;
+    }
+  },
 };
 
 (function () {
@@ -25,8 +40,15 @@ const Perfumes = {
   if (!grid) return;
 
   function buildWhatsAppUrl(perfume) {
-    const message = `Olá! Quero comprar o perfume "${perfume.name}" - ${UI.formatCurrency(Number(perfume.price) || 0)}`;
+    const message = `Olá! Quero comprar "${perfume.name}" - ${UI.formatCurrency(Number(perfume.price) || 0)}`;
     return `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+
+  function applyLabel(label) {
+    const navLabelEl = document.getElementById("perfumes-nav-label");
+    const titleEl = document.getElementById("perfumes-title");
+    if (navLabelEl) navLabelEl.textContent = label;
+    if (titleEl) titleEl.textContent = label;
   }
 
   function renderCard(perfume) {
@@ -48,7 +70,8 @@ const Perfumes = {
   }
 
   async function init() {
-    const perfumes = await Perfumes.load();
+    const [perfumes, label] = await Promise.all([Perfumes.load(), Perfumes.loadLabel()]);
+    applyLabel(label);
     grid.innerHTML = "";
     if (perfumes.length === 0) {
       if (emptyState) emptyState.hidden = false;

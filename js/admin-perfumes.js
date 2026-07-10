@@ -5,6 +5,8 @@
 // sem precisar apagar.
 (function () {
   const PATH = "perfumes";
+  const LABEL_PATH = "settings/perfumesLabel";
+  const DEFAULT_LABEL = "Perfumes";
 
   const form = document.getElementById("perfume-form");
   const nameInput = document.getElementById("perfume-name");
@@ -13,10 +15,40 @@
   const photoInput = document.getElementById("perfume-photo");
   const listEl = document.getElementById("perfume-admin-list");
   const emptyEl = document.getElementById("perfume-admin-empty");
+  const labelForm = document.getElementById("perfume-label-form");
+  const labelInput = document.getElementById("perfume-label-input");
 
   if (!form || !listEl) return;
 
   let items = {};
+
+  async function loadLabel() {
+    if (!labelInput) return;
+    try {
+      const snap = await firebaseDb.ref(LABEL_PATH).once("value");
+      const value = snap.val();
+      labelInput.value = typeof value === "string" && value.trim() ? value.trim() : DEFAULT_LABEL;
+    } catch (err) {
+      console.warn("[VIPpods admin] Não foi possível carregar o nome da aba.", err);
+      labelInput.value = DEFAULT_LABEL;
+    }
+  }
+
+  if (labelForm) {
+    labelForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const value = labelInput.value.trim() || DEFAULT_LABEL;
+      labelInput.value = value;
+      firebaseDb
+        .ref(LABEL_PATH)
+        .set(value)
+        .then(() => alert(`Nome salvo! A aba agora aparece como "${value}" no site.`))
+        .catch((err) => {
+          console.error("[VIPpods admin] Não foi possível salvar o nome da aba:", err);
+          alert("Não foi possível salvar. Verifique sua conexão.");
+        });
+    });
+  }
 
   function resizeImageToDataUrl(file, maxSize = 400, quality = 0.82) {
     return new Promise((resolve, reject) => {
@@ -183,7 +215,7 @@
   firebaseAuth.onAuthStateChanged(async (user) => {
     if (!user || started) return;
     started = true;
-    await loadPerfumes();
+    await Promise.all([loadPerfumes(), loadLabel()]);
     renderList();
   });
 })();

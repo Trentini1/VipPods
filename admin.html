@@ -103,8 +103,21 @@
 
     <h1 class="section-title">Perfumes</h1>
     <p style="color: var(--text-secondary); font-size: 0.85rem; margin: -8px 0 14px;">
-      Catálogo à parte, cadastrado à mão (sem custo/atacado/estoque em lote como os pods) — aparece na aba "Perfumes" do site.
+      Catálogo à parte, cadastrado à mão (sem custo/atacado/estoque em lote como os pods) — aparece nessa aba do site (nome abaixo).
     </p>
+
+    <form id="perfume-label-form" class="perfume-form">
+      <div class="perfume-form__fields">
+        <div class="pricing-panel__field" style="flex-basis: 100%;">
+          <label for="perfume-label-input">Nome da aba/seção no site</label>
+          <input type="text" id="perfume-label-input" placeholder="Perfumes">
+          <p style="color: var(--text-muted); font-size: 0.78rem; margin: 4px 0 0;">
+            Muda o nome no menu inferior e no título da aba — útil quando você trocar de perfumes pra outro tipo de produto. Os itens cadastrados abaixo não mudam de lugar.
+          </p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn--primary">Salvar nome</button>
+    </form>
 
     <form id="perfume-form" class="perfume-form">
       <div class="perfume-form__fields">
