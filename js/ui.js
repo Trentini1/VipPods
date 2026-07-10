@@ -75,18 +75,19 @@ const UI = {
     });
   },
 
-  // Espectro: swatches de sabor com toggle (mesma regra do rail de marca).
-  renderSpectrum(container, families, activeValue, onChange) {
+  // Espectro: swatches de sabor real (não família) com toggle, coloridos pela
+  // família de cor do sabor (mesma regra do rail de marca pro toggle).
+  renderSpectrum(container, items, activeValue, onChange) {
     container.innerHTML = "";
-    families.forEach((family) => {
-      const item = document.createElement("button");
-      item.type = "button";
-      item.className = "spectrum__item";
-      item.dataset.sabor = family.key;
-      item.setAttribute("aria-pressed", String(family.key === activeValue));
-      item.innerHTML = `<span class="spectrum__swatch"></span><span class="spectrum__label">${family.label}</span>`;
-      item.addEventListener("click", () => onChange(family.key === activeValue ? "" : family.key));
-      container.appendChild(item);
+    items.forEach((item) => {
+      const el = document.createElement("button");
+      el.type = "button";
+      el.className = "spectrum__item";
+      el.dataset.sabor = item.family || item.key;
+      el.setAttribute("aria-pressed", String(item.key === activeValue));
+      el.innerHTML = `<span class="spectrum__swatch"></span><span class="spectrum__label">${item.label}</span>`;
+      el.addEventListener("click", () => onChange(item.key === activeValue ? "" : item.key));
+      container.appendChild(el);
     });
   },
 

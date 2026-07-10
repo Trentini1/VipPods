@@ -38,9 +38,20 @@ const Products = {
   // (preço, custo, estoque, foto), que ficam salvas no Firebase e valem
   // pra todo mundo que visita o site, não só pra quem editou.
   async applyRemoteOverrides() {
-    if (typeof window.firebaseDb === "undefined") return;
+    // Acesso defensivo: firebaseDb é `const` de outro <script> (firebase-config.js).
+    // Se esse script não rodou (offline, ad-blocker, CDN fora do ar), a variável
+    // fica em temporal dead zone e um `typeof firebaseDb` direto lançaria
+    // ReferenceError — por isso o try/catch em vez de um `typeof` solto.
+    let db;
     try {
-      const snap = await firebaseDb.ref("overrides").once("value");
+      db = typeof firebaseDb === "undefined" ? null : firebaseDb;
+    } catch (err) {
+      db = null;
+    }
+    if (!db) return;
+
+    try {
+      const snap = await db.ref("overrides").once("value");
       const overrides = snap.val() || {};
       this.items = this.items.map((p) => {
         const ov = overrides[p.id];

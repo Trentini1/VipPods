@@ -16,11 +16,30 @@
   const sentinel = document.getElementById("grid-sentinel");
 
   const PAGE_SIZE = 24;
-  const filterState = { category: "", family: "", brand: "", search: "", sort: "relevance" };
+  const filterState = { category: "", flavor: "", brand: "", search: "", sort: "relevance" };
 
   let availableProducts = [];
   let brandList = [];
-  const familyMap = new Map();
+  let flavorList = []; // [{ key: <sabor real>, label: <sabor real>, family: <chave de cor> }]
+
+  // Sabores reais presentes no catálogo, agrupados pela família de cor (pro
+  // Espectro continuar lendo como um degradê) mas identificados e filtrados
+  // pelo nome de sabor de verdade — não pelo nome genérico da família.
+  function buildFlavorList(products) {
+    const byFlavor = new Map();
+    products.forEach((p) => {
+      if (p.flavor && !byFlavor.has(p.flavor)) {
+        byFlavor.set(p.flavor, Flavors.getFamily(p));
+      }
+    });
+    const familyOrder = Flavors.FAMILIES.map((f) => f.key);
+    return Array.from(byFlavor.entries())
+      .map(([flavor, family]) => ({ key: flavor, label: flavor, family }))
+      .sort((a, b) => {
+        const diff = familyOrder.indexOf(a.family) - familyOrder.indexOf(b.family);
+        return diff !== 0 ? diff : a.label.localeCompare(b.label, "pt-BR");
+      });
+  }
 
   let filteredList = [];
   let renderedCount = 0;
@@ -33,11 +52,6 @@
       clearTimeout(timer);
       timer = setTimeout(() => fn(...args), delay);
     };
-  }
-
-  function familyLabel(key) {
-    const found = Flavors.FAMILIES.find((f) => f.key === key);
-    return found ? found.label : key;
   }
 
   function categoryLabel(value) {
@@ -81,7 +95,7 @@
     let list = availableProducts.filter((p) => {
       if (filterState.category && p.category !== filterState.category) return false;
       if (filterState.brand && p.brand !== filterState.brand) return false;
-      if (filterState.family && familyMap.get(p.id) !== filterState.family) return false;
+      if (filterState.flavor && p.flavor !== filterState.flavor) return false;
       if (term) {
         const haystack = UI.normalize(`${p.name} ${p.brand} ${p.flavor || ""}`);
         if (!haystack.includes(term)) return false;
@@ -117,7 +131,7 @@
     } else if (which === "all") {
       filterState.category = "";
       filterState.brand = "";
-      filterState.family = "";
+      filterState.flavor = "";
       filterState.search = "";
       searchInput.value = "";
     } else {
@@ -144,7 +158,7 @@
       `;
     } else {
       const chips = [];
-      if (filterState.family) chips.push(["family", `Remover filtro de sabor: ${familyLabel(filterState.family)}`]);
+      if (filterState.flavor) chips.push(["flavor", `Remover filtro de sabor: ${filterState.flavor}`]);
       if (filterState.brand) chips.push(["brand", `Remover filtro de marca: ${filterState.brand}`]);
       if (filterState.category) chips.push(["category", `Remover filtro de categoria: ${categoryLabel(filterState.category)}`]);
 
@@ -204,8 +218,8 @@
     renderGrid(true);
   }
 
-  function onFamilyChange(value) {
-    filterState.family = value;
+  function onFlavorChange(value) {
+    filterState.flavor = value;
     refreshFilterControls();
     renderGrid(true);
   }
@@ -218,11 +232,11 @@
 
   function refreshFilterControls() {
     UI.renderSegmentedControl(categorySegmentedEl, UI.CATEGORY_OPTIONS, filterState.category, onCategoryChange);
-    UI.renderSpectrum(flavorSpectrumEl, Flavors.FAMILIES, filterState.family, onFamilyChange);
+    UI.renderSpectrum(flavorSpectrumEl, flavorList, filterState.flavor, onFlavorChange);
     UI.renderChipRail(brandRailEl, brandList, filterState.brand, onBrandChange);
     if (homeSpectrumEl) {
-      UI.renderSpectrum(homeSpectrumEl, Flavors.FAMILIES, filterState.family, (value) => {
-        onFamilyChange(value);
+      UI.renderSpectrum(homeSpectrumEl, flavorList, filterState.flavor, (value) => {
+        onFlavorChange(value);
         activateTab("products");
       });
     }
@@ -326,7 +340,7 @@
       return;
     }
 
-    availableProducts.forEach((p) => familyMap.set(p.id, Flavors.getFamily(p)));
+    flavorList = buildFlavorList(availableProducts);
     brandList = Array.from(new Set(availableProducts.map((p) => p.brand))).sort();
 
     refreshFilterControls();
