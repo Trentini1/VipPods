@@ -15,16 +15,18 @@ const Flavors = {
     { key: "neutro", label: "Acessórios" },
   ],
 
+  // Algumas fichas de produto vêm em inglês (nome original do fornecedor),
+  // então cada regra também reconhece a palavra equivalente em inglês.
   RULES: [
-    [/gelo|gelad[ao]/, "ice"],
-    [/\bmenta\b/, "ice"],
-    [/melancia|morango|cereja|framboesa|frutas vermelhas/, "vermelha"],
-    [/abacaxi|banana|manga|maracuja|coco|pessego|tropical/, "tropical"],
-    [/limao|maca verde|kiwi/, "citrico"],
-    [/\buva\b|amora|blue razz|groselha/, "uva"],
-    [/baunilha|chiclete|lichia/, "doce"],
-    [/energetico/, "energetico"],
-    [/tabaco/, "tabaco"],
+    [/gelo|gelad[ao]|\bice\b/, "ice"],
+    [/\bmenta\b|\bmint\b/, "ice"],
+    [/melancia|morango|cereja|framboesa|frutas vermelhas|watermelon|strawberry|cherry|raspberry/, "vermelha"],
+    [/abacaxi|banana|manga|maracuja|coco|pessego|tropical|pineapple|mango|passion|coconut|peach/, "tropical"],
+    [/limao|maca verde|kiwi|lemon|green apple|\blime\b/, "citrico"],
+    [/\buva\b|amora|blue razz|groselha|\bgrape\b|blackberry/, "uva"],
+    [/baunilha|chiclete|lichia|vanilla|bubblegum|lychee/, "doce"],
+    [/energetico|energy drink|\benergy\b/, "energetico"],
+    [/tabaco|tobacco/, "tabaco"],
   ],
 
   normalize(text) {

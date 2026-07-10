@@ -117,6 +117,7 @@ const UI = {
         <div class="product-card__footer">
           <span class="product-card__price">${this.formatCurrency(price)}${priceSuffix}</span>
         </div>
+        <p class="product-card__ship-note">+ taxa de entrega (a combinar)</p>
       </div>
     `;
 

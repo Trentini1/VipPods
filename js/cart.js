@@ -69,13 +69,6 @@ const Cart = {
     return this.getEntries().reduce((sum, { product, qty }) => sum + product.price * qty, 0);
   },
 
-  getShipping(subtotal) {
-    if (CONFIG.FREE_SHIPPING_MIN != null && subtotal >= CONFIG.FREE_SHIPPING_MIN) {
-      return 0;
-    }
-    return CONFIG.SHIPPING_FEE || 0;
-  },
-
   formatCurrency(value) {
     return UI.formatCurrency(value);
   },
@@ -145,17 +138,14 @@ const Cart = {
     bodyEl.appendChild(frag);
 
     const subtotal = this.getSubtotal();
-    const shipping = this.getShipping(subtotal);
     if (subtotalEl) subtotalEl.textContent = this.formatCurrency(subtotal);
-    if (shippingEl) shippingEl.textContent = shipping === 0 ? "Grátis" : this.formatCurrency(shipping);
-    if (totalEl) totalEl.textContent = this.formatCurrency(subtotal + shipping);
+    if (shippingEl) shippingEl.textContent = "A combinar";
+    if (totalEl) totalEl.textContent = this.formatCurrency(subtotal);
   },
 
   buildWhatsAppMessage() {
     const entries = this.getEntries();
     const subtotal = this.getSubtotal();
-    const shipping = this.getShipping(subtotal);
-    const total = subtotal + shipping;
 
     const lines = [`Olá! Quero fazer um pedido na ${CONFIG.STORE_NAME}:`, ""];
     entries.forEach(({ product, qty }) => {
@@ -163,8 +153,7 @@ const Cart = {
     });
     lines.push("");
     lines.push(`Subtotal: ${this.formatCurrency(subtotal)}`);
-    lines.push(`Frete: ${shipping === 0 ? "Grátis" : this.formatCurrency(shipping)}`);
-    lines.push(`Total: ${this.formatCurrency(total)}`);
+    lines.push("Frete: a combinar (aguardo a taxa de entrega)");
 
     return lines.join("\n");
   },

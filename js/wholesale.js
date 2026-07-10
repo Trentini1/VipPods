@@ -89,6 +89,7 @@ const WholesaleCart = {
     lines.push("");
     lines.push(`Total de unidades: ${this.getTotalQty()}`);
     lines.push(`Total do pedido: ${UI.formatCurrency(total)}`);
+    lines.push("Frete: a combinar (aguardo a taxa de entrega)");
 
     return lines.join("\n");
   },

@@ -4,13 +4,11 @@ const CONFIG = {
 
   // Número de WhatsApp para onde os pedidos são enviados (formato internacional, só dígitos).
   // Exemplo: 55 (Brasil) + DDD + número
-  WHATSAPP_NUMBER: "5511999999999",
+  WHATSAPP_NUMBER: "5541996907011",
 
-  // Taxa de frete fixa aplicada ao pedido (em R$). Use 0 para não cobrar frete.
-  SHIPPING_FEE: 0,
-
-  // Valor mínimo do pedido para frete grátis (null desativa a regra)
-  FREE_SHIPPING_MIN: 200,
+  // A taxa de entrega não é fixa — é sempre combinada com o cliente pelo
+  // WhatsApp depois do pedido (ver aviso "+ taxa de entrega" nos produtos
+  // e a mensagem de checkout em cart.js/wholesale.js).
 
   CURRENCY_LOCALE: "pt-BR",
   CURRENCY: "BRL",

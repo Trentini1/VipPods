@@ -724,6 +724,12 @@ input, select {
   color: var(--grafite-900);
 }
 
+.product-card__ship-note {
+  font: 500 10px/14px var(--font-ui);
+  color: var(--grafite-500);
+  margin: var(--s-1) 0 0;
+}
+
 .product-card__add {
   position: relative;
   width: 32px;
@@ -951,6 +957,12 @@ input, select {
 }
 
 .cart-footer { padding: var(--s-4) 0; border-top: 1px solid var(--aluminio); }
+
+.cart-shipping-note {
+  font: 400 12px/17px var(--font-ui);
+  color: var(--grafite-500);
+  margin: 0 0 var(--s-3);
+}
 
 .cart-totals {
   font: 400 14px/20px var(--font-ui);
