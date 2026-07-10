@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "overrides": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
+    },
+
+    "pricing": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
+    }
+  }
+}
