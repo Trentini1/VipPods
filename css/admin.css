@@ -1068,25 +1068,3 @@ table.admin-table {
   }
 }
 
-.admin-save-bar[hidden] {
-  display: none;
-}
-
-.admin-save-bar {
-  position: sticky;
-  bottom: 0;
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  padding: 14px 16px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.admin-save-bar .status {
-  margin-right: auto;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-}

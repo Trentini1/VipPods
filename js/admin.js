@@ -11,14 +11,10 @@
   const loginError = document.getElementById("admin-login-error");
   const passwordInput = document.getElementById("admin-password");
   const panel = document.getElementById("admin-panel");
-  const saveBar = document.getElementById("admin-save-bar");
-  const statusEl = document.getElementById("admin-status");
   const loadErrorEl = document.getElementById("admin-load-error");
   const tableBody = document.getElementById("admin-table-body");
   const searchInput = document.getElementById("admin-search");
   const logoutBtn = document.getElementById("admin-logout");
-  const saveFileBtn = document.getElementById("admin-save-file");
-  const downloadBtn = document.getElementById("admin-download");
   const markAllOutBtn = document.getElementById("admin-mark-all-out");
   const markAllInBtn = document.getElementById("admin-mark-all-in");
   const tabInBtn = document.getElementById("admin-tab-in");
@@ -35,7 +31,6 @@
 
   let overrides = {};
   let pricing = {};
-  let dirty = false;
   let currentTab = "in"; // 'in' | 'out'
   const rowRefs = new Map(); // id -> { row, badge, checkbox, priceInput, costInput, wholesaleInput, thumb }
 
@@ -109,21 +104,6 @@
     });
   }
 
-  function setDirty(isDirty) {
-    dirty = isDirty;
-    saveBar.hidden = false;
-    statusEl.textContent = dirty
-      ? "Salvo no Firebase — já está valendo pra quem visitar o site agora."
-      : "Nenhuma alteração pendente.";
-  }
-
-  function getMergedProducts() {
-    return Products.getAll().map((p) => {
-      const ov = overrides[p.id];
-      return ov ? { ...p, ...ov } : p;
-    });
-  }
-
   function getEffective(product) {
     const ov = overrides[product.id];
     return ov ? { ...product, ...ov } : product;
@@ -194,7 +174,6 @@
         const dataUrl = await resizeImageToDataUrl(file);
         overrides[product.id] = { ...(overrides[product.id] || {}), image: dataUrl };
         persistOverrides();
-        setDirty(true);
         thumb.src = dataUrl;
       } catch (err) {
         console.error("[VIPpods admin] Erro ao processar imagem:", err);
@@ -212,7 +191,6 @@
       }
       overrides[product.id] = { ...(overrides[product.id] || {}), price: value };
       persistOverrides();
-      setDirty(true);
     });
 
     costInput.addEventListener("change", () => {
@@ -223,7 +201,6 @@
       }
       overrides[product.id] = { ...(overrides[product.id] || {}), costUSD: value };
       persistOverrides();
-      setDirty(true);
     });
 
     wholesaleInput.addEventListener("change", () => {
@@ -234,14 +211,12 @@
       }
       overrides[product.id] = { ...(overrides[product.id] || {}), wholesalePrice: value };
       persistOverrides();
-      setDirty(true);
     });
 
     stockCheckbox.addEventListener("change", () => {
       const nowInStock = !stockCheckbox.checked;
       overrides[product.id] = { ...(overrides[product.id] || {}), inStock: nowInStock };
       persistOverrides();
-      setDirty(true);
       setRowStockUI(refs, nowInStock);
       applyTabAndSearch();
     });
@@ -313,50 +288,6 @@
     });
 
     persistOverrides();
-    setDirty(true);
-  }
-
-  async function saveToFile() {
-    if (!window.showSaveFilePicker) {
-      alert(
-        'Este navegador não suporta salvar o arquivo diretamente. Use "Baixar products.json" e substitua o arquivo manualmente em data/products.json.'
-      );
-      return;
-    }
-    try {
-      const handle = await window.showSaveFilePicker({
-        suggestedName: "products.json",
-        types: [{ description: "JSON", accept: { "application/json": [".json"] } }],
-      });
-      const writable = await handle.createWritable();
-      await writable.write(JSON.stringify(getMergedProducts(), null, 2));
-      await writable.close();
-      statusEl.textContent =
-        `Exportado como "${handle.name}" (snapshot do catálogo atual, incluindo as alterações do Firebase). ` +
-        "As alterações continuam ativas no site normalmente através do Firebase.";
-    } catch (err) {
-      if (err.name !== "AbortError") {
-        console.error("[VIPpods admin] Erro ao salvar arquivo:", err);
-        statusEl.textContent = `Erro ao salvar: ${err.message}`;
-      }
-    }
-  }
-
-  function downloadJSON() {
-    const blob = new Blob([JSON.stringify(getMergedProducts(), null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "products.json";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-    statusEl.textContent =
-      "Arquivo baixado (snapshot do catálogo atual, incluindo as alterações do Firebase). " +
-      "As alterações continuam ativas no site normalmente através do Firebase.";
   }
 
   async function initPanel() {
@@ -371,18 +302,13 @@
       return;
     }
 
-    // aplica overrides pendentes (ainda não salvos no arquivo) para exibição
+    // aplica os overrides já salvos no Firebase por cima do catálogo base pra exibição
     products = products.map((p) => (overrides[p.id] ? { ...p, ...overrides[p.id] } : p));
 
     renderTable(products);
     applyTabAndSearch();
-    if (Object.keys(overrides).length > 0) {
-      setDirty(true);
-    }
 
     searchInput.addEventListener("input", debounce(applyTabAndSearch, 150));
-    saveFileBtn.addEventListener("click", saveToFile);
-    downloadBtn.addEventListener("click", downloadJSON);
 
     tabInBtn.addEventListener("click", () => switchTab("in"));
     tabOutBtn.addEventListener("click", () => switchTab("out"));
@@ -400,7 +326,6 @@
         if (refs) setRowStockUI(refs, false);
       });
       persistOverrides();
-      setDirty(true);
       applyTabAndSearch();
     });
 
@@ -423,7 +348,6 @@
         if (refs) setRowStockUI(refs, true);
       });
       persistOverrides();
-      setDirty(true);
       applyTabAndSearch();
     });
 
