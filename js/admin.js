@@ -20,6 +20,7 @@
   const saveFileBtn = document.getElementById("admin-save-file");
   const downloadBtn = document.getElementById("admin-download");
   const markAllOutBtn = document.getElementById("admin-mark-all-out");
+  const markAllInBtn = document.getElementById("admin-mark-all-in");
   const tabInBtn = document.getElementById("admin-tab-in");
   const tabOutBtn = document.getElementById("admin-tab-out");
   const tabInCountEl = document.getElementById("admin-tab-in-count");
@@ -397,6 +398,29 @@
         overrides[product.id] = { ...(overrides[product.id] || {}), inStock: false };
         const refs = rowRefs.get(product.id);
         if (refs) setRowStockUI(refs, false);
+      });
+      persistOverrides();
+      setDirty(true);
+      applyTabAndSearch();
+    });
+
+    markAllInBtn.addEventListener("click", () => {
+      const confirmed = confirm(
+        "Tem certeza que deseja restaurar TODOS os produtos pra 'em estoque'? " +
+          "Isso remove qualquer override manual de estoque salvo (mantém preço/custo/foto)."
+      );
+      if (!confirmed) return;
+
+      Products.getAll().forEach((product) => {
+        const ov = { ...(overrides[product.id] || {}) };
+        delete ov.inStock;
+        if (Object.keys(ov).length === 0) {
+          delete overrides[product.id];
+        } else {
+          overrides[product.id] = ov;
+        }
+        const refs = rowRefs.get(product.id);
+        if (refs) setRowStockUI(refs, true);
       });
       persistOverrides();
       setDirty(true);

@@ -54,13 +54,6 @@ const WholesaleCart = {
     return this.getEntries().reduce((sum, { product, qty }) => sum + product.wholesalePrice * qty, 0);
   },
 
-  formatCurrency(value) {
-    return value.toLocaleString(CONFIG.CURRENCY_LOCALE, {
-      style: "currency",
-      currency: CONFIG.CURRENCY,
-    });
-  },
-
   renderSummary() {
     const totalQtyEl = document.getElementById("wholesale-total-qty");
     const totalValueEl = document.getElementById("wholesale-total-value");
@@ -73,7 +66,7 @@ const WholesaleCart = {
     const minQty = CONFIG.WHOLESALE_MIN_QTY;
 
     totalQtyEl.textContent = String(totalQty);
-    totalValueEl.textContent = this.formatCurrency(totalValue);
+    totalValueEl.textContent = UI.formatCurrency(totalValue);
 
     if (totalQty > 0 && totalQty < minQty) {
       warningEl.hidden = false;
@@ -91,11 +84,11 @@ const WholesaleCart = {
 
     const lines = [`Olá! Quero fazer um pedido no atacado/revenda na ${CONFIG.STORE_NAME}:`, ""];
     entries.forEach(({ product, qty }) => {
-      lines.push(`• ${qty}x ${product.name} - ${this.formatCurrency(product.wholesalePrice * qty)}`);
+      lines.push(`• ${qty}x ${product.name} - ${UI.formatCurrency(product.wholesalePrice * qty)}`);
     });
     lines.push("");
     lines.push(`Total de unidades: ${this.getTotalQty()}`);
-    lines.push(`Total do pedido: ${this.formatCurrency(total)}`);
+    lines.push(`Total do pedido: ${UI.formatCurrency(total)}`);
 
     return lines.join("\n");
   },
@@ -108,17 +101,17 @@ const WholesaleCart = {
   },
 };
 
-// Renderização do grid da aba Atacado: busca, filtro de categoria e steppers de quantidade.
+// Renderização do grid da aba Atacado: segmented de categoria, busca e steppers de quantidade.
 (function () {
   const grid = document.getElementById("wholesale-grid");
   const searchInput = document.getElementById("wholesale-search-input");
-  const categoryFilter = document.getElementById("wholesale-category-filter");
+  const categorySegmentedEl = document.getElementById("wholesale-category-segmented");
   const resultsCount = document.getElementById("wholesale-results-count");
   const emptyState = document.getElementById("wholesale-empty-state");
   const checkoutBtn = document.getElementById("wholesale-checkout-btn");
-  const cardMap = new Map();
   let availableProducts = [];
   let initialized = false;
+  const filterState = { category: "", search: "" };
 
   function debounce(fn, delay = 200) {
     let timer;
@@ -128,47 +121,31 @@ const WholesaleCart = {
     };
   }
 
-  function normalize(text) {
-    return (text || "").toString().normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-  }
-
-  function formatCurrency(value) {
-    return value.toLocaleString(CONFIG.CURRENCY_LOCALE, {
-      style: "currency",
-      currency: CONFIG.CURRENCY,
+  function buildCard(product, index) {
+    const { card, footer } = UI.buildProductCardBase(product, {
+      price: product.wholesalePrice,
+      priceSuffix: ' <span style="font-weight:400;">/ un.</span>',
+      eager: index < 4,
     });
-  }
+    card.style.animationDelay = index < 8 ? `${index * 24}ms` : "0ms";
 
-  function buildCard(product) {
-    const card = document.createElement("article");
-    card.className = "product-card";
-    card.dataset.id = String(product.id);
-
-    const subtitle = [product.brand, product.flavor].filter(Boolean).join(" · ");
+    const qtyWrap = document.createElement("div");
+    qtyWrap.className = "wholesale-card__qty";
     const currentQty = WholesaleCart.getQty(product.id);
-
-    card.innerHTML = `
-      <img class="product-card__img" src="${product.image}" alt="${product.name}" loading="lazy" width="200" height="200">
-      <div class="product-card__body">
-        <p class="product-card__category">${product.category}</p>
-        <h3 class="product-card__name">${product.name}</h3>
-        <p class="product-card__subtitle">${subtitle}</p>
-        <p class="product-card__price">${formatCurrency(product.wholesalePrice)} <span style="font-weight:400;font-size:0.75rem;color:var(--text-muted);">/ un.</span></p>
-        <div class="wholesale-card__qty">
-          <button type="button" class="qty-btn" data-action="decrease" aria-label="Diminuir quantidade de ${product.name}">−</button>
-          <input type="number" min="0" step="1" value="${currentQty}" class="qty-input" aria-label="Quantidade de ${product.name}">
-          <button type="button" class="qty-btn" data-action="increase" aria-label="Aumentar quantidade de ${product.name}">+</button>
-        </div>
-      </div>
+    qtyWrap.innerHTML = `
+      <button type="button" class="qty-btn" data-action="decrease" aria-label="Diminuir quantidade de ${product.name}">${Icons.minus}</button>
+      <input type="number" min="0" step="1" value="${currentQty}" class="qty-input" aria-label="Quantidade de ${product.name}">
+      <button type="button" class="qty-btn" data-action="increase" aria-label="Aumentar quantidade de ${product.name}">${Icons.plus}</button>
     `;
+    footer.appendChild(qtyWrap);
 
-    const qtyInput = card.querySelector(".qty-input");
-    card.querySelector('[data-action="decrease"]').addEventListener("click", () => {
+    const qtyInput = qtyWrap.querySelector(".qty-input");
+    qtyWrap.querySelector('[data-action="decrease"]').addEventListener("click", () => {
       const next = Math.max(0, Number(qtyInput.value) - 1);
       qtyInput.value = next;
       WholesaleCart.setQty(product.id, next);
     });
-    card.querySelector('[data-action="increase"]').addEventListener("click", () => {
+    qtyWrap.querySelector('[data-action="increase"]').addEventListener("click", () => {
       const next = Number(qtyInput.value) + 1;
       qtyInput.value = next;
       WholesaleCart.setQty(product.id, next);
@@ -180,34 +157,12 @@ const WholesaleCart = {
     return card;
   }
 
-  function populateFilterOptions(products) {
-    const categories = Array.from(new Set(products.map((p) => p.category))).sort();
-    categories.forEach((cat) => {
-      const opt = document.createElement("option");
-      opt.value = cat;
-      opt.textContent = cat;
-      categoryFilter.appendChild(opt);
-    });
-  }
-
-  function initGrid(products) {
-    const frag = document.createDocumentFragment();
-    products.forEach((product) => {
-      const card = buildCard(product);
-      cardMap.set(product.id, card);
-      frag.appendChild(card);
-    });
-    grid.appendChild(frag);
-  }
-
   function getFiltered() {
-    const term = normalize(searchInput.value.trim());
-    const category = categoryFilter.value;
-
+    const term = UI.normalize(filterState.search.trim());
     return availableProducts.filter((p) => {
-      if (category && p.category !== category) return false;
+      if (filterState.category && p.category !== filterState.category) return false;
       if (term) {
-        const haystack = normalize(`${p.name} ${p.brand} ${p.flavor || ""}`);
+        const haystack = UI.normalize(`${p.name} ${p.brand} ${p.flavor || ""}`);
         if (!haystack.includes(term)) return false;
       }
       return true;
@@ -216,25 +171,25 @@ const WholesaleCart = {
 
   function render() {
     const filtered = getFiltered();
-    const visibleIds = new Set(filtered.map((p) => p.id));
-
-    cardMap.forEach((el, id) => {
-      if (!visibleIds.has(id)) {
-        el.classList.add("is-hidden");
-      }
-    });
-
+    grid.innerHTML = "";
     const frag = document.createDocumentFragment();
-    filtered.forEach((p) => {
-      const el = cardMap.get(p.id);
-      el.classList.remove("is-hidden");
-      frag.appendChild(el);
-    });
+    filtered.forEach((p, i) => frag.appendChild(buildCard(p, i)));
     grid.appendChild(frag);
 
     const count = filtered.length;
     resultsCount.textContent = `${count} produto${count === 1 ? "" : "s"} encontrado${count === 1 ? "" : "s"}`;
     emptyState.hidden = count !== 0;
+    if (count === 0) {
+      emptyState.innerHTML = filterState.search.trim()
+        ? "<strong>Nenhum pod com esse nome.</strong> Tente pela marca."
+        : "<strong>Nenhum pod com esses filtros.</strong>";
+    }
+  }
+
+  function onCategoryChange(value) {
+    filterState.category = value;
+    UI.renderSegmentedControl(categorySegmentedEl, UI.CATEGORY_OPTIONS, filterState.category, onCategoryChange);
+    render();
   }
 
   window.initWholesaleTab = function initWholesaleTab() {
@@ -246,15 +201,19 @@ const WholesaleCart = {
 
     document.getElementById("wholesale-min-qty").textContent = CONFIG.WHOLESALE_MIN_QTY;
 
+    const searchIconSlot = document.getElementById("wholesale-search-icon-slot");
+    if (searchIconSlot) searchIconSlot.innerHTML = Icons.search;
+
     if (availableProducts.length === 0) return;
 
-    populateFilterOptions(availableProducts);
-    initGrid(availableProducts);
+    UI.renderSegmentedControl(categorySegmentedEl, UI.CATEGORY_OPTIONS, filterState.category, onCategoryChange);
     render();
     WholesaleCart.renderSummary();
 
-    searchInput.addEventListener("input", debounce(render, 200));
-    categoryFilter.addEventListener("change", render);
+    searchInput.addEventListener("input", debounce(() => {
+      filterState.search = searchInput.value;
+      render();
+    }, 200));
     checkoutBtn.addEventListener("click", () => WholesaleCart.checkout());
   };
 })();

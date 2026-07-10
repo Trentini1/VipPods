@@ -38,7 +38,7 @@ const Products = {
   // (preço, custo, estoque, foto), que ficam salvas no Firebase e valem
   // pra todo mundo que visita o site, não só pra quem editou.
   async applyRemoteOverrides() {
-    if (typeof firebaseDb === "undefined") return;
+    if (typeof window.firebaseDb === "undefined") return;
     try {
       const snap = await firebaseDb.ref("overrides").once("value");
       const overrides = snap.val() || {};

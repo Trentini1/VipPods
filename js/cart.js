@@ -77,10 +77,7 @@ const Cart = {
   },
 
   formatCurrency(value) {
-    return value.toLocaleString(CONFIG.CURRENCY_LOCALE, {
-      style: "currency",
-      currency: CONFIG.CURRENCY,
-    });
+    return UI.formatCurrency(value);
   },
 
   renderCart() {
@@ -123,11 +120,11 @@ const Cart = {
           <p class="cart-item__price">${this.formatCurrency(product.price)}</p>
         </div>
         <div class="cart-item__qty">
-          <button type="button" class="qty-btn" data-action="decrease" aria-label="Diminuir quantidade de ${product.name}">−</button>
+          <button type="button" class="qty-btn" data-action="decrease" aria-label="Diminuir quantidade de ${product.name}">${Icons.minus}</button>
           <input type="number" min="1" value="${qty}" class="qty-input" aria-label="Quantidade de ${product.name}">
-          <button type="button" class="qty-btn" data-action="increase" aria-label="Aumentar quantidade de ${product.name}">+</button>
+          <button type="button" class="qty-btn" data-action="increase" aria-label="Aumentar quantidade de ${product.name}">${Icons.plus}</button>
         </div>
-        <button type="button" class="cart-item__remove" aria-label="Remover ${product.name} do carrinho">🗑</button>
+        <button type="button" class="cart-item__remove" aria-label="Remover ${product.name} do carrinho">${Icons.trash}</button>
       `;
 
       row.querySelector('[data-action="decrease"]').addEventListener("click", () => {

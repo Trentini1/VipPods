@@ -1,0 +1,130 @@
+// Helpers de UI compartilhados entre Início/Produtos (main.js) e Atacado (wholesale.js):
+// normalização de busca, formatação de moeda, card de produto (chassi comum) e
+// controles de filtro reutilizáveis (segmented, espectro, rail de chip).
+const UI = {
+  CATEGORY_OPTIONS: [
+    { value: "", label: "Todos" },
+    { value: "Descartável", label: "Descartável" },
+    { value: "Pod Recarregável", label: "Recarregável" },
+    { value: "Refil/Cápsula", label: "Refil" },
+    { value: "Acessório", label: "Acessórios" },
+  ],
+
+  normalize(text) {
+    return (text || "")
+      .toString()
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .toLowerCase();
+  },
+
+  formatCurrency(value) {
+    return value.toLocaleString(CONFIG.CURRENCY_LOCALE, {
+      style: "currency",
+      currency: CONFIG.CURRENCY,
+    });
+  },
+
+  // Alterna will-change:transform só durante o toque (nunca fixo), delegado
+  // no document pra não precisar religar listener em cada card novo.
+  bindPressFx() {
+    const SELECTOR =
+      ".btn, .product-card, .product-card__add, .qty-btn, .segmented__btn, " +
+      ".brand-rail__chip, .cart-item__remove, .spectrum__item";
+
+    const start = (e) => {
+      const el = e.target.closest(SELECTOR);
+      if (el) el.style.willChange = "transform";
+    };
+    const end = (e) => {
+      const el = e.target.closest(SELECTOR);
+      if (el) el.style.willChange = "";
+    };
+
+    document.addEventListener("pointerdown", start, { passive: true });
+    document.addEventListener("pointerup", end, { passive: true });
+    document.addEventListener("pointercancel", end, { passive: true });
+  },
+
+  // Segmented control mutuamente exclusivo (sempre tem uma opção "ativa"; não
+  // existe estado "nenhuma selecionada" além da opção default, ex: "Todos").
+  renderSegmentedControl(container, options, activeValue, onChange) {
+    container.innerHTML = "";
+    options.forEach((opt) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "segmented__btn" + (opt.value === activeValue ? " is-active" : "");
+      btn.textContent = opt.label;
+      btn.setAttribute("aria-pressed", String(opt.value === activeValue));
+      btn.addEventListener("click", () => onChange(opt.value));
+      container.appendChild(btn);
+    });
+  },
+
+  // Rail de chip com toggle: tocar no ativo de novo limpa o filtro.
+  renderChipRail(container, values, activeValue, onChange) {
+    container.innerHTML = "";
+    values.forEach((value) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "brand-rail__chip" + (value === activeValue ? " is-active" : "");
+      chip.textContent = value;
+      chip.setAttribute("aria-pressed", String(value === activeValue));
+      chip.addEventListener("click", () => onChange(value === activeValue ? "" : value));
+      container.appendChild(chip);
+    });
+  },
+
+  // Espectro: swatches de sabor com toggle (mesma regra do rail de marca).
+  renderSpectrum(container, families, activeValue, onChange) {
+    container.innerHTML = "";
+    families.forEach((family) => {
+      const item = document.createElement("button");
+      item.type = "button";
+      item.className = "spectrum__item";
+      item.dataset.sabor = family.key;
+      item.setAttribute("aria-pressed", String(family.key === activeValue));
+      item.innerHTML = `<span class="spectrum__swatch"></span><span class="spectrum__label">${family.label}</span>`;
+      item.addEventListener("click", () => onChange(family.key === activeValue ? "" : family.key));
+      container.appendChild(item);
+    });
+  },
+
+  // Cria o "chassi" comum do card (tarja de sabor, imagem, categoria, nome,
+  // subtítulo, badge de puffs) e devolve o footer vazio pro chamador colocar
+  // o controle específico (botão ⊕ no varejo, stepper no atacado).
+  buildProductCardBase(product, { price, priceSuffix = "", eager = false } = {}) {
+    const family = Flavors.getFamily(product);
+    const card = document.createElement("article");
+    card.className = "product-card";
+    card.dataset.id = String(product.id);
+    card.dataset.sabor = family;
+
+    const subtitle = [product.brand, product.flavor].filter(Boolean).join(" · ");
+    const puffsLabel = product.puffs ? `${product.puffs.toLocaleString("pt-BR")} PUFFS` : "";
+
+    card.innerHTML = `
+      <div class="product-card__media">
+        <img class="product-card__img" alt="${product.name}"
+          ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}>
+        ${puffsLabel ? `<span class="product-card__puffs">${puffsLabel}</span>` : ""}
+      </div>
+      <div class="product-card__body">
+        <p class="product-card__category">${product.category}</p>
+        <h3 class="product-card__name">${product.name}</h3>
+        <p class="product-card__subtitle">${subtitle}</p>
+        <div class="product-card__footer">
+          <span class="product-card__price">${this.formatCurrency(price)}${priceSuffix}</span>
+        </div>
+      </div>
+    `;
+
+    const img = card.querySelector(".product-card__img");
+    img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
+    img.src = product.image;
+    if (!eager) img.width = 200, (img.height = 200);
+
+    const footer = card.querySelector(".product-card__footer");
+    return { card, footer };
+  },
+};

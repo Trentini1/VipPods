@@ -1,18 +1,33 @@
-// Navegação em abas, carrossel de destaques, busca/filtros/ordenação e
-// renderização do grid de produtos (aba "Produtos").
+// Navegação em abas (com memória de scroll por aba), Espectro de sabor,
+// segmented de categoria, rail de marca, busca/ordenar e grid paginado
+// (24 em 24, IntersectionObserver) da aba Produtos + destaques da Início.
 (function () {
   const grid = document.getElementById("product-grid");
   const searchInput = document.getElementById("search-input");
-  const categoryFilter = document.getElementById("category-filter");
-  const brandFilter = document.getElementById("brand-filter");
-  const sortSelect = document.getElementById("sort-select");
+  const sortToggle = document.getElementById("sort-toggle");
+  const sortMenu = document.getElementById("sort-menu");
   const resultsCount = document.getElementById("results-count");
-  const emptyState = document.getElementById("empty-state");
+  const emptyStateEl = document.getElementById("empty-state");
   const loadErrorBanner = document.getElementById("load-error-banner");
-  const cardMap = new Map();
-  let availableProducts = [];
+  const categorySegmentedEl = document.getElementById("category-segmented");
+  const flavorSpectrumEl = document.getElementById("flavor-spectrum");
+  const homeSpectrumEl = document.getElementById("home-spectrum");
+  const brandRailEl = document.getElementById("brand-rail");
+  const sentinel = document.getElementById("grid-sentinel");
 
-  function debounce(fn, delay = 250) {
+  const PAGE_SIZE = 24;
+  const filterState = { category: "", family: "", brand: "", search: "", sort: "relevance" };
+
+  let availableProducts = [];
+  let brandList = [];
+  const familyMap = new Map();
+
+  let filteredList = [];
+  let renderedCount = 0;
+  let initialGridRendered = false;
+  let gridObserver = null;
+
+  function debounce(fn, delay = 200) {
     let timer;
     return (...args) => {
       clearTimeout(timer);
@@ -20,95 +35,61 @@
     };
   }
 
-  function normalize(text) {
-    return (text || "")
-      .toString()
-      .normalize("NFD")
-      .replace(/[̀-ͯ]/g, "")
-      .toLowerCase();
+  function familyLabel(key) {
+    const found = Flavors.FAMILIES.find((f) => f.key === key);
+    return found ? found.label : key;
   }
 
-  function formatCurrency(value) {
-    return value.toLocaleString(CONFIG.CURRENCY_LOCALE, {
-      style: "currency",
-      currency: CONFIG.CURRENCY,
-    });
+  function categoryLabel(value) {
+    const found = UI.CATEGORY_OPTIONS.find((o) => o.value === value);
+    return found ? found.label : value;
   }
 
-  function buildCard(product) {
-    const card = document.createElement("article");
-    card.className = "product-card";
-    card.dataset.id = String(product.id);
+  // ---------- Card de produto (varejo: preço + botão ⊕) ----------
+  function renderCard(product, indexInBatch, eager) {
+    const { card, footer } = UI.buildProductCardBase(product, { price: product.price, eager });
+    card.style.animationDelay = indexInBatch < 8 ? `${indexInBatch * 24}ms` : "0ms";
 
-    const subtitle = [product.brand, product.flavor].filter(Boolean).join(" · ");
-    const puffsLabel = product.puffs ? `${product.puffs.toLocaleString("pt-BR")} puffs` : "";
-
-    card.innerHTML = `
-      <img class="product-card__img" src="${product.image}" alt="${product.name}" loading="lazy" width="200" height="200">
-      <div class="product-card__body">
-        <p class="product-card__category">${product.category}</p>
-        <h3 class="product-card__name">${product.name}</h3>
-        <p class="product-card__subtitle">${subtitle}${puffsLabel ? " · " + puffsLabel : ""}</p>
-        <p class="product-card__price">${formatCurrency(product.price)}</p>
-        <button type="button" class="btn btn--primary product-card__add" aria-label="Adicionar ${product.name} ao carrinho">
-          Adicionar ao carrinho
-        </button>
-      </div>
-    `;
-
-    card.querySelector(".product-card__add").addEventListener("click", () => {
-      Cart.addItem(product.id, 1);
-    });
+    const addBtn = document.createElement("button");
+    addBtn.type = "button";
+    addBtn.className = "product-card__add";
+    addBtn.setAttribute("aria-label", `Adicionar ${product.name} ao carrinho`);
+    addBtn.innerHTML = Icons.plus;
+    addBtn.addEventListener("click", () => Cart.addItem(product.id, 1));
+    footer.appendChild(addBtn);
 
     return card;
   }
 
-  function populateFilterOptions(products) {
-    const categories = Array.from(new Set(products.map((p) => p.category))).sort();
-    const brands = Array.from(new Set(products.map((p) => p.brand))).sort();
+  // ---------- Destaques (aba Início) ----------
+  function renderFeatured(products) {
+    const featuredGrid = document.getElementById("featured-grid");
+    if (!featuredGrid) return;
+    let featured = products.filter((p) => p.featured).slice(0, 4);
+    if (featured.length === 0) featured = products.slice(0, 4);
 
-    categories.forEach((cat) => {
-      const opt = document.createElement("option");
-      opt.value = cat;
-      opt.textContent = cat;
-      categoryFilter.appendChild(opt);
-    });
-
-    brands.forEach((brand) => {
-      const opt = document.createElement("option");
-      opt.value = brand;
-      opt.textContent = brand;
-      brandFilter.appendChild(opt);
-    });
-  }
-
-  function initGrid(products) {
+    featuredGrid.innerHTML = "";
     const frag = document.createDocumentFragment();
-    products.forEach((product) => {
-      const card = buildCard(product);
-      cardMap.set(product.id, card);
-      frag.appendChild(card);
-    });
-    grid.appendChild(frag);
+    featured.forEach((p, i) => frag.appendChild(renderCard(p, i, i < 2)));
+    featuredGrid.appendChild(frag);
   }
 
-  function getFiltered() {
-    const term = normalize(searchInput.value.trim());
-    const category = categoryFilter.value;
-    const brand = brandFilter.value;
-    const sortBy = sortSelect.value;
+  // ---------- Filtro + grid paginado (aba Produtos) ----------
+  function computeFilteredList() {
+    const term = UI.normalize(filterState.search.trim());
 
     let list = availableProducts.filter((p) => {
-      if (category && p.category !== category) return false;
-      if (brand && p.brand !== brand) return false;
+      if (filterState.category && p.category !== filterState.category) return false;
+      if (filterState.brand && p.brand !== filterState.brand) return false;
+      if (filterState.family && familyMap.get(p.id) !== filterState.family) return false;
       if (term) {
-        const haystack = normalize(`${p.name} ${p.brand} ${p.flavor || ""}`);
+        const haystack = UI.normalize(`${p.name} ${p.brand} ${p.flavor || ""}`);
         if (!haystack.includes(term)) return false;
       }
       return true;
     });
 
-    switch (sortBy) {
+    switch (filterState.sort) {
       case "price-asc":
         list = list.slice().sort((a, b) => a.price - b.price);
         break;
@@ -119,158 +100,197 @@
         list = list.slice().sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
         break;
       default:
-        // mantém a ordem original (relevância)
         break;
     }
-
     return list;
   }
 
-  // Reaproveita os nós de card já criados: apenas oculta/mostra e reordena,
-  // sem recriar o DOM a cada busca/filtro (importante com 555 produtos).
-  function render() {
-    const filtered = getFiltered();
-    const visibleIds = new Set(filtered.map((p) => p.id));
-
-    cardMap.forEach((el, id) => {
-      if (!visibleIds.has(id)) {
-        el.classList.add("is-hidden");
-      }
-    });
-
-    const frag = document.createDocumentFragment();
-    filtered.forEach((p) => {
-      const el = cardMap.get(p.id);
-      el.classList.remove("is-hidden");
-      frag.appendChild(el);
-    });
-    grid.appendChild(frag);
-
-    const count = filtered.length;
-    if (resultsCount) {
-      resultsCount.textContent = `${count} produto${count === 1 ? "" : "s"} encontrado${count === 1 ? "" : "s"}`;
-    }
-    if (emptyState) {
-      emptyState.hidden = count !== 0;
-    }
+  function updateResultsCount() {
+    const count = filteredList.length;
+    resultsCount.textContent = `${count} produto${count === 1 ? "" : "s"} encontrado${count === 1 ? "" : "s"}`;
   }
 
-  const debouncedRender = debounce(render, 200);
-
-  // ---------- Carrossel de destaques (aba Início) ----------
-  function initCarousel(products) {
-    const track = document.getElementById("carousel-track");
-    const dotsContainer = document.getElementById("carousel-dots");
-    const prevBtn = document.getElementById("carousel-prev");
-    const nextBtn = document.getElementById("carousel-next");
-
-    let featured = products.filter((p) => p.featured).slice(0, 3);
-    if (featured.length === 0) {
-      featured = products.slice(0, 3);
+  function clearFilter(which) {
+    if (which === "search") {
+      searchInput.value = "";
+      filterState.search = "";
+    } else if (which === "all") {
+      filterState.category = "";
+      filterState.brand = "";
+      filterState.family = "";
+      filterState.search = "";
+      searchInput.value = "";
+    } else {
+      filterState[which] = "";
     }
-    if (featured.length === 0) {
-      track.closest(".carousel").hidden = true;
+    refreshFilterControls();
+    renderGrid(true);
+  }
+
+  function updateEmptyState() {
+    if (filteredList.length !== 0) {
+      emptyStateEl.hidden = true;
+      emptyStateEl.innerHTML = "";
       return;
     }
+    emptyStateEl.hidden = false;
 
-    let currentIndex = 0;
-    let autoplayTimer = null;
-
-    featured.forEach((product) => {
-      const slide = document.createElement("div");
-      slide.className = "carousel__slide";
-      const subtitle = [product.brand, product.flavor].filter(Boolean).join(" · ");
-      slide.innerHTML = `
-        <img class="carousel__slide-img" src="${product.image}" alt="${product.name}" loading="lazy">
-        <div>
-          <p class="carousel__slide-category">${product.category}</p>
-          <h2 class="carousel__slide-name">${product.name}</h2>
-          <p class="carousel__slide-subtitle">${subtitle}</p>
-          <p class="carousel__slide-price">${formatCurrency(product.price)}</p>
-          <button type="button" class="btn btn--primary carousel__slide-add">Adicionar ao carrinho</button>
-        </div>
+    const term = filterState.search.trim();
+    if (term) {
+      emptyStateEl.innerHTML = `
+        <strong>Nenhum pod com esse nome.</strong>
+        Tente pela marca ou escolha um sabor no topo.
+        <div><button type="button" data-clear="search">Limpar busca</button></div>
       `;
-      slide.querySelector(".carousel__slide-add").addEventListener("click", () => {
-        Cart.addItem(product.id, 1);
-      });
-      track.appendChild(slide);
-    });
-
-    featured.forEach((_, i) => {
-      const dot = document.createElement("button");
-      dot.type = "button";
-      dot.className = "carousel__dot" + (i === 0 ? " is-active" : "");
-      dot.setAttribute("aria-label", `Ir para destaque ${i + 1}`);
-      dot.addEventListener("click", () => {
-        goTo(i);
-        resetAutoplay();
-      });
-      dotsContainer.appendChild(dot);
-    });
-
-    function updateDots() {
-      Array.from(dotsContainer.children).forEach((dot, i) => {
-        dot.classList.toggle("is-active", i === currentIndex);
-      });
-    }
-
-    function goTo(index) {
-      currentIndex = (index + featured.length) % featured.length;
-      track.scrollTo({ left: track.clientWidth * currentIndex, behavior: "smooth" });
-      updateDots();
-    }
-
-    function startAutoplay() {
-      if (featured.length <= 1) return;
-      autoplayTimer = setInterval(() => goTo(currentIndex + 1), 5000);
-    }
-
-    function resetAutoplay() {
-      clearInterval(autoplayTimer);
-      startAutoplay();
-    }
-
-    if (featured.length <= 1) {
-      prevBtn.hidden = true;
-      nextBtn.hidden = true;
     } else {
-      prevBtn.addEventListener("click", () => {
-        goTo(currentIndex - 1);
-        resetAutoplay();
-      });
-      nextBtn.addEventListener("click", () => {
-        goTo(currentIndex + 1);
-        resetAutoplay();
-      });
+      const chips = [];
+      if (filterState.family) chips.push(["family", `Remover filtro de sabor: ${familyLabel(filterState.family)}`]);
+      if (filterState.brand) chips.push(["brand", `Remover filtro de marca: ${filterState.brand}`]);
+      if (filterState.category) chips.push(["category", `Remover filtro de categoria: ${categoryLabel(filterState.category)}`]);
+
+      let html = "<strong>Nenhum pod com esses filtros.</strong><div>";
+      html += chips.map(([key, label]) => `<button type="button" data-clear="${key}">${label}</button>`).join(" ");
+      if (chips.length > 1) html += ` <button type="button" data-clear="all">Limpar tudo</button>`;
+      html += "</div>";
+      emptyStateEl.innerHTML = html;
     }
 
-    let scrollDebounce;
-    track.addEventListener("scroll", () => {
-      clearTimeout(scrollDebounce);
-      scrollDebounce = setTimeout(() => {
-        const index = Math.round(track.scrollLeft / track.clientWidth);
-        if (index !== currentIndex) {
-          currentIndex = index;
-          updateDots();
-        }
-      }, 100);
+    emptyStateEl.querySelectorAll("button[data-clear]").forEach((btn) => {
+      btn.addEventListener("click", () => clearFilter(btn.dataset.clear));
     });
-
-    track.addEventListener("pointerdown", () => clearInterval(autoplayTimer));
-
-    startAutoplay();
   }
 
-  // ---------- Navegação em abas ----------
+  function renderGrid(reset) {
+    if (reset) {
+      filteredList = computeFilteredList();
+      grid.innerHTML = "";
+      renderedCount = 0;
+    }
+
+    const nextBatch = filteredList.slice(renderedCount, renderedCount + PAGE_SIZE);
+    const frag = document.createDocumentFragment();
+    nextBatch.forEach((p, i) => {
+      const globalIndex = renderedCount + i;
+      const eager = !initialGridRendered && globalIndex < 4;
+      const indexInBatch = reset ? globalIndex : 8; // só a entrada inicial do grid recebe stagger
+      frag.appendChild(renderCard(p, indexInBatch, eager));
+    });
+    grid.appendChild(frag);
+    renderedCount += nextBatch.length;
+    initialGridRendered = true;
+
+    updateResultsCount();
+    updateEmptyState();
+  }
+
+  function setupGridObserver() {
+    gridObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && renderedCount < filteredList.length) {
+            renderGrid(false);
+          }
+        });
+      },
+      { rootMargin: "600px 0px" }
+    );
+    gridObserver.observe(sentinel);
+  }
+
+  // ---------- Controles de filtro (segmented / espectro / rail de marca) ----------
+  function onCategoryChange(value) {
+    filterState.category = value;
+    refreshFilterControls();
+    renderGrid(true);
+  }
+
+  function onFamilyChange(value) {
+    filterState.family = value;
+    refreshFilterControls();
+    renderGrid(true);
+  }
+
+  function onBrandChange(value) {
+    filterState.brand = value;
+    refreshFilterControls();
+    renderGrid(true);
+  }
+
+  function refreshFilterControls() {
+    UI.renderSegmentedControl(categorySegmentedEl, UI.CATEGORY_OPTIONS, filterState.category, onCategoryChange);
+    UI.renderSpectrum(flavorSpectrumEl, Flavors.FAMILIES, filterState.family, onFamilyChange);
+    UI.renderChipRail(brandRailEl, brandList, filterState.brand, onBrandChange);
+    if (homeSpectrumEl) {
+      UI.renderSpectrum(homeSpectrumEl, Flavors.FAMILIES, filterState.family, (value) => {
+        onFamilyChange(value);
+        activateTab("products");
+      });
+    }
+  }
+
+  // ---------- Busca ----------
+  const debouncedRenderGrid = debounce(() => renderGrid(true), 200);
+
+  // ---------- Ordenar (menu) ----------
+  function closeSortMenu() {
+    sortMenu.hidden = true;
+    sortToggle.setAttribute("aria-expanded", "false");
+  }
+
+  function openSortMenu() {
+    sortMenu.hidden = false;
+    sortToggle.setAttribute("aria-expanded", "true");
+  }
+
+  function initSortMenu() {
+    sortToggle.addEventListener("click", () => {
+      if (sortMenu.hidden) openSortMenu();
+      else closeSortMenu();
+    });
+
+    sortMenu.querySelectorAll("li").forEach((li) => {
+      const select = () => {
+        filterState.sort = li.dataset.sort;
+        sortMenu.querySelectorAll("li").forEach((el) => el.setAttribute("aria-selected", String(el === li)));
+        closeSortMenu();
+        renderGrid(true);
+      };
+      li.addEventListener("click", select);
+      li.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          select();
+        }
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!sortMenu.hidden && !e.target.closest(".toolbar")) closeSortMenu();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !sortMenu.hidden) {
+        closeSortMenu();
+        sortToggle.focus();
+      }
+    });
+  }
+
+  // ---------- Navegação em abas (com memória de scroll por aba) ----------
+  const tabScrollY = {};
+
   function activateTab(tabName) {
+    const current = document.querySelector(".app-tab.is-active");
+    if (current) tabScrollY[current.dataset.tabPanel] = window.scrollY;
+
     document.querySelectorAll(".app-tab").forEach((el) => {
       el.classList.toggle("is-active", el.dataset.tabPanel === tabName);
     });
     document.querySelectorAll(".bottom-nav__item").forEach((el) => {
       el.classList.toggle("is-active", el.dataset.tabTarget === tabName);
     });
-    window.scrollTo(0, 0);
+    window.scrollTo(0, tabScrollY[tabName] || 0);
   }
+  window.activateTab = activateTab;
 
   function initTabs() {
     document.querySelectorAll("[data-tab-target]").forEach((btn) => {
@@ -282,6 +302,13 @@
   }
 
   async function bootstrap() {
+    UI.bindPressFx();
+
+    const searchIconSlot = document.getElementById("search-icon-slot");
+    if (searchIconSlot) searchIconSlot.innerHTML = Icons.search;
+    const sortChevronSlot = document.getElementById("sort-chevron-slot");
+    if (sortChevronSlot) sortChevronSlot.innerHTML = Icons.chevronDown;
+
     await Products.load();
     availableProducts = Products.getAvailable();
 
@@ -292,23 +319,30 @@
           "Não foi possível carregar o catálogo de produtos. Tente recarregar a página.";
       }
       if (resultsCount) resultsCount.textContent = "0 produtos encontrados";
-      if (emptyState) emptyState.hidden = false;
+      if (emptyStateEl) {
+        emptyStateEl.hidden = false;
+        emptyStateEl.innerHTML = "<strong>Não deu pra carregar o catálogo.</strong> Verifique a conexão.";
+      }
       return;
     }
 
-    populateFilterOptions(availableProducts);
-    initGrid(availableProducts);
-    render();
-    initCarousel(availableProducts);
+    availableProducts.forEach((p) => familyMap.set(p.id, Flavors.getFamily(p)));
+    brandList = Array.from(new Set(availableProducts.map((p) => p.brand))).sort();
+
+    refreshFilterControls();
+    renderFeatured(availableProducts);
+    renderGrid(true);
+    setupGridObserver();
+    initSortMenu();
 
     if (typeof window.initWholesaleTab === "function") {
       window.initWholesaleTab();
     }
 
-    searchInput.addEventListener("input", debouncedRender);
-    categoryFilter.addEventListener("change", render);
-    brandFilter.addEventListener("change", render);
-    sortSelect.addEventListener("change", render);
+    searchInput.addEventListener("input", () => {
+      filterState.search = searchInput.value;
+      debouncedRenderGrid();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", () => {

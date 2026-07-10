@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIPpods - Admin</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700&family=Public+Sans:wght@400;500;600&family=Martian+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
   <header class="site-header">
@@ -67,6 +70,7 @@
     <div class="admin-toolbar">
       <input type="search" id="admin-search" placeholder="Buscar produto por nome ou marca...">
       <div class="admin-bulk-actions">
+        <button type="button" id="admin-mark-all-in" class="btn" style="background: var(--surface-elevated); color: var(--success);">Restaurar todos (em estoque)</button>
         <button type="button" id="admin-mark-all-out" class="btn" style="background: var(--surface-elevated); color: var(--danger);">Marcar todos fora de estoque</button>
         <button type="button" id="admin-logout" class="btn" style="background: var(--surface-elevated); color: var(--text-primary);">Sair</button>
       </div>

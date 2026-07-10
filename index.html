@@ -5,9 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIPpods - Catálogo</title>
   <meta name="description" content="Catálogo de pods e descartáveis VIPpods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700&family=Public+Sans:wght@400;500;600&family=Martian+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <dialog id="age-gate" class="age-gate">
+    <div class="age-gate__inner">
+      <p class="age-gate__logo">VIPpods</p>
+      <p class="text-body">Este site vende produtos pra maiores de 18 anos.</p>
+      <p class="text-title" style="margin: var(--s-4) 0;">Você é maior de 18 anos?</p>
+      <button type="button" id="age-gate-yes" class="btn btn--primary" style="width:100%;">Sim, sou maior de 18</button>
+      <button type="button" id="age-gate-no" class="btn btn--ghost" style="width:100%; margin-top: var(--s-2);">Não sou maior de 18</button>
+    </div>
+  </dialog>
+
   <header class="site-header">
     <div class="container site-header__inner">
       <span class="site-header__logo" data-store-name>VIPpods</span>
@@ -20,17 +33,16 @@
     <!-- ABA: Início -->
     <section id="tab-home" class="app-tab is-active" data-tab-panel="home">
       <div class="container">
-        <h1 class="section-title">Destaques</h1>
-
-        <div class="carousel">
-          <div id="carousel-track" class="carousel__track"></div>
-          <button type="button" id="carousel-prev" class="carousel__nav carousel__nav--prev" aria-label="Destaque anterior">‹</button>
-          <button type="button" id="carousel-next" class="carousel__nav carousel__nav--next" aria-label="Próximo destaque">›</button>
+        <div class="spectrum-wrap">
+          <p class="spectrum-label">Filtrar por sabor</p>
+          <div id="home-spectrum" class="spectrum" role="group" aria-label="Filtrar por sabor"></div>
         </div>
-        <div id="carousel-dots" class="carousel__dots"></div>
+
+        <h1 class="section-title">Em destaque</h1>
+        <section id="featured-grid" class="product-grid product-grid--compact" aria-label="Produtos em destaque"></section>
 
         <div class="home-cta">
-          <p>Confira todo o nosso catálogo de pods e descartáveis.</p>
+          <p class="text-body">Confira todo o nosso catálogo de pods e descartáveis.</p>
           <button type="button" class="btn btn--primary" data-goto-tab="products">Ver catálogo completo</button>
         </div>
       </div>
@@ -39,34 +51,39 @@
     <!-- ABA: Produtos -->
     <section id="tab-products" class="app-tab" data-tab-panel="products">
       <div class="container">
-        <div class="filters-bar">
-          <label for="search-input" class="visually-hidden">Buscar produtos</label>
-          <input type="search" id="search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
+        <div id="category-segmented" class="segmented" role="group" aria-label="Filtrar por categoria"></div>
 
-          <label for="category-filter" class="visually-hidden">Filtrar por categoria</label>
-          <select id="category-filter" aria-label="Filtrar por categoria">
-            <option value="">Todas as categorias</option>
-          </select>
-
-          <label for="brand-filter" class="visually-hidden">Filtrar por marca</label>
-          <select id="brand-filter" aria-label="Filtrar por marca">
-            <option value="">Todas as marcas</option>
-          </select>
-
-          <label for="sort-select" class="visually-hidden">Ordenar por</label>
-          <select id="sort-select" aria-label="Ordenar por">
-            <option value="relevance">Relevância</option>
-            <option value="price-asc">Menor preço</option>
-            <option value="price-desc">Maior preço</option>
-            <option value="name-asc">Nome (A-Z)</option>
-          </select>
-
-          <p id="results-count" class="results-count" aria-live="polite"></p>
+        <div class="spectrum-wrap">
+          <p class="spectrum-label">Filtrar por sabor</p>
+          <div id="flavor-spectrum" class="spectrum" role="group" aria-label="Filtrar por sabor"></div>
         </div>
 
-        <section id="product-grid" class="product-grid" aria-label="Lista de produtos"></section>
+        <div id="brand-rail" class="brand-rail" role="group" aria-label="Filtrar por marca"></div>
 
-        <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+        <div class="toolbar">
+          <div class="search-field">
+            <span class="search-field__icon" id="search-icon-slot"></span>
+            <label for="search-input" class="visually-hidden">Buscar produtos</label>
+            <input type="search" id="search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
+          </div>
+          <button type="button" class="sort-pill" id="sort-toggle" aria-haspopup="listbox" aria-expanded="false">
+            <span>Ordenar</span>
+            <span id="sort-chevron-slot"></span>
+          </button>
+          <ul class="sort-menu" id="sort-menu" role="listbox" aria-label="Ordenar por" hidden>
+            <li role="option" data-sort="relevance" aria-selected="true" tabindex="0">Relevância</li>
+            <li role="option" data-sort="price-asc" aria-selected="false" tabindex="0">Menor preço</li>
+            <li role="option" data-sort="price-desc" aria-selected="false" tabindex="0">Maior preço</li>
+            <li role="option" data-sort="name-asc" aria-selected="false" tabindex="0">Nome (A-Z)</li>
+          </ul>
+        </div>
+
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+
+        <section id="product-grid" class="product-grid" aria-label="Lista de produtos"></section>
+        <div id="grid-sentinel" class="grid-sentinel" aria-hidden="true"></div>
+
+        <p id="empty-state" class="empty-state" hidden></p>
       </div>
     </section>
 
@@ -78,21 +95,21 @@
           Pedido mínimo de <strong><span id="wholesale-min-qty">50</span> unidades</strong> no total (pode misturar produtos diferentes à vontade).
         </div>
 
-        <div class="filters-bar">
-          <label for="wholesale-search-input" class="visually-hidden">Buscar produtos no atacado</label>
-          <input type="search" id="wholesale-search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
+        <div id="wholesale-category-segmented" class="segmented" role="group" aria-label="Filtrar por categoria"></div>
 
-          <label for="wholesale-category-filter" class="visually-hidden">Filtrar por categoria</label>
-          <select id="wholesale-category-filter" aria-label="Filtrar por categoria">
-            <option value="">Todas as categorias</option>
-          </select>
-
-          <p id="wholesale-results-count" class="results-count" aria-live="polite"></p>
+        <div class="toolbar">
+          <div class="search-field">
+            <span class="search-field__icon" id="wholesale-search-icon-slot"></span>
+            <label for="wholesale-search-input" class="visually-hidden">Buscar produtos no atacado</label>
+            <input type="search" id="wholesale-search-input" placeholder="Buscar por nome, marca ou sabor..." autocomplete="off">
+          </div>
         </div>
+
+        <p id="wholesale-results-count" class="results-count" aria-live="polite"></p>
 
         <section id="wholesale-grid" class="product-grid" aria-label="Lista de produtos no atacado"></section>
 
-        <p id="wholesale-empty-state" class="empty-state" hidden>Nenhum produto encontrado com esses filtros.</p>
+        <p id="wholesale-empty-state" class="empty-state" hidden></p>
 
         <div class="wholesale-cart-summary">
           <div class="wholesale-cart-summary__row">
@@ -122,7 +139,7 @@
             <div><span>Frete</span><span id="cart-shipping">R$ 0,00</span></div>
             <div class="cart-total-row"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
           </div>
-          <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar pedido no WhatsApp</button>
+          <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar no WhatsApp</button>
         </div>
       </div>
     </section>
@@ -135,34 +152,38 @@
 
   <nav class="bottom-nav" aria-label="Navegação principal">
     <button type="button" class="bottom-nav__item is-active" data-tab-target="home">
-      <span class="bottom-nav__icon" aria-hidden="true">🏠</span>
+      <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 10 3l7 6.5"/><path d="M5 8.5V17h4v-5h2v5h4V8.5"/></svg></span>
       <span class="bottom-nav__label">Início</span>
     </button>
     <button type="button" class="bottom-nav__item" data-tab-target="products">
-      <span class="bottom-nav__icon" aria-hidden="true">🛍️</span>
+      <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7V5.3a3.5 3.5 0 0 1 7 0V7"/><rect x="3.5" y="7" width="13" height="10" rx="2"/></svg></span>
       <span class="bottom-nav__label">Produtos</span>
     </button>
     <button type="button" class="bottom-nav__item" data-tab-target="wholesale">
-      <span class="bottom-nav__icon" aria-hidden="true">📦</span>
+      <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5 10 4l7 3.5-7 3.5-7-3.5Z"/><path d="M3 7.5V14l7 3.5 7-3.5V7.5"/><path d="M10 11v6.5"/></svg></span>
       <span class="bottom-nav__label">Atacado</span>
     </button>
     <button type="button" class="bottom-nav__item" data-tab-target="cart">
-      <span class="bottom-nav__icon" aria-hidden="true">🛒</span>
+      <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="17" r="1.1"/><circle cx="14.5" cy="17" r="1.1"/><path d="M2.5 3h2l1.7 10.2h9.6l1.7-6.7H5.6"/></svg></span>
       <span class="bottom-nav__label">Carrinho</span>
       <span id="cart-count" class="cart-count" hidden>0</span>
     </button>
   </nav>
 
-  <!-- A ordem importa: config -> firebase -> dados -> produtos -> carrinho -> atacado -> lógica principal -->
+  <!-- A ordem importa: config -> firebase -> ícones/sabores -> dados -> produtos -> carrinho -> atacado -> lógica principal -->
   <script src="js/config.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
   <script src="js/firebase-config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/flavors.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/products-data.js"></script>
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/wholesale.js"></script>
+  <script src="js/age-gate.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
