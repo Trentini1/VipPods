@@ -678,6 +678,19 @@ input, select {
   border-radius: var(--r-chip);
 }
 
+.product-card__badge {
+  position: absolute;
+  left: var(--s-2);
+  top: var(--s-2);
+  background: var(--grafite-900);
+  color: var(--branco);
+  font: 600 10px/1 var(--font-data);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-chip);
+}
+
 .product-card__body {
   padding: var(--s-3) var(--s-3) var(--s-4);
   display: flex;
@@ -887,7 +900,8 @@ input, select {
    Atacado / Revendedor
    ========================================================================== */
 
-.wholesale-banner {
+.wholesale-banner,
+.info-banner {
   background: var(--aluminio-2);
   border: 1px solid var(--aluminio);
   border-radius: var(--r-input);
@@ -897,7 +911,8 @@ input, select {
   margin-top: var(--s-4);
 }
 
-.wholesale-banner strong { color: var(--grafite-900); }
+.wholesale-banner strong,
+.info-banner strong { color: var(--grafite-900); }
 
 .wholesale-banner + .btn { margin-top: var(--s-4); }
 
@@ -1029,6 +1044,39 @@ input, select {
   border-top: 1px solid var(--aluminio);
   padding-top: var(--s-2);
   margin-top: var(--s-2);
+}
+
+.cart-customer {
+  display: flex;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.cart-customer__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+
+.cart-customer__field label {
+  font: 500 12px/16px var(--font-ui);
+  color: var(--grafite-500);
+}
+
+.cart-customer__field input {
+  background: var(--aluminio-2);
+  border: 1px solid transparent;
+  border-radius: var(--r-input);
+  padding: var(--s-2) var(--s-3);
+  min-height: 40px;
+  font: 400 14px/20px var(--font-ui);
+  color: var(--grafite-900);
+}
+
+.cart-customer__field input:focus {
+  border-color: var(--grafite-900);
+  outline: none;
 }
 
 /* ---------- Footer ---------- */

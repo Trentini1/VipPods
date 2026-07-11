@@ -374,6 +374,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     Cart.load();
     Cart.renderCart();
+    Cart.loadCustomerInfo();
+    Cart.bindCustomerFields();
     initTabs();
     bootstrap();
 

@@ -142,12 +142,14 @@
       <td><input type="number" min="0" step="1" class="stock-qty-input" value="${product.stockQty ?? 0}" aria-label="Quantidade em estoque de ${product.name}"></td>
       <td><span class="badge ${inStock ? "badge--ok" : "badge--out"}">${inStock ? "Em estoque" : "Fora de estoque"}</span></td>
       <td><input type="checkbox" class="stock-checkbox" ${inStock ? "" : "checked"} aria-label="Marcar ${product.name} como fora de estoque"></td>
+      <td><input type="checkbox" class="featured-checkbox" ${product.featured ? "checked" : ""} aria-label="Marcar ${product.name} como destaque na Início"></td>
     `;
 
     const priceInput = tr.querySelector(".price-input");
     const costInput = tr.querySelector(".cost-input");
     const stockQtyInput = tr.querySelector(".stock-qty-input");
     const stockCheckbox = tr.querySelector(".stock-checkbox");
+    const featuredCheckbox = tr.querySelector(".featured-checkbox");
     const badge = tr.querySelector(".badge");
     const photoInput = tr.querySelector(".photo-input");
     const thumb = tr.querySelector(".admin-thumb");
@@ -212,6 +214,11 @@
       persistOverrides();
       setRowStockUI(refs, nowInStock);
       applyTabAndSearch();
+    });
+
+    featuredCheckbox.addEventListener("change", () => {
+      overrides[product.id] = { ...(overrides[product.id] || {}), featured: featuredCheckbox.checked };
+      persistOverrides();
     });
 
     return tr;

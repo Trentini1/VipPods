@@ -108,6 +108,7 @@ const UI = {
       <div class="product-card__media">
         <img class="product-card__img" alt="${product.name}"
           ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}>
+        ${product.featured ? '<span class="product-card__badge">Mais vendido</span>' : ""}
         ${puffsLabel ? `<span class="product-card__puffs">${puffsLabel}</span>` : ""}
       </div>
       <div class="product-card__body">

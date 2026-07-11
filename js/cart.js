@@ -2,7 +2,9 @@
 // renderizar e finalizar pedido via WhatsApp.
 const Cart = {
   STORAGE_KEY: "vippods_cart",
+  CUSTOMER_STORAGE_KEY: "vippods_customer_info",
   items: {}, // { [productId]: quantidade }
+  customerInfo: { name: "", neighborhood: "" },
 
   load() {
     try {
@@ -20,6 +22,43 @@ const Cart = {
     } catch (err) {
       console.warn("[VIPpods] Não foi possível salvar o carrinho no localStorage.", err);
     }
+  },
+
+  // Nome/bairro ficam salvos à parte do carrinho de itens: preenchidos uma vez,
+  // continuam disponíveis em pedidos futuros sem precisar digitar de novo.
+  loadCustomerInfo() {
+    try {
+      const raw = localStorage.getItem(this.CUSTOMER_STORAGE_KEY);
+      this.customerInfo = raw ? JSON.parse(raw) : { name: "", neighborhood: "" };
+    } catch (err) {
+      this.customerInfo = { name: "", neighborhood: "" };
+    }
+  },
+
+  persistCustomerInfo() {
+    try {
+      localStorage.setItem(this.CUSTOMER_STORAGE_KEY, JSON.stringify(this.customerInfo));
+    } catch (err) {
+      console.warn("[VIPpods] Não foi possível salvar nome/bairro no localStorage.", err);
+    }
+  },
+
+  bindCustomerFields() {
+    const nameInput = document.getElementById("cart-customer-name");
+    const neighborhoodInput = document.getElementById("cart-customer-neighborhood");
+    if (!nameInput || !neighborhoodInput) return;
+
+    nameInput.value = this.customerInfo.name || "";
+    neighborhoodInput.value = this.customerInfo.neighborhood || "";
+
+    nameInput.addEventListener("input", () => {
+      this.customerInfo.name = nameInput.value;
+      this.persistCustomerInfo();
+    });
+    neighborhoodInput.addEventListener("input", () => {
+      this.customerInfo.neighborhood = neighborhoodInput.value;
+      this.persistCustomerInfo();
+    });
   },
 
   addItem(productId, qty = 1) {
@@ -146,8 +185,13 @@ const Cart = {
   buildWhatsAppMessage() {
     const entries = this.getEntries();
     const subtotal = this.getSubtotal();
+    const name = this.customerInfo.name.trim();
+    const neighborhood = this.customerInfo.neighborhood.trim();
 
     const lines = [`Olá! Quero fazer um pedido na ${CONFIG.STORE_NAME}:`, ""];
+    if (name) lines.push(`Nome: ${name}`);
+    if (neighborhood) lines.push(`Bairro: ${neighborhood}`);
+    if (name || neighborhood) lines.push("");
     entries.forEach(({ product, qty }) => {
       lines.push(`• ${qty}x ${product.name} - ${this.formatCurrency(product.price * qty)}`);
     });

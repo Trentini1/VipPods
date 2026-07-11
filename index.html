@@ -41,6 +41,10 @@
           <div id="home-spectrum" class="spectrum" role="group" aria-label="Filtrar por sabor"></div>
         </div>
 
+        <div class="info-banner">
+          <strong>Pix ou cartão na entrega.</strong> Combinamos o valor da entrega e o horário direto pelo WhatsApp, geralmente em poucas horas.
+        </div>
+
         <h1 class="section-title">Em destaque</h1>
         <section id="featured-grid" class="product-grid product-grid--compact" aria-label="Produtos em destaque"></section>
 
@@ -142,6 +146,18 @@
             <div><span>Frete</span><span id="cart-shipping">A combinar</span></div>
             <div class="cart-total-row"><span>Total (sem frete)</span><span id="cart-total">R$ 0,00</span></div>
           </div>
+
+          <div class="cart-customer">
+            <div class="cart-customer__field">
+              <label for="cart-customer-name">Nome</label>
+              <input type="text" id="cart-customer-name" placeholder="Seu nome" autocomplete="name">
+            </div>
+            <div class="cart-customer__field">
+              <label for="cart-customer-neighborhood">Bairro</label>
+              <input type="text" id="cart-customer-neighborhood" placeholder="Bairro pra entrega" autocomplete="address-level3">
+            </div>
+          </div>
+
           <p class="cart-shipping-note">A taxa de entrega não está incluída — será combinada com você pelo WhatsApp ao fechar o pedido.</p>
           <button type="button" id="checkout-btn" class="btn checkout-btn">Finalizar no WhatsApp</button>
         </div>
