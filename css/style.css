@@ -730,6 +730,16 @@ input, select {
   margin: var(--s-1) 0 0;
 }
 
+.product-card__stock-note {
+  font: 600 10px/14px var(--font-ui);
+  color: var(--grafite-500);
+  margin: 0;
+}
+
+.product-card__stock-note--low {
+  color: var(--danger, #D0342C);
+}
+
 .product-card__add {
   position: relative;
   width: 32px;

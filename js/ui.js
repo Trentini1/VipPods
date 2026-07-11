@@ -94,7 +94,7 @@ const UI = {
   // Cria o "chassi" comum do card (tarja de sabor, imagem, categoria, nome,
   // subtítulo, badge de puffs) e devolve o footer vazio pro chamador colocar
   // o controle específico (botão ⊕ no varejo, stepper no atacado).
-  buildProductCardBase(product, { price, priceSuffix = "", eager = false } = {}) {
+  buildProductCardBase(product, { price, priceSuffix = "", eager = false, stockNote = "", stockLow = false } = {}) {
     const family = Flavors.getFamily(product);
     const card = document.createElement("article");
     card.className = "product-card";
@@ -117,6 +117,7 @@ const UI = {
         <div class="product-card__footer">
           <span class="product-card__price">${this.formatCurrency(price)}${priceSuffix}</span>
         </div>
+        ${stockNote ? `<p class="product-card__stock-note${stockLow ? " product-card__stock-note--low" : ""}">${stockNote}</p>` : ""}
         <p class="product-card__ship-note">+ taxa de entrega (a combinar)</p>
       </div>
     `;

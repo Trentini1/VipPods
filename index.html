@@ -96,6 +96,7 @@
         <h1 class="section-title">Atacado / Revendedor</h1>
         <div class="wholesale-banner">
           Pedido mínimo de <strong><span id="wholesale-min-qty">50</span> unidades</strong> no total (pode misturar produtos diferentes à vontade).
+          Todos os produtos do catálogo estão disponíveis para pedido sob encomenda no atacado.
         </div>
 
         <div id="wholesale-category-segmented" class="segmented" role="group" aria-label="Filtrar por categoria"></div>
@@ -137,6 +138,20 @@
 
         <div id="perfume-grid" class="perfume-grid" aria-label="Lista de produtos"></div>
         <p id="perfume-empty-state" class="empty-state" hidden>
+          <strong>Nenhum produto disponível no momento.</strong>
+          Volte em breve.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABA: Extras (segunda seção de produto cadastrada à mão no admin) -->
+    <section id="tab-extras" class="app-tab" data-tab-panel="extras">
+      <div class="container">
+        <h1 class="section-title" id="extras-title">Extras</h1>
+        <p class="text-body" style="color: var(--grafite-500); margin: 0 0 var(--s-4);">Seleção pequena, cadastrada à mão — confira e peça direto no WhatsApp.</p>
+
+        <div id="extra-grid" class="perfume-grid" aria-label="Lista de produtos"></div>
+        <p id="extra-empty-state" class="empty-state" hidden>
           <strong>Nenhum produto disponível no momento.</strong>
           Volte em breve.
         </p>
@@ -185,6 +200,10 @@
       <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5h4M9 2.5v2.3c0 .4-.15.78-.42 1.06L7.2 7.3A2 2 0 0 0 6.6 8.7v7.3a1.5 1.5 0 0 0 1.5 1.5h3.8a1.5 1.5 0 0 0 1.5-1.5V8.7c0-.53-.21-1.04-.58-1.4l-1.38-1.4A1.5 1.5 0 0 1 11 4.8V2.5"/><path d="M7 12h6"/></svg></span>
       <span class="bottom-nav__label" id="perfumes-nav-label">Perfumes</span>
     </button>
+    <button type="button" class="bottom-nav__item" data-tab-target="extras">
+      <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5 12 7l4.8.7-3.5 3.4.8 4.8L10 13.6l-4.1 2.3.8-4.8L3.2 7.7 8 7l2-4.5Z"/></svg></span>
+      <span class="bottom-nav__label" id="extras-nav-label">Extras</span>
+    </button>
     <button type="button" class="bottom-nav__item" data-tab-target="cart">
       <span class="bottom-nav__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="17" r="1.1"/><circle cx="14.5" cy="17" r="1.1"/><path d="M2.5 3h2l1.7 10.2h9.6l1.7-6.7H5.6"/></svg></span>
       <span class="bottom-nav__label">Carrinho</span>
@@ -206,6 +225,7 @@
   <script src="js/cart.js"></script>
   <script src="js/wholesale.js"></script>
   <script src="js/perfumes.js"></script>
+  <script src="js/extras.js"></script>
   <script src="js/age-gate.js"></script>
   <script src="js/main.js"></script>
 </body>

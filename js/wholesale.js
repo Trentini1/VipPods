@@ -1,5 +1,7 @@
 // Carrinho e catálogo da aba Atacado/Revendedor. Preços usam product.wholesalePrice
 // e o pedido só libera o checkout quando o total de unidades bate o mínimo (CONFIG.WHOLESALE_MIN_QTY).
+// Todo o catálogo aparece aqui sob encomenda, mesmo o que está marcado como fora
+// de estoque no varejo — atacado não depende do estoque de varejo.
 const WholesaleCart = {
   STORAGE_KEY: "vippods_wholesale_cart",
   items: {}, // { [productId]: quantidade }
@@ -127,6 +129,7 @@ const WholesaleCart = {
       price: product.wholesalePrice,
       priceSuffix: ' <span style="font-weight:400;">/ un.</span>',
       eager: index < 4,
+      stockNote: "Disponível sob encomenda",
     });
     card.style.animationDelay = index < 8 ? `${index * 24}ms` : "0ms";
 
@@ -198,7 +201,10 @@ const WholesaleCart = {
     initialized = true;
 
     WholesaleCart.load();
-    availableProducts = Products.getAvailable();
+    // Atacado sempre mostra o catálogo inteiro, sob encomenda — independe do
+    // estoque de varejo (Products.getAvailable() filtra por inStock, que é
+    // controle de varejo; aqui usamos getAll() de propósito).
+    availableProducts = Products.getAll();
 
     document.getElementById("wholesale-min-qty").textContent = CONFIG.WHOLESALE_MIN_QTY;
 

@@ -93,6 +93,7 @@
             <th scope="col">Custo (US$)</th>
             <th scope="col">Preço Varejo (R$)</th>
             <th scope="col">Preço Atacado (R$)</th>
+            <th scope="col">Estoque (qtd)</th>
             <th scope="col">Status</th>
             <th scope="col">Fora de estoque</th>
           </tr>
@@ -143,6 +144,49 @@
 
     <div id="perfume-admin-list" class="perfume-admin-list"></div>
     <p id="perfume-admin-empty" class="empty-state" style="padding: 24px 16px;">Nenhum perfume cadastrado ainda.</p>
+
+    <h1 class="section-title">Extras</h1>
+    <p style="color: var(--text-secondary); font-size: 0.85rem; margin: -8px 0 14px;">
+      Segunda seção cadastrada à mão, independente dos Perfumes e da tabela de pods — aparece nessa aba do site (nome abaixo).
+    </p>
+
+    <form id="extra-label-form" class="perfume-form">
+      <div class="perfume-form__fields">
+        <div class="pricing-panel__field" style="flex-basis: 100%;">
+          <label for="extra-label-input">Nome da aba/seção no site</label>
+          <input type="text" id="extra-label-input" placeholder="Extras">
+          <p style="color: var(--text-muted); font-size: 0.78rem; margin: 4px 0 0;">
+            Muda o nome no menu inferior e no título da aba. Os itens cadastrados abaixo não mudam de lugar.
+          </p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn--primary">Salvar nome</button>
+    </form>
+
+    <form id="extra-form" class="perfume-form">
+      <div class="perfume-form__fields">
+        <div class="pricing-panel__field">
+          <label for="extra-name">Nome</label>
+          <input type="text" id="extra-name" required>
+        </div>
+        <div class="pricing-panel__field">
+          <label for="extra-price">Preço (R$)</label>
+          <input type="number" id="extra-price" min="0" step="0.01" required>
+        </div>
+        <div class="pricing-panel__field" style="flex-basis: 100%;">
+          <label for="extra-description">Descrição</label>
+          <textarea id="extra-description" rows="2"></textarea>
+        </div>
+        <div class="pricing-panel__field">
+          <label for="extra-photo">Foto (opcional)</label>
+          <input type="file" id="extra-photo" accept="image/*">
+        </div>
+      </div>
+      <button type="submit" class="btn btn--primary">Adicionar item</button>
+    </form>
+
+    <div id="extra-admin-list" class="perfume-admin-list"></div>
+    <p id="extra-admin-empty" class="empty-state" style="padding: 24px 16px;">Nenhum item cadastrado ainda.</p>
   </main>
 
   <script src="js/config.js"></script>
@@ -154,5 +198,6 @@
   <script src="js/products.js"></script>
   <script src="js/admin.js"></script>
   <script src="js/admin-perfumes.js"></script>
+  <script src="js/admin-extras.js"></script>
 </body>
 </html>

@@ -147,6 +147,7 @@
       <td><input type="number" min="0" step="0.01" class="cost-input" value="${product.costUSD ?? 0}" aria-label="Custo em dólar de ${product.name}"></td>
       <td><input type="number" min="0" step="0.01" class="price-input" value="${product.price}" aria-label="Preço varejo de ${product.name}"></td>
       <td><input type="number" min="0" step="0.01" class="wholesale-input" value="${product.wholesalePrice ?? 0}" aria-label="Preço atacado de ${product.name}"></td>
+      <td><input type="number" min="0" step="1" class="stock-qty-input" value="${product.stockQty ?? 0}" aria-label="Quantidade em estoque de ${product.name}"></td>
       <td><span class="badge ${inStock ? "badge--ok" : "badge--out"}">${inStock ? "Em estoque" : "Fora de estoque"}</span></td>
       <td><input type="checkbox" class="stock-checkbox" ${inStock ? "" : "checked"} aria-label="Marcar ${product.name} como fora de estoque"></td>
     `;
@@ -154,12 +155,13 @@
     const priceInput = tr.querySelector(".price-input");
     const costInput = tr.querySelector(".cost-input");
     const wholesaleInput = tr.querySelector(".wholesale-input");
+    const stockQtyInput = tr.querySelector(".stock-qty-input");
     const stockCheckbox = tr.querySelector(".stock-checkbox");
     const badge = tr.querySelector(".badge");
     const photoInput = tr.querySelector(".photo-input");
     const thumb = tr.querySelector(".admin-thumb");
 
-    const refs = { row: tr, badge, checkbox: stockCheckbox, priceInput, costInput, wholesaleInput, thumb };
+    const refs = { row: tr, badge, checkbox: stockCheckbox, priceInput, costInput, wholesaleInput, stockQtyInput, thumb };
     rowRefs.set(product.id, refs);
 
     photoInput.addEventListener("change", async () => {
@@ -210,6 +212,16 @@
         return;
       }
       overrides[product.id] = { ...(overrides[product.id] || {}), wholesalePrice: value };
+      persistOverrides();
+    });
+
+    stockQtyInput.addEventListener("change", () => {
+      const value = Math.floor(Number(stockQtyInput.value));
+      if (Number.isNaN(value) || value < 0) {
+        stockQtyInput.value = product.stockQty ?? 0;
+        return;
+      }
+      overrides[product.id] = { ...(overrides[product.id] || {}), stockQty: value };
       persistOverrides();
     });
 

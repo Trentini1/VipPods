@@ -60,8 +60,20 @@
   }
 
   // ---------- Card de produto (varejo: preço + botão ⊕) ----------
+  function stockNoteFor(product) {
+    const qty = Number(product.stockQty);
+    if (!Number.isFinite(qty) || qty < 0) return "";
+    return `${qty} em estoque`;
+  }
+
   function renderCard(product, indexInBatch, eager) {
-    const { card, footer } = UI.buildProductCardBase(product, { price: product.price, eager });
+    const qty = Number(product.stockQty);
+    const { card, footer } = UI.buildProductCardBase(product, {
+      price: product.price,
+      eager,
+      stockNote: stockNoteFor(product),
+      stockLow: Number.isFinite(qty) && qty > 0 && qty <= 5,
+    });
     card.style.animationDelay = indexInBatch < 8 ? `${indexInBatch * 24}ms` : "0ms";
 
     const addBtn = document.createElement("button");

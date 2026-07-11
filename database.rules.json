@@ -18,6 +18,11 @@
       ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
     },
 
+    "extras": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
+    },
+
     "settings": {
       ".read": true,
       ".write": "auth != null && auth.token.email == 'admin@vippods.app'"
