@@ -24,15 +24,12 @@
 
   const retailRateInput = document.getElementById("retail-rate");
   const retailMarkupInput = document.getElementById("retail-markup");
-  const wholesaleRateInput = document.getElementById("wholesale-rate");
-  const wholesaleMarkupInput = document.getElementById("wholesale-markup");
   const applyRetailBtn = document.getElementById("apply-retail-pricing");
-  const applyWholesaleBtn = document.getElementById("apply-wholesale-pricing");
 
   let overrides = {};
   let pricing = {};
   let currentTab = "in"; // 'in' | 'out'
-  const rowRefs = new Map(); // id -> { row, badge, checkbox, priceInput, costInput, wholesaleInput, thumb }
+  const rowRefs = new Map(); // id -> { row, badge, checkbox, priceInput, costInput, thumb }
 
   async function loadOverrides() {
     try {
@@ -63,16 +60,12 @@
     }
     retailRateInput.value = pricing.retailRate;
     retailMarkupInput.value = pricing.retailMarkup;
-    wholesaleRateInput.value = pricing.wholesaleRate;
-    wholesaleMarkupInput.value = pricing.wholesaleMarkup;
   }
 
   function persistPricing() {
     pricing = {
       retailRate: Number(retailRateInput.value) || 0,
       retailMarkup: Number(retailMarkupInput.value) || 0,
-      wholesaleRate: Number(wholesaleRateInput.value) || 0,
-      wholesaleMarkup: Number(wholesaleMarkupInput.value) || 0,
     };
     firebaseDb.ref(PRICING_PATH).set(pricing).catch((err) => {
       console.error("[VIPpods admin] Não foi possível salvar a precificação no Firebase:", err);
@@ -146,7 +139,6 @@
       <td>${product.category}</td>
       <td><input type="number" min="0" step="0.01" class="cost-input" value="${product.costUSD ?? 0}" aria-label="Custo em dólar de ${product.name}"></td>
       <td><input type="number" min="0" step="0.01" class="price-input" value="${product.price}" aria-label="Preço varejo de ${product.name}"></td>
-      <td><input type="number" min="0" step="0.01" class="wholesale-input" value="${product.wholesalePrice ?? 0}" aria-label="Preço atacado de ${product.name}"></td>
       <td><input type="number" min="0" step="1" class="stock-qty-input" value="${product.stockQty ?? 0}" aria-label="Quantidade em estoque de ${product.name}"></td>
       <td><span class="badge ${inStock ? "badge--ok" : "badge--out"}">${inStock ? "Em estoque" : "Fora de estoque"}</span></td>
       <td><input type="checkbox" class="stock-checkbox" ${inStock ? "" : "checked"} aria-label="Marcar ${product.name} como fora de estoque"></td>
@@ -154,14 +146,13 @@
 
     const priceInput = tr.querySelector(".price-input");
     const costInput = tr.querySelector(".cost-input");
-    const wholesaleInput = tr.querySelector(".wholesale-input");
     const stockQtyInput = tr.querySelector(".stock-qty-input");
     const stockCheckbox = tr.querySelector(".stock-checkbox");
     const badge = tr.querySelector(".badge");
     const photoInput = tr.querySelector(".photo-input");
     const thumb = tr.querySelector(".admin-thumb");
 
-    const refs = { row: tr, badge, checkbox: stockCheckbox, priceInput, costInput, wholesaleInput, stockQtyInput, thumb };
+    const refs = { row: tr, badge, checkbox: stockCheckbox, priceInput, costInput, stockQtyInput, thumb };
     rowRefs.set(product.id, refs);
 
     photoInput.addEventListener("change", async () => {
@@ -202,16 +193,6 @@
         return;
       }
       overrides[product.id] = { ...(overrides[product.id] || {}), costUSD: value };
-      persistOverrides();
-    });
-
-    wholesaleInput.addEventListener("change", () => {
-      const value = Number(wholesaleInput.value);
-      if (Number.isNaN(value) || value < 0) {
-        wholesaleInput.value = product.wholesalePrice ?? 0;
-        return;
-      }
-      overrides[product.id] = { ...(overrides[product.id] || {}), wholesalePrice: value };
       persistOverrides();
     });
 
@@ -366,11 +347,8 @@
     applyRetailBtn.addEventListener("click", () => {
       applyBulkPricing("priceInput", retailRateInput, retailMarkupInput, "price");
     });
-    applyWholesaleBtn.addEventListener("click", () => {
-      applyBulkPricing("wholesaleInput", wholesaleRateInput, wholesaleMarkupInput, "wholesalePrice");
-    });
 
-    [retailRateInput, retailMarkupInput, wholesaleRateInput, wholesaleMarkupInput].forEach((input) => {
+    [retailRateInput, retailMarkupInput].forEach((input) => {
       input.addEventListener("change", persistPricing);
     });
   }

@@ -19,16 +19,11 @@ const CONFIG = {
   // com o e-mail abaixo e a senha que você quiser usar pra entrar no /admin.html.
   ADMIN_EMAIL: "admin@vippods.app",
 
-  // Quantidade mínima total (somando todos os produtos) pra fechar pedido no atacado.
-  WHOLESALE_MIN_QTY: 50,
-
   // Valores padrão da calculadora de preço do admin (cotação do dólar + margem em R$).
   // O admin pode ajustar e reaplicar a qualquer momento; isso aqui é só o valor inicial.
   DEFAULT_PRICING: {
     retailRate: 5.2,
     retailMarkup: 15,
-    wholesaleRate: 5.2,
-    wholesaleMarkup: 7,
   },
 };
 

@@ -899,48 +899,9 @@ input, select {
 
 .wholesale-banner strong { color: var(--grafite-900); }
 
-.wholesale-card__qty {
-  display: flex;
-  align-items: center;
-  gap: var(--s-2);
-  margin-top: auto;
-  padding-top: var(--s-2);
-}
+.wholesale-banner + .btn { margin-top: var(--s-4); }
 
-.wholesale-card__qty .qty-input { flex: 1; }
-
-.wholesale-cart-summary {
-  position: sticky;
-  bottom: calc(var(--bottom-nav-h) + var(--s-2) + env(safe-area-inset-bottom));
-  background: var(--branco);
-  border: 1px solid var(--aluminio);
-  border-radius: var(--r-card);
-  box-shadow: var(--e-2);
-  padding: var(--s-4);
-  margin: var(--s-2) 0 var(--s-6);
-}
-
-.wholesale-cart-summary__row {
-  display: flex;
-  justify-content: space-between;
-  font: 400 14px/20px var(--font-ui);
-  color: var(--grafite-500);
-  padding: 2px 0;
-}
-
-.wholesale-cart-summary__row strong {
-  color: var(--grafite-900);
-  font-family: var(--font-data);
-  font-variant-numeric: tabular-nums;
-}
-
-.wholesale-min-warning {
-  color: color-mix(in oklch, var(--sabor, #FF5C2B) 62%, var(--grafite-900));
-  font: 500 13px/18px var(--font-ui);
-  margin: var(--s-2) 0;
-}
-
-/* ---------- Steppers de quantidade (carrinho e atacado) ---------- */
+/* ---------- Steppers de quantidade (carrinho) ---------- */
 
 .qty-btn {
   position: relative;
